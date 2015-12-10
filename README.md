@@ -1,2 +1,25 @@
 # invesdwin-bom
-Bill Of Materials for managing common invesdwin dependency versions
+
+This project consists of a BOM-POM (Bill of Materials) that can be used to share dependency management between multiple projects. It contains the versions for often used dependencies in invesdwin.
+
+## Maven
+
+Releases and snapshots are deployed to this maven repository:
+```
+http://invesdwin.de:8081/artifactory/invesdwin-oss
+```
+
+Dependency declaration:
+```xml
+<dependencyManagement>
+	<dependencies>
+		<dependency>
+			<groupId>de.invesdwin</groupId>
+			<artifactId>invesdwin-bom</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+			<type>pom</type>
+			<scope>import</scope>
+		</dependency>
+	</dependencies>
+</dependencyManagement>
+```
