@@ -1,6 +1,6 @@
 # invesdwin-bom
 
-This project consists of a BOM-POM (Bill of Materials) that can be used to share dependency management between multiple projects. It contains the versions for often used dependencies in invesdwin.
+This project consists of a BOM-POM ([bill of materials](https://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html)) that can be used to share dependency management between multiple projects. It contains the versions for often used dependencies in invesdwin.
 
 ## Maven
 
