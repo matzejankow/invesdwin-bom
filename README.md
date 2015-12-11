@@ -6,7 +6,7 @@ This project consists of a BOM-POM ([bill of materials](https://maven.apache.org
 
 Releases and snapshots are deployed to this maven repository:
 ```
-http://invesdwin.de:8081/artifactory/invesdwin-oss
+http://invesdwin.de/artifactory/invesdwin-oss
 ```
 
 Dependency declaration:
