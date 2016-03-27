@@ -32,7 +32,7 @@
 		<version.slf4j>1.7.13</version.slf4j>
 
 		<version.wicket>7.1.0</version.wicket>
-		<version.wicket-bootstrap>0.10.4</version.wicket-bootstrap>
+		<version.wicket-bootstrap>0.10.6</version.wicket-bootstrap>
 		<version.spring-security>4.0.3.RELEASE</version.spring-security>
 		<version.javax.servlet>3.0.0.v201112011016</version.javax.servlet>
 		<version.jackson>2.6.0</version.jackson>
