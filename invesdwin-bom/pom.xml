@@ -39,6 +39,10 @@
 		<version.jsoup>1.7.3</version.jsoup>
 		<version.highstock>2.0.4</version.highstock>
 		<version.args4j>2.0.28</version.args4j>
+		
+		<version.hibernate-validator>5.1.2.Final</version.hibernate-validator>
+		<version.validation-api>1.1.0.Final</version.validation-api>
+		<version.juel>2.2.6</version.juel>
 
 		<version.junit>4.12</version.junit>
 		<version.mockito>1.9.5</version.mockito>
@@ -442,6 +446,33 @@
 				<groupId>args4j</groupId>
 				<artifactId>args4j</artifactId>
 				<version>${version.args4j}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-validator</artifactId>
+				<version>${version.hibernate-validator}</version>
+			</dependency>
+			<dependency>
+				<!-- seems like juel is a hidden dependency of hibernate-validator -->
+				<groupId>de.odysseus.juel</groupId>
+				<artifactId>juel-impl</artifactId>
+				<version>${version.juel}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.odysseus.juel</groupId>
+				<artifactId>juel-api</artifactId>
+				<version>${version.juel}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.hibernate</groupId>
+				<artifactId>hibernate-validator-annotation-processor</artifactId>
+				<version>${version.hibernate-validator}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.validation</groupId>
+				<artifactId>validation-api</artifactId>
+				<version>${version.validation-api}</version>
 			</dependency>
 
 		</dependencies>
