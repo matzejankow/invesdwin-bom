@@ -75,6 +75,16 @@
 				<artifactId>invesdwin-nowicket</artifactId>
 				<version>${version.invesdwin-nowicket}</version>
 			</dependency>
+			<dependency>
+				<groupId>de.invesdwin</groupId>
+				<artifactId>invesdwin-nowicket-security-shiro</artifactId>
+				<version>${version.invesdwin-nowicket}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.invesdwin</groupId>
+				<artifactId>invesdwin-nowicket-security-spring</artifactId>
+				<version>${version.invesdwin-nowicket}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.springframework</groupId>
