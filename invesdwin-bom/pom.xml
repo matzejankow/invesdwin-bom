@@ -85,6 +85,16 @@
 				<artifactId>invesdwin-nowicket-security-spring</artifactId>
 				<version>${version.invesdwin-nowicket}</version>
 			</dependency>
+			<dependency>
+				<groupId>de.invesdwin</groupId>
+				<artifactId>invesdwin-context</artifactId>
+				<version>${version.invesdwin-context}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.invesdwin</groupId>
+				<artifactId>invesdwin-context-integration</artifactId>
+				<version>${version.invesdwin-context}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.springframework</groupId>
