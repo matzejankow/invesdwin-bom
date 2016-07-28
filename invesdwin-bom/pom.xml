@@ -21,6 +21,7 @@
 		<version.invesdwin-aspects>1.0.0-SNAPSHOT</version.invesdwin-aspects>
 		<version.invesdwin-norva>1.0.0-SNAPSHOT</version.invesdwin-norva>
 		<version.invesdwin-nowicket>1.0.0-SNAPSHOT</version.invesdwin-nowicket>
+		<version.invesdwin-context>1.0.0-SNAPSHOT</version.invesdwin-context>
 
 		<version.guava>19.0</version.guava>
 		<version.assertj-guava>2.0.0</version.assertj-guava>
@@ -93,6 +94,11 @@
 			<dependency>
 				<groupId>de.invesdwin</groupId>
 				<artifactId>invesdwin-context-integration</artifactId>
+				<version>${version.invesdwin-context}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.invesdwin</groupId>
+				<artifactId>invesdwin-context-webserver</artifactId>
 				<version>${version.invesdwin-context}</version>
 			</dependency>
 
