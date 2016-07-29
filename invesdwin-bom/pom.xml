@@ -40,7 +40,7 @@
 		<version.jsoup>1.7.3</version.jsoup>
 		<version.highstock>2.0.4</version.highstock>
 		<version.args4j>2.0.28</version.args4j>
-		
+
 		<version.hibernate-validator>5.1.2.Final</version.hibernate-validator>
 		<version.validation-api>1.1.0.Final</version.validation-api>
 		<version.juel>2.2.6</version.juel>
@@ -90,6 +90,12 @@
 				<groupId>de.invesdwin</groupId>
 				<artifactId>invesdwin-context</artifactId>
 				<version>${version.invesdwin-context}</version>
+			</dependency>
+			<dependency>
+				<groupId>de.invesdwin</groupId>
+				<artifactId>invesdwin-context</artifactId>
+				<version>${project.version}</version>
+				<type>test-jar</type>
 			</dependency>
 			<dependency>
 				<groupId>de.invesdwin</groupId>
