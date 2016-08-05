@@ -31,6 +31,7 @@
 		<version.javassist>3.19.0-GA</version.javassist>
 		<version.jsr305>3.0.0</version.jsr305>
 		<version.slf4j>1.7.13</version.slf4j>
+		<version.joda-time>2.7</version.joda-time>
 
 		<version.wicket>7.1.0</version.wicket>
 		<version.wicket-bootstrap>0.10.6</version.wicket-bootstrap>
@@ -379,12 +380,6 @@
 				<groupId>org.apache.wicket</groupId>
 				<artifactId>wicket-datetime</artifactId>
 				<version>${version.wicket}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>joda-time</artifactId>
-						<groupId>joda-time</groupId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>de.agilecoders.wicket</groupId>
@@ -505,6 +500,11 @@
 				<groupId>javax.validation</groupId>
 				<artifactId>validation-api</artifactId>
 				<version>${version.validation-api}</version>
+			</dependency>
+			<dependency>
+				<groupId>joda-time</groupId>
+				<artifactId>joda-time</artifactId>
+				<version>${version.joda-time}</version>
 			</dependency>
 
 		</dependencies>
