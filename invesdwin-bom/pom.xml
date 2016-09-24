@@ -48,6 +48,9 @@
 		<version.hibernate-validator>5.2.4.Final</version.hibernate-validator>
 		<version.validation-api>1.1.0.Final</version.validation-api>
 		<version.juel>2.2.6</version.juel>
+		<version.querydsl>4.1.3</version.querydsl>
+		<!-- querydsl-collections is still on 2.x -->
+		<version.cglib>2.2.2</version.cglib>
 
 		<version.junit>4.12</version.junit>
 		<version.mockito>1.9.5</version.mockito>
@@ -522,6 +525,50 @@
 				<groupId>joda-time</groupId>
 				<artifactId>joda-time</artifactId>
 				<version>${version.joda-time}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>com.querydsl</groupId>
+				<artifactId>querydsl-collections</artifactId>
+				<version>${version.querydsl}</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>ecj</artifactId>
+						<groupId>org.eclipse.jdt.core.compiler</groupId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>cglib</groupId>
+				<artifactId>cglib</artifactId>
+				<version>${version.cglib}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.querydsl</groupId>
+				<artifactId>querydsl-collections</artifactId>
+				<version>${version.querydsl}</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>ecj</artifactId>
+						<groupId>org.eclipse.jdt.core.compiler</groupId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>com.querydsl</groupId>
+				<artifactId>querydsl-jpa</artifactId>
+				<version>${version.querydsl}</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>hibernate-jpa-2.0-api</artifactId>
+						<groupId>org.hibernate.javax.persistence</groupId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>com.querydsl</groupId>
+				<artifactId>querydsl-core</artifactId>
+				<version>${version.querydsl}</version>
 			</dependency>
 
 		</dependencies>
