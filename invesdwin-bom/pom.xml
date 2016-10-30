@@ -35,6 +35,7 @@
 		<version.commons-codec>1.10</version.commons-codec>
 		<version.commons-lang>2.6</version.commons-lang>
 		<version.commons-io>2.4</version.commons-io>
+		<version.curvesapi>1.04</version.curvesapi>
 
 		<version.wicket>7.1.0</version.wicket>
 		<version.wicket-bootstrap>0.10.6</version.wicket-bootstrap>
@@ -311,6 +312,11 @@
 				<groupId>commons-io</groupId>
 				<artifactId>commons-io</artifactId>
 				<version>${version.commons-io}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.virtuald</groupId>
+				<artifactId>curvesapi</artifactId>
+				<version>${version.curvesapi}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
