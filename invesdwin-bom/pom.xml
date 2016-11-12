@@ -38,6 +38,7 @@
 		<version.commons-io>2.4</version.commons-io>
 		<version.curvesapi>1.04</version.curvesapi>
 		<version.commons-collections>3.2.2</version.commons-collections>
+		<version.commons-pool>1.6</version.commons-pool>
 
 		<version.wicket>7.1.0</version.wicket>
 		<version.wicket-bootstrap>0.10.6</version.wicket-bootstrap>
@@ -305,6 +306,11 @@
 				<groupId>commons-collections</groupId>
 				<artifactId>commons-collections</artifactId>
 				<version>${version.commons-collections}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-pool</groupId>
+				<artifactId>commons-pool</artifactId>
+				<version>${version.commons-pool}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.aspectj</groupId>
