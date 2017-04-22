@@ -117,7 +117,7 @@
 			</dependency>
 			<dependency>
 				<groupId>de.invesdwin</groupId>
-				<artifactId>invesdwin-context-io</artifactId>
+				<artifactId>invesdwin-context-integration</artifactId>
 				<version>${version.invesdwin-context}</version>
 			</dependency>
 			<dependency>
