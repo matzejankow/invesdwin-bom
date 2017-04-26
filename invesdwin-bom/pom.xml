@@ -329,11 +329,6 @@
 				<version>${version.commons-lang3}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.aspectj</groupId>
-				<artifactId>aspectjweaver</artifactId>
-				<version>${version.aspectj}</version>
-			</dependency>
-			<dependency>
 				<groupId>com.google.code.findbugs</groupId>
 				<artifactId>jsr305</artifactId>
 				<version>${version.jsr305}</version>
@@ -590,17 +585,6 @@
 				<groupId>cglib</groupId>
 				<artifactId>cglib</artifactId>
 				<version>${version.cglib}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.querydsl</groupId>
-				<artifactId>querydsl-collections</artifactId>
-				<version>${version.querydsl}</version>
-				<exclusions>
-					<exclusion>
-						<artifactId>ecj</artifactId>
-						<groupId>org.eclipse.jdt.core.compiler</groupId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.querydsl</groupId>
