@@ -67,6 +67,8 @@
 
 		<version.junit>4.12</version.junit>
 		<version.mockito>1.9.5</version.mockito>
+		
+		<version.zt-exec>1.8</version.zt-exec>
 	</properties>
 
 	<dependencyManagement>
@@ -628,6 +630,12 @@
 				<groupId>javax.xml.bind</groupId>
 				<artifactId>jaxb-api</artifactId>
 				<version>${version.jaxb}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.zeroturnaround</groupId>
+				<artifactId>zt-exec</artifactId>
+				<version>${version.zt-exec}</version>
 			</dependency>
 
 		</dependencies>
