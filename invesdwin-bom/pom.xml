@@ -35,7 +35,7 @@
 		<version.assertj-core>3.8.0</version.assertj-core>
 		<version.spring>5.0.0.RELEASE</version.spring>
 		<version.spring-data-commons>2.0.0.RELEASE</version.spring-data-commons>
-		<version.aspectj>1.9.0.BETA-6</version.aspectj>
+		<version.aspectj>1.8.11</version.aspectj>
 		<version.javassist>3.21.0-GA</version.javassist>
 		<version.jsr305>3.0.0</version.jsr305>
 		<version.slf4j>1.7.25</version.slf4j>
