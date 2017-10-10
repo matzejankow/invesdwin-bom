@@ -71,7 +71,7 @@
 		<version.activation>1.2.0</version.activation>
 
 		<version.junit-jupiter>5.0.1</version.junit-jupiter>
-		<version.junit-platform>1.0.1</version.junit-platform>
+		<version.junit>4.12</version.junit>
 		<version.mockito>2.10.0</version.mockito>
 		<version.byte-buddy>1.7.5</version.byte-buddy>
 		<version.objenesis>2.6</version.objenesis>
@@ -463,14 +463,9 @@
 				<version>${version.junit-jupiter}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.junit.jupiter</groupId>
-				<artifactId>junit-jupiter-engine</artifactId>
-				<version>${version.junit-jupiter}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.junit.platform</groupId>
-				<artifactId>junit-platform-runner</artifactId>
-				<version>${version.junit-platform}</version>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${version.junit}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mockito</groupId>
@@ -839,6 +834,8 @@
 									<exclude>org.hibernate:hibernate-c3p0</exclude>
 									<exclude>org.hibernate.javax.persistence:hibernate-jpa-2.0-api</exclude>
 									<exclude>javassist:javassist</exclude>
+									<exclude>org\.junit\.jupiter:junit-jupiter-engine</exclude>
+									<exclude>org\.junit\.platform:junit-platform-runner</exclude>
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
