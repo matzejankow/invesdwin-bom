@@ -49,7 +49,7 @@
 		<version.wicket>7.1.0</version.wicket>
 		<version.wicket-bootstrap>0.10.6</version.wicket-bootstrap>
 		<version.spring-security>5.0.0.M4</version.spring-security>
-		<version.javax.servlet>3.0.0.v201112011016</version.javax.servlet>
+		<version.javax-servlet>3.1.0</version.javax-servlet>
 		<version.jackson>2.9.1</version.jackson>
 		<version.jsoup>1.8.3</version.jsoup>
 		<version.highstock>2.0.4</version.highstock>
@@ -452,9 +452,9 @@
 			</dependency>
 
 			<dependency>
-				<groupId>org.eclipse.jetty.orbit</groupId>
-				<artifactId>javax.servlet</artifactId>
-				<version>${version.javax.servlet}</version>
+				<groupId>javax.servlet</groupId>
+				<artifactId>javax.servlet-api</artifactId>
+				<version>${version.javax-servlet}</version>
 			</dependency>
 
 			<dependency>
@@ -819,6 +819,7 @@
 									<exclude>commons-logging:commons-logging</exclude>
 									<exclude>org.aspectj:aspectjrt</exclude>
 									<exclude>javax.servlet:servlet-api</exclude>
+									<exclude>org.eclipse.jetty.orbit:javax.servlet</exclude>
 									<exclude>org.apache.geronimo.specs:geronimo-jaxb_2.1_spec</exclude>
 									<exclude>commons-logging:commons-logging-api</exclude>
 									<exclude>javax.persistence:persistence-api</exclude>
@@ -834,8 +835,10 @@
 									<exclude>org.hibernate:hibernate-c3p0</exclude>
 									<exclude>org.hibernate.javax.persistence:hibernate-jpa-2.0-api</exclude>
 									<exclude>javassist:javassist</exclude>
-									<exclude>org\.junit\.jupiter:junit-jupiter-engine</exclude>
-									<exclude>org\.junit\.platform:junit-platform-runner</exclude>
+									<exclude>org.junit.jupiter:junit-jupiter-engine</exclude>
+									<exclude>org.junit.platform:junit-platform-runner</exclude>
+									<exclude>org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec</exclude>
+									<exclude>org.apache.geronimo.specs:geronimo-jms_1.1_spec</exclude>
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
@@ -990,17 +993,18 @@
 							<param>org\.webjars:pnotify.*</param>
 							<!-- zlib -->
 							<param>com\.github\.mrj0:jep.*</param>
-							<!-- CDDL -->
-							<param>javax\.mail:mail.*</param>
-							<param>javax\.xml\.bind:jaxb.*</param>
 							<!-- CPL -->
 							<param>wsdl4j.*</param>
-							<!-- GPL with classpath exception -->
+							<!-- CDDL or GPL with classpath exception -->
+							<param>javax\.mail:mail.*</param>
+							<param>javax\.xml\.bind:jaxb.*</param>
 							<param>com\.jidesoft:jide-oss.*</param>
 							<param>org\.glassfish\.jersey.*</param>
 							<param>javax\.annotation:javax\.annotation-api.*</param>
 							<param>javax\.activation:javax\.activation-api.*</param>
 							<param>org\.glassfish\.jaxb.*</param>
+							<param>javax\.servlet:javax\.servlet-api.*</param>
+							<param>javax\.jms:javax\.jms-api.*</param>
 							<!-- public domain -->
 							<param>org\.freedesktop\.tango.*</param>
 							<!-- MPL -->
