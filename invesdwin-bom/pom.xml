@@ -71,7 +71,6 @@
 		<version.jaxb>2.3.0</version.jaxb>
 		<version.activation>1.2.0</version.activation>
 
-		<version.junit-jupiter>5.0.1</version.junit-jupiter>
 		<version.junit>4.12</version.junit>
 		<version.mockito>2.10.0</version.mockito>
 		<version.byte-buddy>1.7.5</version.byte-buddy>
@@ -469,11 +468,6 @@
 			</dependency>
 
 			<dependency>
-				<groupId>org.junit.jupiter</groupId>
-				<artifactId>junit-jupiter-api</artifactId>
-				<version>${version.junit-jupiter}</version>
-			</dependency>
-			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>${version.junit}</version>
@@ -847,6 +841,7 @@
 									<exclude>org.hibernate.javax.persistence:hibernate-jpa-2.0-api</exclude>
 									<exclude>javassist:javassist</exclude>
 									<exclude>org.junit.jupiter:junit-jupiter-engine</exclude>
+									<exclude>org.junit.jupiter:junit-jupiter-api</exclude>
 									<exclude>org.junit.platform:junit-platform-runner</exclude>
 									<exclude>org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec</exclude>
 									<exclude>org.apache.geronimo.specs:geronimo-jms_1.1_spec</exclude>
