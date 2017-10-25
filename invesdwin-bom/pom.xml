@@ -476,6 +476,11 @@
 				</exclusions>
 			</dependency>
 			<dependency>
+				<groupId>com.fasterxml.jackson.datatype</groupId>
+				<artifactId>jackson-datatype-guava</artifactId>
+				<version>${version.jackson}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.fasterxml.jackson.jaxrs</groupId>
 				<artifactId>jackson-jaxrs-base</artifactId>
 				<version>${version.jackson}</version>
@@ -979,10 +984,11 @@
 							<param>org\.sonatype\.plexus.*</param>
 							<param>commons-io.*</param>
 							<param>ecs:ecs.*</param>
+							<param>de\.jollyday.*</param>
+							<!-- bsd license -->
 							<!-- MIT license -->
 							<param>org\.slf4j.*</param>
 							<param>org\.bouncycastle.*</param>
-							<!-- bsd license -->
 							<param>org\.postgresql.*</param>
 							<param>org\.codehaus\.janino.*</param>
 							<param>org\.jquantlib.*</param>
@@ -995,6 +1001,7 @@
 							<param>com\.diffplug\.matsim:matconsolectl.*</param>
 							<param>com\.yahoo\.platform\.yui:yuicompressor.*</param>
 							<param>org\.hsqldb:hsqldb.*</param>
+							<param>com\.github\.virtuald:curvesapi.*</param>
 							<!-- psfl (bsd-like) license -->
 							<param>org\.scijava:jython-shaded.*</param>
 							<!-- epl license -->
