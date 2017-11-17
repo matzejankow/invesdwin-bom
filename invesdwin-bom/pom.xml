@@ -986,7 +986,6 @@
 							<param>joda-time.*</param>
 							<param>javax\.jdo.*</param>
 							<param>org\.jasig\.cas.*</param>
-							<param>io\.mappedbus:mappedbus.*</param>
 							<param>dk\.ange:javaoctave.*</param>
 							<param>org\.sonatype\.plexus.*</param>
 							<param>commons-io.*</param>
