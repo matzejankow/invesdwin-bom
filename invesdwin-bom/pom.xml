@@ -1044,6 +1044,7 @@
 							<param>com\.github\.jbytecode:RCaller.*</param>
 							<param>com\.googlecode\.matrix-toolkits-java:mtj.*</param>
 							<param>org\.webjars:pnotify.*</param>
+							<param>com\.github\.asbachb:ftp4j.*</param>
 							<!-- zlib -->
 							<param>com\.github\.mrj0:jep.*</param>
 							<!-- CPL -->
