@@ -15,22 +15,15 @@
 		</license>
 	</licenses>
 
-
-	<scm>
-		<url>https://github.com/subes/invesdwin-bom</url>
-		<connection>scm:git:https://github.com/subes/invesdwin-bom.git</connection>
-		<tag>HEAD</tag>
-	</scm>
-
 	<properties>
-		<version.invesdwin-util>1.0.0-SNAPSHOT</version.invesdwin-util>
-		<version.invesdwin-instrument>1.0.0-SNAPSHOT</version.invesdwin-instrument>
-		<version.invesdwin-aspects>1.0.0-SNAPSHOT</version.invesdwin-aspects>
-		<version.invesdwin-norva>1.0.0-SNAPSHOT</version.invesdwin-norva>
-		<version.invesdwin-nowicket>1.0.0-SNAPSHOT</version.invesdwin-nowicket>
-		<version.invesdwin-context>1.0.0-SNAPSHOT</version.invesdwin-context>
-		<version.invesdwin-context-persistence>1.0.0-SNAPSHOT</version.invesdwin-context-persistence>
-		<version.invesdwin-context-security>1.0.0-SNAPSHOT</version.invesdwin-context-security>
+		<version.invesdwin-util>${project.version}</version.invesdwin-util>
+		<version.invesdwin-instrument>${project.version}</version.invesdwin-instrument>
+		<version.invesdwin-aspects>${project.version}</version.invesdwin-aspects>
+		<version.invesdwin-norva>${project.version}</version.invesdwin-norva>
+		<version.invesdwin-nowicket>${project.version}</version.invesdwin-nowicket>
+		<version.invesdwin-context>${project.version}</version.invesdwin-context>
+		<version.invesdwin-context-persistence>${project.version}</version.invesdwin-context-persistence>
+		<version.invesdwin-context-security>${project.version}</version.invesdwin-context-security>
 
 		<version.guava>23.1-jre</version.guava>
 		<version.assertj-guava>3.1.0</version.assertj-guava>
@@ -1167,5 +1160,11 @@
 			<url>http://invesdwin.de/artifactory/invesdwin-oss-remote</url>
 		</pluginRepository>
 	</pluginRepositories>
+	
+	<scm>
+		<url>https://github.com/subes/invesdwin-bom</url>
+		<connection>scm:git:https://github.com/subes/invesdwin-bom.git</connection>
+		<tag>HEAD</tag>
+	</scm>
 
 </project>
