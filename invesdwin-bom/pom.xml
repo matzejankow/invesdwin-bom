@@ -15,6 +15,13 @@
 		</license>
 	</licenses>
 
+
+	<scm>
+		<url>https://github.com/subes/invesdwin-bom</url>
+		<connection>scm:git:https://github.com/subes/invesdwin-bom.git</connection>
+		<tag>HEAD</tag>
+	</scm>
+
 	<properties>
 		<version.invesdwin-util>1.0.0-SNAPSHOT</version.invesdwin-util>
 		<version.invesdwin-instrument>1.0.0-SNAPSHOT</version.invesdwin-instrument>
@@ -91,6 +98,8 @@
 		<version.maven-enforcer-plugin>3.0.0-M1</version.maven-enforcer-plugin>
 		<version.lifecycle-mapping>1.0.0</version.lifecycle-mapping>
 		<version.license-check-maven-plugin>0.5.4-inv</version.license-check-maven-plugin>
+		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
+		<version.maven-scm-plugin>1.9.5</version.maven-scm-plugin>
 
 	</properties>
 
@@ -1094,6 +1103,26 @@
 							<param>org\.webjars:highstock.*</param>
 						</excludesRegex>
 					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-release-plugin</artifactId>
+					<version>${version.maven-release-plugin}</version>
+					<configuration>
+						<tag>v${releaseVersion}</tag>
+						<tagNameFormat>v@{project.version}</tagNameFormat>
+						<autoVersionSubmodules>true</autoVersionSubmodules>
+						<!-- releaseProfiles configuration will actually force a Maven profile 
+							– the `releases` profile – to become active during the Release process. -->
+						<releaseProfiles>releases</releaseProfiles>
+					</configuration>
+					<dependencies>
+						<dependency>
+							<groupId>org.apache.maven.plugins</groupId>
+							<artifactId>maven-scm-plugin</artifactId>
+							<version>${version.maven-scm-plugin}</version>
+						</dependency>
+					</dependencies>
 				</plugin>
 			</plugins>
 		</pluginManagement>
