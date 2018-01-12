@@ -1096,8 +1096,6 @@
 					<artifactId>maven-release-plugin</artifactId>
 					<version>${version.maven-release-plugin}</version>
 					<configuration>
-						<tag>v${releaseVersion}</tag>
-						<tagNameFormat>v@{project.version}</tagNameFormat>
 						<autoVersionSubmodules>true</autoVersionSubmodules>
 						<!-- releaseProfiles configuration will actually force a Maven profile 
 							– the `releases` profile – to become active during the Release process. -->
