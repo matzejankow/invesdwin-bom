@@ -1103,6 +1103,7 @@
 						<!-- releaseProfiles configuration will actually force a Maven profile 
 							– the `releases` profile – to become active during the Release process. -->
 						<releaseProfiles>releases</releaseProfiles>
+						<tagNameFormat>release/@{project.artifactId}-@{project.version}</tagNameFormat>
 					</configuration>
 					<dependencies>
 						<dependency>
