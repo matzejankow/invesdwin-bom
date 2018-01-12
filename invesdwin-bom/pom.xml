@@ -4,7 +4,7 @@
 	<groupId>de.invesdwin</groupId>
 	<artifactId>invesdwin-bom</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.1</version>
 
 	<licenses>
 		<license>
@@ -1161,7 +1161,7 @@
 	<scm>
 		<url>https://github.com/subes/invesdwin-bom</url>
 		<connection>scm:git:https://github.com/subes/invesdwin-bom.git</connection>
-		<tag>HEAD</tag>
+		<tag>invesdwin-bom-1.0.1</tag>
 	</scm>
 
 </project>
