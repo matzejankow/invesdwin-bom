@@ -1018,6 +1018,7 @@
 							<!-- WARNING: commercial license bound to broker account, not for 
 								free use -->
 							<param>com\.dukascopy.*</param>
+							<param>org\.fife:DDS2-TextEditor.*</param>
 							<!-- WARNING: optional, you need to buy a license to use this dependency -->
 							<param>org\.webjars:highstock.*</param>
 							<!-- WARNING: commercial license needs to be bought -->
