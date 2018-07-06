@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
@@ -15,7 +16,7 @@
 	</licenses>
 
 	<properties>
-	<!-- jforex still references some methods that got removed -->
+		<!-- jforex still references some methods that got removed -->
 		<version.guava>23.6-jre</version.guava>
 		<version.assertj-guava>3.2.0</version.assertj-guava>
 		<version.assertj-core>3.9.1</version.assertj-core>
@@ -26,6 +27,7 @@
 		<version.javassist>3.22.0-GA</version.javassist>
 		<version.jsr305>3.0.1</version.jsr305>
 		<version.slf4j>1.7.25</version.slf4j>
+		<version.minlog-slf4j>1.12</version.minlog-slf4j>
 		<version.joda-time>2.9.9</version.joda-time>
 		<version.commons-codec>1.10</version.commons-codec>
 		<version.commons-lang>2.6</version.commons-lang>
@@ -48,6 +50,7 @@
 		<version.highstock>2.0.4</version.highstock>
 		<version.args4j>2.0.28</version.args4j>
 		<version.shiro>1.2.4</version.shiro>
+		<version.jquery>2.2.4</version.jquery>
 
 		<version.hibernate-validator>5.2.4.Final</version.hibernate-validator>
 		<version.validation-api>1.1.0.Final</version.validation-api>
@@ -366,6 +369,11 @@
 				<artifactId>slf4j-simple</artifactId>
 				<version>${version.slf4j}</version>
 			</dependency>
+			<dependency>
+				<groupId>com.dorkbox</groupId>
+				<artifactId>MinLog-SLF4J</artifactId>
+				<version>${version.minlog-slf4j}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
@@ -573,6 +581,11 @@
 				<groupId>org.webjars</groupId>
 				<artifactId>highstock</artifactId>
 				<version>${version.highstock}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.webjars</groupId>
+				<artifactId>jquery</artifactId>
+				<version>${version.jquery}</version>
 			</dependency>
 			<dependency>
 				<groupId>args4j</groupId>
@@ -818,6 +831,7 @@
 									<exclude>javax.persistence:persistence-api</exclude>
 									<exclude>log4j:log4j</exclude>
 									<exclude>org.slf4j:slf4j-log4j12</exclude>
+									<exclude>com.esotericsoftware:minlog</exclude>
 									<exclude>javax.servlet.jsp:jsp-api</exclude>
 									<exclude>net.sf.ehcache:ehcache-core</exclude>
 									<exclude>org.fusesource.leveldbjni:leveldbjni-all</exclude>
