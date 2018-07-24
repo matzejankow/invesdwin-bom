@@ -17,7 +17,7 @@
 
 	<properties>
 		<!-- jforex still references some methods that got removed -->
-		<version.guava>24.0-jre</version.guava>
+		<version.guava>23.6.1-jre</version.guava>
 		<version.assertj-guava>3.2.0</version.assertj-guava>
 		<version.assertj-core>3.9.1</version.assertj-core>
 		<version.assertj-joda-time>2.0.0</version.assertj-joda-time>
@@ -488,6 +488,10 @@
 						<artifactId>reflections</artifactId>
 						<groupId>org.reflections</groupId>
 					</exclusion>
+					<exclusion>
+						<groupId>com.google.guava</groupId>
+						<artifactId>guava</artifactId>
+					</exclusion>
 				</exclusions>
 			</dependency>
 			<dependency>
@@ -498,6 +502,10 @@
 					<exclusion>
 						<artifactId>protobuf-java</artifactId>
 						<groupId>com.google.protobuf</groupId>
+					</exclusion>
+					<exclusion>
+						<groupId>com.google.guava</groupId>
+						<artifactId>guava</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
@@ -665,6 +673,12 @@
 				<groupId>com.querydsl</groupId>
 				<artifactId>querydsl-core</artifactId>
 				<version>${version.querydsl}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>com.google.guava</groupId>
+						<artifactId>guava</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml</groupId>
