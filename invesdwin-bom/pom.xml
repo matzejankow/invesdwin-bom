@@ -39,6 +39,7 @@
 		<version.commons-math3>3.6.1</version.commons-math3>
 		<version.commons-lang3>3.7</version.commons-lang3>
 		<version.commons-beanutils>1.9.2</version.commons-beanutils>
+		<version.commons-fileupload>1.3.3</version.commons-fileupload>
 
 		<version.wicket>8.0.0</version.wicket>
 		<version.wicket-bootstrap>2.0.2</version.wicket-bootstrap>
@@ -560,6 +561,11 @@
 				<groupId>org.apache.wicket</groupId>
 				<artifactId>wicket-native-websocket-javax</artifactId>
 				<version>${version.wicket}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-fileupload</groupId>
+				<artifactId>commons-fileupload</artifactId>
+				<version>${version.commons-fileupload}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.shiro</groupId>
