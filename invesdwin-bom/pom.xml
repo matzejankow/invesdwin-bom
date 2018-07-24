@@ -17,7 +17,7 @@
 
 	<properties>
 		<!-- jforex still references some methods that got removed -->
-		<version.guava>23.6-jre</version.guava>
+		<version.guava>24.0-jre</version.guava>
 		<version.assertj-guava>3.2.0</version.assertj-guava>
 		<version.assertj-core>3.9.1</version.assertj-core>
 		<version.assertj-joda-time>2.0.0</version.assertj-joda-time>
@@ -497,11 +497,6 @@
 					<exclusion>
 						<artifactId>protobuf-java</artifactId>
 						<groupId>com.google.protobuf</groupId>
-					</exclusion>
-					<!-- we are stuck with an older version of guava because of jforex -->
-					<exclusion>
-						<artifactId>guava</artifactId>
-						<groupId>com.google.guava</groupId>
 					</exclusion>
 				</exclusions>
 			</dependency>
