@@ -869,6 +869,7 @@
 									<exclude>net.jcip:jcip-annotations</exclude>
 									<exclude>org.glassfish:javax.servlet</exclude>
 									<exclude>org.hibernate:hibernate-c3p0</exclude>
+									<exclude>org.hibernate:hibernate-hikaricp</exclude>
 									<exclude>org.hibernate.javax.persistence:hibernate-jpa-2.0-api</exclude>
 									<exclude>javassist:javassist</exclude>
 									<exclude>org.junit.jupiter:junit-jupiter-engine</exclude>
