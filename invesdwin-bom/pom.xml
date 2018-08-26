@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.invesdwin</groupId>
@@ -58,6 +60,7 @@
 		<!-- querydsl-collections is still on 2.x -->
 		<version.cglib>2.2.2</version.cglib>
 		<version.classmate>1.3.0</version.classmate>
+		<version.caffeine>2.6.2</version.caffeine>
 
 		<version.netty>4.1.23.Final</version.netty>
 
@@ -239,6 +242,16 @@
 				<version>${version.spring-data-commons}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>com.github.ben-manes.caffeine</groupId>
+				<artifactId>caffeine</artifactId>
+				<version>${version.caffeine}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.ben-manes.caffeine</groupId>
+				<artifactId>jcache</artifactId>
+				<version>${version.caffeine}</version>
+			</dependency>
 			<dependency>
 				<groupId>com.google.guava</groupId>
 				<artifactId>guava</artifactId>
@@ -845,7 +858,6 @@
 									<exclude>org.slf4j:slf4j-log4j12</exclude>
 									<exclude>com.esotericsoftware:minlog</exclude>
 									<exclude>javax.servlet.jsp:jsp-api</exclude>
-									<exclude>net.sf.ehcache:ehcache-core</exclude>
 									<exclude>org.fusesource.leveldbjni:leveldbjni-all</exclude>
 									<exclude>javax.enterprise:cdi-api</exclude>
 									<exclude>net.jcip:jcip-annotations</exclude>
@@ -858,6 +870,10 @@
 									<exclude>org.junit.platform:junit-platform-runner</exclude>
 									<exclude>org.apache.geronimo.specs:geronimo-jms_1.1_spec</exclude>
 									<exclude>com.sun.jna:jna</exclude>
+									<!-- use caffeine instead -->
+									<exclude>org.ehcache:ehcache</exclude>
+									<exclude>net.sf.ehcache:ehcache</exclude>
+									<exclude>net.sf.ehcache:ehcache-core</exclude>
 									<!-- use org.lz4 version instead -->
 									<exclude>net.jpountz.lz4:lz4</exclude>
 									<!-- use jboss jta specification instead -->
@@ -866,7 +882,8 @@
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
-							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence /> -->
+							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence 
+								/> -->
 						</rules>
 					</configuration>
 				</plugin>
