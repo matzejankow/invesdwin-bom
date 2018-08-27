@@ -879,7 +879,6 @@
 									<exclude>com.sun.jna:jna</exclude>
 									<!-- use caffeine instead -->
 									<exclude>org.ehcache:ehcache</exclude>
-									<exclude>net.sf.ehcache:ehcache</exclude>
 									<exclude>net.sf.ehcache:ehcache-core</exclude>
 									<!-- use org.lz4 version instead -->
 									<exclude>net.jpountz.lz4:lz4</exclude>
