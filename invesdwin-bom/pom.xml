@@ -74,7 +74,7 @@
 		<version.objenesis>2.6</version.objenesis>
 
 		<version.zt-exec>1.10</version.zt-exec>
-		<version.lz4>1.4.0</version.lz4>
+		<version.lz4>1.4.1</version.lz4>
 
 		<version.maven>3.5.0</version.maven>
 		<version.plexus-build-api>0.0.7</version.plexus-build-api>
