@@ -24,7 +24,7 @@
 		<version.spring-data-commons>2.0.7.RELEASE</version.spring-data-commons>
 		<version.aspectj>1.8.13</version.aspectj>
 		<version.javassist>3.22.0-GA</version.javassist>
-		<version.jsr305>3.0.1</version.jsr305>
+		<version.jsr305>3.0.2</version.jsr305>
 		<version.slf4j>1.7.25</version.slf4j>
 		<version.minlog-slf4j>1.12</version.minlog-slf4j>
 		<version.joda-time>2.9.9</version.joda-time>
