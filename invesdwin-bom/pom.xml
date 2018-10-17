@@ -20,8 +20,8 @@
 		<version.assertj-guava>3.2.0</version.assertj-guava>
 		<version.assertj-core>3.9.1</version.assertj-core>
 		<version.assertj-joda-time>2.0.0</version.assertj-joda-time>
-		<version.spring>5.0.6.RELEASE</version.spring>
-		<version.spring-data-commons>2.0.7.RELEASE</version.spring-data-commons>
+		<version.spring>5.1.1.RELEASE</version.spring>
+		<version.spring-data-commons>2.1.1.RELEASE</version.spring-data-commons>
 		<version.aspectj>1.9.1</version.aspectj>
 		<version.javassist>3.23.1-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
@@ -890,6 +890,12 @@
 									<!-- use jboss jta specification instead -->
 									<exclude>org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec</exclude>
 									<exclude>javax.transaction:jta</exclude>
+									<!-- use bcprov-jdk15on instead -->
+									<exclude>org.bouncycastle:bcprov-jdk16</exclude>
+									<exclude>org.bouncycastle:bcprov-jdk15</exclude>
+									<exclude>org.bouncycastle:bcprov-jdk15+</exclude>
+									<exclude>org.bouncycastle:bcprov-jdk14</exclude>
+									<exclude>org.bouncycastle:bcprov-jdk12</exclude>
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
