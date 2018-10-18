@@ -869,7 +869,6 @@
 									<exclude>org.slf4j:slf4j-log4j12</exclude>
 									<exclude>com.esotericsoftware:minlog</exclude>
 									<exclude>javax.servlet.jsp:jsp-api</exclude>
-									<exclude>org.fusesource.leveldbjni:leveldbjni-all</exclude>
 									<exclude>javax.enterprise:cdi-api</exclude>
 									<exclude>net.jcip:jcip-annotations</exclude>
 									<exclude>org.glassfish:javax.servlet</exclude>
