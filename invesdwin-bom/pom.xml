@@ -21,7 +21,7 @@
 		<version.assertj-core>3.9.1</version.assertj-core>
 		<version.assertj-joda-time>2.0.0</version.assertj-joda-time>
 		<version.spring>5.1.1.RELEASE</version.spring>
-		<version.spring-data-commons>2.1.1.RELEASE</version.spring-data-commons>
+		<version.spring-data>2.1.1.RELEASE</version.spring-data>
 		<version.aspectj>1.9.1</version.aspectj>
 		<version.javassist>3.23.1-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
@@ -240,7 +240,23 @@
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-commons</artifactId>
-				<version>${version.spring-data-commons}</version>
+				<version>${version.spring-data}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-jpa</artifactId>
+				<version>${version.spring-data}</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>aspectjrt</artifactId>
+						<groupId>org.aspectj</groupId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-ldap</artifactId>
+				<version>${version.spring-data}</version>
 			</dependency>
 
 			<dependency>
