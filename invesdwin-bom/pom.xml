@@ -916,6 +916,8 @@
 									<exclude>org.bouncycastle:bcprov-jdk15+</exclude>
 									<exclude>org.bouncycastle:bcprov-jdk14</exclude>
 									<exclude>org.bouncycastle:bcprov-jdk12</exclude>
+									<!-- use com.narupley:not-going-to-be-commons-ssl instead -->
+									<exclude>ca.juliusdavies:not-yet-commons-ssl</exclude>
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
