@@ -918,6 +918,9 @@
 									<exclude>org.bouncycastle:bcprov-jdk12</exclude>
 									<!-- use com.narupley:not-going-to-be-commons-ssl instead -->
 									<exclude>ca.juliusdavies:not-yet-commons-ssl</exclude>
+									<!-- use ta-lib:ta-lib from dukascopy instead -->
+									<exclude>org.clojars.edbond:talib</exclude>
+									<exclude>com.tictactec:ta-lib</exclude>
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
