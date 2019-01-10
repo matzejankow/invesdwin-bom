@@ -1120,6 +1120,7 @@
 							<param>org\.renjin\.cran:DEoptim.*</param>
 							<param>org\.scilab\.modules:javasci.*</param>
 							<param>org\.scilab\.modules:types.*</param>
+							<param>nz\.ac\.waikato\.cms\.weka:weka-stable.*</param>
 							<!-- WARNING: no license specified, though since it interacts with 
 								R over a socket, we expect it to be GPL -->
 							<param>com\.github\.yannrichet:Rsession.*</param>
