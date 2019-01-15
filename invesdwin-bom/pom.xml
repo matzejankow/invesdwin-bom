@@ -921,6 +921,10 @@
 									<!-- use ta-lib:ta-lib from dukascopy instead -->
 									<exclude>org.clojars.edbond:talib</exclude>
 									<exclude>com.tictactec:ta-lib</exclude>
+									<!-- use com.jgoodies:jgoodies-forms instead -->
+									<exclude>com.jgoodies:forms</exclude>
+									<!-- use org.swinglabs.swingx:swingx-all instead -->
+									<exclude>org.swinglabs:swingx</exclude>
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
@@ -1052,6 +1056,7 @@
 							<param>com\.yahoo\.platform\.yui:yuicompressor.*</param>
 							<param>org\.hsqldb:hsqldb.*</param>
 							<param>com\.github\.virtuald:curvesapi.*</param>
+							<param>com\.jgoodies:jgoodies-forms.*</param>
 							<!-- psfl (bsd-like) license -->
 							<param>org\.scijava:jython-shaded.*</param>
 							<!-- epl license -->
@@ -1063,7 +1068,7 @@
 							<param>net\.sourceforge.mydoggy.*</param>
 							<param>it\.tidalwave\.betterbeansbinding.*</param>
 							<param>org\.jdesktop\.bsaf.*</param>
-							<param>org\.swinglabs:swingx.*</param>
+							<param>org\.swinglabs\.swingx:swingx-all.*</param>
 							<param>com\.toedter:jcalendar.*</param>
 							<param>net\.sourceforge\.dynamicreports.*</param>
 							<param>net\.sf\.jasperreports.*</param>
