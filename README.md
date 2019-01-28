@@ -16,7 +16,7 @@ Dependency declaration:
 		<dependency>
 			<groupId>de.invesdwin</groupId>
 			<artifactId>invesdwin-bom</artifactId>
-			<version>1.0.1</version>
+			<version>1.0.2</version>
 			<type>pom</type>
 			<scope>import</scope>
 		</dependency>
