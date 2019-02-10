@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.invesdwin</groupId>
@@ -74,6 +76,8 @@
 
 		<version.zt-exec>1.10</version.zt-exec>
 		<version.lz4>1.4.1</version.lz4>
+		
+		<version.quandl>2.0.0</version.quandl>
 
 		<version.maven>3.5.0</version.maven>
 		<version.plexus-build-api>0.0.7</version.plexus-build-api>
@@ -89,6 +93,7 @@
 		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
 		<version.maven-scm-plugin>1.9.5</version.maven-scm-plugin>
 		<version.maven-deploy-plugin>2.8.2</version.maven-deploy-plugin>
+		<version.maven-warpath-plugin>2.0.2</version.maven-warpath-plugin>
 	</properties>
 
 	<dependencyManagement>
@@ -786,6 +791,11 @@
 				<version>${version.activation}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>com.jimmoores</groupId>
+				<artifactId>quandl-core</artifactId>
+				<version>${version.quandl}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>org.apache.maven</groupId>
@@ -829,7 +839,7 @@
 				<artifactId>objenesis</artifactId>
 				<version>${version.objenesis}</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>org.ow2.asm</groupId>
 				<artifactId>asm</artifactId>
@@ -940,10 +950,15 @@
 									<exclude>com.jgoodies:forms</exclude>
 									<!-- use org.swinglabs.swingx:swingx-all instead -->
 									<exclude>org.swinglabs:swingx</exclude>
+									<!-- use org.jfree:jfreechart instead -->
+									<exclude>jfree:jfreechart</exclude>
+									<!-- use jfreechart 1.5.0 instead -->
+									<exclude>org.jfree:jcommon</exclude>
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
-							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence /> -->
+							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence 
+								/> -->
 						</rules>
 					</configuration>
 				</plugin>
@@ -1009,6 +1024,25 @@
 									</pluginExecutionFilter>
 									<action>
 										<ignore />
+									</action>
+								</pluginExecution>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.appfuse
+										</groupId>
+										<artifactId>
+											maven-warpath-plugin
+										</artifactId>
+										<versionRange>
+											[2.0.2,)
+										</versionRange>
+										<goals>
+											<goal>add-classes</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<execute />
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
@@ -1170,6 +1204,19 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-deploy-plugin</artifactId>
 					<version>${version.maven-deploy-plugin}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.appfuse</groupId>
+					<artifactId>maven-warpath-plugin</artifactId>
+					<version>${version.maven-warpath-plugin}</version>
+					<extensions>true</extensions>
+					<executions>
+						<execution>
+							<goals>
+								<goal>add-classes</goal>
+							</goals>
+						</execution>
+					</executions>
 				</plugin>
 			</plugins>
 		</pluginManagement>
