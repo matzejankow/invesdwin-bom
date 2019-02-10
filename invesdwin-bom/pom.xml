@@ -93,7 +93,6 @@
 		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
 		<version.maven-scm-plugin>1.9.5</version.maven-scm-plugin>
 		<version.maven-deploy-plugin>2.8.2</version.maven-deploy-plugin>
-		<version.maven-warpath-plugin>2.0.2</version.maven-warpath-plugin>
 	</properties>
 
 	<dependencyManagement>
@@ -1026,25 +1025,6 @@
 										<ignore />
 									</action>
 								</pluginExecution>
-								<pluginExecution>
-									<pluginExecutionFilter>
-										<groupId>
-											org.appfuse
-										</groupId>
-										<artifactId>
-											maven-warpath-plugin
-										</artifactId>
-										<versionRange>
-											[2.0.2,)
-										</versionRange>
-										<goals>
-											<goal>add-classes</goal>
-										</goals>
-									</pluginExecutionFilter>
-									<action>
-										<execute />
-									</action>
-								</pluginExecution>
 							</pluginExecutions>
 						</lifecycleMappingMetadata>
 					</configuration>
@@ -1204,19 +1184,6 @@
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-deploy-plugin</artifactId>
 					<version>${version.maven-deploy-plugin}</version>
-				</plugin>
-				<plugin>
-					<groupId>org.appfuse</groupId>
-					<artifactId>maven-warpath-plugin</artifactId>
-					<version>${version.maven-warpath-plugin}</version>
-					<extensions>true</extensions>
-					<executions>
-						<execution>
-							<goals>
-								<goal>add-classes</goal>
-							</goals>
-						</execution>
-					</executions>
 				</plugin>
 			</plugins>
 		</pluginManagement>
