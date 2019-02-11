@@ -1132,6 +1132,7 @@
 							<param>javax\.servlet:javax\.servlet-api.*</param>
 							<param>javax\.jms:javax\.jms-api.*</param>
 							<param>javax\.xml\.soap:javax\.xml\.soap-api.*</param>
+							<param>javax\.el:javax\.el-api.*</param>
 							<!-- public domain -->
 							<param>org\.freedesktop\.tango.*</param>
 							<!-- MPL -->
