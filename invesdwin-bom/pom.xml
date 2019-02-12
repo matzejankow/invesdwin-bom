@@ -56,6 +56,8 @@
 		<version.javax.el>3.0.0</version.javax.el>
 		<version.validation-api>2.0.1.Final</version.validation-api>
 		<version.querydsl>4.2.1</version.querydsl>
+		<!-- querydsl-collections is still on 2.x -->
+		<version.cglib>2.2.2</version.cglib>
 		<version.ecj>3.16.0</version.ecj>
 		<version.classmate>1.4.0</version.classmate>
 		<version.caffeine>2.6.2</version.caffeine>
@@ -705,6 +707,11 @@
 						<groupId>org.hibernate.javax.persistence</groupId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+				<dependency>
+				<groupId>cglib</groupId>
+				<artifactId>cglib</artifactId>
+				<version>${version.cglib}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jdt</groupId>
