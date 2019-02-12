@@ -80,6 +80,9 @@
 
 		<version.quandl>2.0.0</version.quandl>
 
+		<version.fastutil>8.2.2</version.fastutil>
+		<version.dsiutils>2.5.4</version.dsiutils>
+
 		<version.maven>3.6.0</version.maven>
 		<version.plexus-build-api>0.0.7</version.plexus-build-api>
 		<version.plexus-utils>3.1.1</version.plexus-utils>
@@ -791,6 +794,43 @@
 				<groupId>com.jimmoores</groupId>
 				<artifactId>quandl-core</artifactId>
 				<version>${version.quandl}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>it.unimi.dsi</groupId>
+				<artifactId>fastutil</artifactId>
+				<version>${version.fastutil}</version>
+			</dependency>
+			<dependency>
+				<groupId>it.unimi.dsi</groupId>
+				<artifactId>dsiutils</artifactId>
+				<version>${version.dsiutils}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>ch.qos.logback</groupId>
+						<artifactId>logback-classic</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-collections</groupId>
+						<artifactId>commons-collections</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>commons-configuration</groupId>
+						<artifactId>commons-configuration</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>com.martiansoftware</groupId>
+						<artifactId>jsap</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-api</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<dependency>
