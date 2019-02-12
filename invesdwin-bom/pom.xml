@@ -53,12 +53,10 @@
 		<version.jquery>3.3.1-2</version.jquery>
 
 		<version.hibernate-validator>6.0.14.Final</version.hibernate-validator>
+		<version.javax.el>3.0.0</version.javax.el>
 		<version.validation-api>2.0.1.Final</version.validation-api>
-		<version.juel>2.2.7</version.juel>
 		<version.querydsl>4.2.1</version.querydsl>
-		<version.reflections>0.9.11</version.reflections>
-		<!-- querydsl-collections is still on 2.x -->
-		<version.cglib>2.2.2</version.cglib>
+		<version.ecj>3.16.0</version.ecj>
 		<version.classmate>1.4.0</version.classmate>
 		<version.caffeine>2.6.2</version.caffeine>
 		<version.jcache>1.1.0</version.jcache>
@@ -85,7 +83,7 @@
 		<version.plexus-utils>3.1.1</version.plexus-utils>
 		<version.plexus-classworlds>2.6.0</version.plexus-classworlds>
 		<version.maven-plugin-plugin>3.6.0</version.maven-plugin-plugin>
-		<version.maven-compiler-plugin>3.7.0</version.maven-compiler-plugin>
+		<version.maven-compiler-plugin>3.8.0</version.maven-compiler-plugin>
 		<version.plexus-compiler-javac-errorprone>2.8.2</version.plexus-compiler-javac-errorprone>
 		<version.errorprone>2.1.1</version.errorprone>
 		<version.maven-enforcer-plugin>3.0.0-M2</version.maven-enforcer-plugin>
@@ -654,20 +652,14 @@
 				<version>${version.hibernate-validator}</version>
 			</dependency>
 			<dependency>
-				<!-- seems like juel is a hidden dependency of hibernate-validator -->
-				<groupId>de.odysseus.juel</groupId>
-				<artifactId>juel-impl</artifactId>
-				<version>${version.juel}</version>
-			</dependency>
-			<dependency>
-				<groupId>de.odysseus.juel</groupId>
-				<artifactId>juel-api</artifactId>
-				<version>${version.juel}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-validator-annotation-processor</artifactId>
 				<version>${version.hibernate-validator}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish</groupId>
+				<artifactId>javax.el</artifactId>
+				<version>${version.javax.el}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.validation</groupId>
@@ -696,16 +688,6 @@
 				</exclusions>
 			</dependency>
 			<dependency>
-				<groupId>org.reflections</groupId>
-				<artifactId>reflections</artifactId>
-				<version>${version.reflections}</version>
-			</dependency>
-			<dependency>
-				<groupId>cglib</groupId>
-				<artifactId>cglib</artifactId>
-				<version>${version.cglib}</version>
-			</dependency>
-			<dependency>
 				<groupId>com.querydsl</groupId>
 				<artifactId>querydsl-jpa</artifactId>
 				<version>${version.querydsl}</version>
@@ -723,6 +705,11 @@
 						<groupId>org.hibernate.javax.persistence</groupId>
 					</exclusion>
 				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jdt</groupId>
+				<artifactId>ecj</artifactId>
+				<version>${version.ecj}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.querydsl</groupId>
