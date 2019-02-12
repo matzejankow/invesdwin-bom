@@ -25,7 +25,7 @@
 		<version.aspectj>1.9.2</version.aspectj>
 		<version.javassist>3.24.1-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
-		<version.slf4j>1.8.0-beta2</version.slf4j>
+		<version.slf4j>1.7.25</version.slf4j>
 		<version.minlog-slf4j>1.12</version.minlog-slf4j>
 		<version.joda-time>2.10.1</version.joda-time>
 		<version.commons-codec>1.11</version.commons-codec>
