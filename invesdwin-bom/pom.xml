@@ -998,6 +998,8 @@
 									<exclude>javax.el:javax.el-api</exclude>
 									<!-- use org.eclipse.jdt:ecj instead -->
 									<exclude>org.eclipse.jdt.core.compiler:ecj</exclude>
+									<!-- use org.datanucleus:javax.jdo instead -->
+									<exclude>javax.jdo:jdo-api</exclude>
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
