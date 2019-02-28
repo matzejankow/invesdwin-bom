@@ -52,7 +52,7 @@
 		<version.shiro>1.4.0</version.shiro>
 		<version.jquery>3.3.1-2</version.jquery>
 
-		<version.hibernate-validator>6.0.14.Final</version.hibernate-validator>
+		<version.hibernate-validator>6.0.15.Final</version.hibernate-validator>
 		<version.javax.el>3.0.0</version.javax.el>
 		<version.validation-api>2.0.1.Final</version.validation-api>
 		<version.querydsl>4.2.1</version.querydsl>
@@ -652,12 +652,12 @@
 			</dependency>
 
 			<dependency>
-				<groupId>org.hibernate</groupId>
+				<groupId>org.hibernate.validator</groupId>
 				<artifactId>hibernate-validator</artifactId>
 				<version>${version.hibernate-validator}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.hibernate</groupId>
+				<groupId>org.hibernate.validator</groupId>
 				<artifactId>hibernate-validator-annotation-processor</artifactId>
 				<version>${version.hibernate-validator}</version>
 			</dependency>
@@ -1024,6 +1024,9 @@
 									<exclude>javax.activation:activation</exclude>
 									<!-- use com.sun.mail:javax.mail instead -->
 									<exclude>javax.mail:mail</exclude>
+									<!-- use org.hibernate.validator:... instead -->
+									<exclude>org.hibernate:hibernate-validator-annotation-processor</exclude>
+									<exclude>org.hibernate:hibernate-validator</exclude>
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
