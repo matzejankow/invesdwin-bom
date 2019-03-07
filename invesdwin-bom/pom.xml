@@ -1184,6 +1184,7 @@
 							<param>org\.webjars:pnotify.*</param>
 							<param>com\.github\.asbachb:ftp4j.*</param>
 							<param>org\.biojava:jcolorbrewer.*</param>
+							<param>org\.swingexplorer:swingexplorer-core.*</param>
 							<!-- zlib -->
 							<param>com\.github\.mrj0:jep.*</param>
 							<!-- CPL -->
