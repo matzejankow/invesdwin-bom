@@ -83,6 +83,7 @@
 		<version.fastutil>8.2.2</version.fastutil>
 		<version.dsiutils>2.5.4</version.dsiutils>
 		<version.koloboke>1.0.0</version.koloboke>
+		<version.jamm>0.3.3</version.jamm>
 
 		<version.maven>3.6.0</version.maven>
 		<version.plexus-build-api>0.0.7</version.plexus-build-api>
@@ -850,6 +851,11 @@
 				<groupId>com.koloboke</groupId>
 				<artifactId>koloboke-impl-jdk8</artifactId>
 				<version>${version.koloboke}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.jbellis</groupId>
+				<artifactId>jamm</artifactId>
+				<version>${version.jamm}</version>
 			</dependency>
 
 			<dependency>
