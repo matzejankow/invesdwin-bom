@@ -83,7 +83,6 @@
 		<version.fastutil>8.2.2</version.fastutil>
 		<version.dsiutils>2.5.4</version.dsiutils>
 		<version.koloboke>1.0.0</version.koloboke>
-		<version.koloboke-compile>0.5.1</version.koloboke-compile>
 
 		<version.maven>3.6.0</version.maven>
 		<version.plexus-build-api>0.0.7</version.plexus-build-api>
@@ -851,12 +850,6 @@
 				<artifactId>koloboke-impl-jdk8</artifactId>
 				<version>${version.koloboke}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.koloboke</groupId>
-				<artifactId>koloboke-compile</artifactId>
-				<version>${version.koloboke-compile}</version>
-			</dependency>
-
 
 			<dependency>
 				<groupId>org.apache.maven</groupId>
