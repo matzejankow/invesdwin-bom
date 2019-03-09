@@ -915,6 +915,12 @@
 				<artifactId>asm-tree</artifactId>
 				<version>${version.ow2asm}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-shade-plugin</artifactId>
+				<version>${version.maven-shade-plugin}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
