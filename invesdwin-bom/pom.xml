@@ -1178,6 +1178,7 @@
 							<param>org\.hsqldb:hsqldb.*</param>
 							<param>com\.github\.virtuald:curvesapi.*</param>
 							<param>com\.jgoodies:jgoodies-.*</param>
+							<param>com\.miglayout:miglayout.*</param>
 							<!-- psfl (bsd-like) license -->
 							<param>org\.scijava:jython-shaded.*</param>
 							<!-- epl license -->
