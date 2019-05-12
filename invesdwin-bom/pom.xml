@@ -1230,6 +1230,7 @@
 							<param>com\.sun\.xml\.messaging\.saaj:saaj-impl.*</param>
 							<!-- modified bsd license -->
 							<param>com\.jamonapi.*</param>
+							<param>com\.fifesoft.*</param>
 							<!-- not everything is open sourced -->
 							<param>de\.invesdwin.*</param>
 							<!-- WARNING: CCA 2.5 license, you need to put a link to this when 
