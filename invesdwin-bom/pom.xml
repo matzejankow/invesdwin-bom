@@ -71,7 +71,7 @@
 
 		<version.junit>4.12</version.junit>
 		<version.mockito>2.28.2</version.mockito>
-		<version.byte-buddy>1.9.9</version.byte-buddy>
+		<version.byte-buddy>1.9.10</version.byte-buddy>
 		<version.objenesis>3.0.1</version.objenesis>
 		<version.ow2asm>7.0</version.ow2asm>
 
