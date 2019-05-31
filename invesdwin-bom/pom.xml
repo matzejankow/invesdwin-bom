@@ -25,7 +25,7 @@
 		<version.aspectj>1.9.4</version.aspectj>
 		<version.javassist>3.24.1-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
-		<version.slf4j>1.7.25</version.slf4j>
+		<version.slf4j>1.7.26</version.slf4j>
 		<version.minlog-slf4j>1.12</version.minlog-slf4j>
 		<version.joda-time>2.10.1</version.joda-time>
 		<version.commons-codec>1.11</version.commons-codec>
@@ -52,7 +52,7 @@
 		<version.shiro>1.4.0</version.shiro>
 		<version.jquery>3.3.1-2</version.jquery>
 
-		<version.hibernate-validator>6.0.15.Final</version.hibernate-validator>
+		<version.hibernate-validator>6.0.16.Final</version.hibernate-validator>
 		<version.javax.el>3.0.0</version.javax.el>
 		<version.validation-api>2.0.1.Final</version.validation-api>
 		<version.querydsl>4.2.1</version.querydsl>
