@@ -4,7 +4,7 @@
 	<groupId>de.invesdwin</groupId>
 	<artifactId>invesdwin-bom</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.3</version>
+	<version>1.0.3-SNAPSHOT</version>
 
 	<licenses>
 		<license>
@@ -83,20 +83,20 @@
 		<version.koloboke>1.0.0</version.koloboke>
 		<version.jamm>0.3.3</version.jamm>
 
-		<version.maven>3.6.0</version.maven>
+		<version.maven>3.6.1</version.maven>
 		<version.plexus-build-api>0.0.7</version.plexus-build-api>
-		<version.plexus-utils>3.1.1</version.plexus-utils>
+		<version.plexus-utils>3.2.0</version.plexus-utils>
 		<version.plexus-classworlds>2.6.0</version.plexus-classworlds>
-		<version.maven-plugin-plugin>3.6.0</version.maven-plugin-plugin>
-		<version.maven-compiler-plugin>3.8.0</version.maven-compiler-plugin>
-		<version.plexus-compiler-javac-errorprone>2.8.2</version.plexus-compiler-javac-errorprone>
-		<version.errorprone>2.1.1</version.errorprone>
+		<version.maven-plugin-plugin>3.6.1</version.maven-plugin-plugin>
+		<version.maven-compiler-plugin>3.8.1</version.maven-compiler-plugin>
+		<version.plexus-compiler-javac-errorprone>2.8.5</version.plexus-compiler-javac-errorprone>
+		<version.errorprone>2.3.3</version.errorprone>
 		<version.maven-enforcer-plugin>3.0.0-M2</version.maven-enforcer-plugin>
 		<version.lifecycle-mapping>1.0.0</version.lifecycle-mapping>
 		<version.license-check-maven-plugin>0.5.5-inv</version.license-check-maven-plugin>
 		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
 		<version.maven-scm-plugin>1.11.2</version.maven-scm-plugin>
-		<version.maven-deploy-plugin>2.8.2</version.maven-deploy-plugin>
+		<version.maven-deploy-plugin>3.0.0-M1</version.maven-deploy-plugin>
 		<version.maven-shade-plugin>3.2.1</version.maven-shade-plugin>
 	</properties>
 
@@ -1338,7 +1338,6 @@
 	<scm>
 		<url>https://github.com/subes/invesdwin-bom</url>
 		<connection>scm:git:https://github.com/subes/invesdwin-bom.git</connection>
-		<tag>invesdwin-bom-1.0.3</tag>
 	</scm>
 
 </project>
