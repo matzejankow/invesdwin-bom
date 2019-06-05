@@ -97,6 +97,8 @@
 		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
 		<version.maven-deploy-plugin>3.0.0-M1</version.maven-deploy-plugin>
 		<version.maven-shade-plugin>3.2.1</version.maven-shade-plugin>
+		
+		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
 
 	<dependencyManagement>
