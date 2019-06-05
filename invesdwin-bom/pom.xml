@@ -95,7 +95,7 @@
 		<version.lifecycle-mapping>1.0.0</version.lifecycle-mapping>
 		<version.license-check-maven-plugin>0.5.5-inv</version.license-check-maven-plugin>
 		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
-		<version.maven-scm-plugin>1.11.1</version.maven-scm-plugin>
+		<version.maven-scm-plugin>1.11.2</version.maven-scm-plugin>
 		<version.maven-deploy-plugin>2.8.2</version.maven-deploy-plugin>
 		<version.maven-shade-plugin>3.2.1</version.maven-shade-plugin>
 	</properties>
