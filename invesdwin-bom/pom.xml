@@ -95,7 +95,6 @@
 		<version.lifecycle-mapping>1.0.0</version.lifecycle-mapping>
 		<version.license-check-maven-plugin>0.5.5-inv</version.license-check-maven-plugin>
 		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
-		<version.maven-scm-plugin>1.11.2</version.maven-scm-plugin>
 		<version.maven-deploy-plugin>3.0.0-M1</version.maven-deploy-plugin>
 		<version.maven-shade-plugin>3.2.1</version.maven-shade-plugin>
 	</properties>
@@ -1273,13 +1272,6 @@
 							– the `releases` profile – to become active during the Release process. -->
 						<releaseProfiles>releases</releaseProfiles>
 					</configuration>
-					<dependencies>
-						<dependency>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-scm-plugin</artifactId>
-							<version>${version.maven-scm-plugin}</version>
-						</dependency>
-					</dependencies>
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
