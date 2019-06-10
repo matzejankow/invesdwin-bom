@@ -707,6 +707,12 @@
 				<groupId>com.querydsl</groupId>
 				<artifactId>querydsl-apt</artifactId>
 				<version>${version.querydsl}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>org.eclipse.jdt.core.compiler</groupId>
+						<artifactId>ecj</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jdt</groupId>
