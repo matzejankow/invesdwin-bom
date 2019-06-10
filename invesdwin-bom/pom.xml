@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.invesdwin</groupId>
@@ -95,7 +97,7 @@
 		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
 		<version.maven-deploy-plugin>3.0.0-M1</version.maven-deploy-plugin>
 		<version.maven-shade-plugin>3.2.1</version.maven-shade-plugin>
-		
+
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
 
@@ -702,6 +704,11 @@
 				</exclusions>
 			</dependency>
 			<dependency>
+				<groupId>com.querydsl</groupId>
+				<artifactId>querydsl-apt</artifactId>
+				<version>${version.querydsl}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.eclipse.jdt</groupId>
 				<artifactId>ecj</artifactId>
 				<version>${version.ecj}</version>
@@ -1031,7 +1038,8 @@
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
-							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence /> -->
+							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence 
+								/> -->
 						</rules>
 					</configuration>
 				</plugin>
