@@ -22,7 +22,7 @@
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
 		<version.spring>5.1.7.RELEASE</version.spring>
 		<version.spring-data>2.1.8.RELEASE</version.spring-data>
-		<version.aspectj>1.9.2</version.aspectj>
+		<version.aspectj>1.9.4</version.aspectj>
 		<version.javassist>3.24.1-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
 		<version.slf4j>1.7.26</version.slf4j>
