@@ -90,7 +90,7 @@
 		<version.maven-compiler-plugin>3.8.1</version.maven-compiler-plugin>
 		<version.plexus-compiler-javac-errorprone>2.8.5</version.plexus-compiler-javac-errorprone>
 		<version.errorprone>2.3.3</version.errorprone>
-		<version.maven-enforcer-plugin>3.0.0-M2</version.maven-enforcer-plugin>
+		<version.maven-enforcer-plugin>3.0.0-atlassian-m01</version.maven-enforcer-plugin>
 		<version.lifecycle-mapping>1.0.0</version.lifecycle-mapping>
 		<version.license-check-maven-plugin>0.5.5-inv</version.license-check-maven-plugin>
 		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
