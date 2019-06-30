@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.invesdwin</groupId>
@@ -96,6 +98,7 @@
 		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
 		<version.maven-deploy-plugin>3.0.0-M1</version.maven-deploy-plugin>
 		<version.maven-shade-plugin>3.2.1</version.maven-shade-plugin>
+		<version.maven-replacer-plugin>1.5.3</version.maven-replacer-plugin>
 
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
@@ -1043,7 +1046,8 @@
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
-							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence /> -->
+							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence 
+								/> -->
 						</rules>
 					</configuration>
 				</plugin>
@@ -1275,6 +1279,86 @@
 					<artifactId>maven-shade-plugin</artifactId>
 					<version>${version.maven-shade-plugin}</version>
 				</plugin>
+				<plugin>
+					<groupId>com.google.code.maven-replacer-plugin</groupId>
+					<artifactId>replacer</artifactId>
+					<version>${version.maven-replacer-plugin}</version>
+					<executions>
+						<execution>
+							<id>replace-project-version</id>
+							<phase>validate</phase>
+							<goals>
+								<goal>replace</goal>
+							</goals>
+							<configuration>
+								<basedir>${project.basedir}</basedir>
+								<includes>
+									<include>pom.xml</include>
+								</includes>
+								<outputDir>${project.build.directory}</outputDir>
+								<encoding>ISO-8859-1</encoding>
+								<replacements>
+									<replacement>
+										<token>\u0024{project.version}</token>
+										<value>${project.version}</value>
+									</replacement>
+								</replacements>
+							</configuration>
+						</execution>
+
+						<execution>
+							<id>replace-umlauts</id>
+							<phase>generate-sources</phase>
+							<goals>
+								<goal>replace</goal>
+							</goals>
+							<configuration>
+								<basedir>${basedir}</basedir>
+								<includes>
+									<include>src/**/*.properties</include>
+								</includes>
+								<encoding>ISO-8859-1</encoding>
+								<replacements>
+									<replacement>
+										<token>Ä</token>
+										<value>\\u00C4</value>
+									</replacement>
+									<replacement>
+										<token>ä</token>
+										<value>\\u00E4</value>
+									</replacement>
+									<replacement>
+										<token>Ö</token>
+										<value>\\u00D6</value>
+									</replacement>
+									<replacement>
+										<token>ö</token>
+										<value>\\u00F6</value>
+									</replacement>
+									<replacement>
+										<token>Ü</token>
+										<value>\\u00DC</value>
+									</replacement>
+									<replacement>
+										<token>ü</token>
+										<value>\\u00FC</value>
+									</replacement>
+									<replacement>
+										<token>ß</token>
+										<value>\\u00DF</value>
+									</replacement>
+								</replacements>
+							</configuration>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-install-plugin</artifactId>
+					<configuration>
+						<pomFile>${project.build.directory}/pom.xml</pomFile>
+					</configuration>
+				</plugin>
 			</plugins>
 		</pluginManagement>
 		<plugins>
@@ -1289,6 +1373,14 @@
 			<plugin>
 				<groupId>org.complykit</groupId>
 				<artifactId>license-check-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>com.google.code.maven-replacer-plugin</groupId>
+				<artifactId>replacer</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-install-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
