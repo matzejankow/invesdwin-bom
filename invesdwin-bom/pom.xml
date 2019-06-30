@@ -1295,7 +1295,7 @@
 					<executions>
 						<execution>
 							<id>replace-project-version</id>
-							<phase>generate-sources</phase>
+							<phase>analyse</phase>
 							<goals>
 								<goal>execute</goal>
 							</goals>
