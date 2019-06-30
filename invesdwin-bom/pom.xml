@@ -99,6 +99,8 @@
 		<version.maven-deploy-plugin>3.0.0-M1</version.maven-deploy-plugin>
 		<version.maven-shade-plugin>3.2.1</version.maven-shade-plugin>
 		<version.maven-replacer-plugin>1.5.3</version.maven-replacer-plugin>
+		<version.gmavenplus-plugin>1.7.1</version.gmavenplus-plugin>
+		<version.groovy>2.5.4</version.groovy>
 
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
@@ -210,6 +212,12 @@
 				<groupId>org.springframework</groupId>
 				<artifactId>spring-jms</artifactId>
 				<version>${version.spring}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.groovy</groupId>
+				<artifactId>groovy</artifactId>
+				<version>${version.groovy}</version>
+				<classifier>indy</classifier>
 			</dependency>
 
 			<dependency>
@@ -1280,32 +1288,46 @@
 					<version>${version.maven-shade-plugin}</version>
 				</plugin>
 				<plugin>
+					<groupId>org.codehaus.gmavenplus</groupId>
+					<artifactId>gmavenplus-plugin</artifactId>
+					<version>${version.gmavenplus-plugin}</version>
+					<executions>
+						<execution>
+							<id>replace-project-version</id>
+							<phase>generate-sources</phase>
+							<goals>
+								<goal>execute</goal>
+							</goals>
+							<configuration>
+								<scripts>
+									<script>
+								<![CDATA[
+									def src = new File("${project.basedir}/pom.xml")
+									def dstDir = new File("${project.build.directory}")
+									dstDir.mkdirs()
+									def dst = new File(dstDir,"pom.xml")
+									def text = src.text.replace("\$"+"{project.version}", "${project.version}")
+									dst.write(text)
+									]]></script>
+								</scripts>
+							</configuration>
+						</execution>
+					</executions>
+					<dependencies>
+						<dependency>
+							<groupId>org.codehaus.groovy</groupId>
+							<artifactId>groovy-all</artifactId>
+							<version>${version.groovy}</version>
+							<scope>runtime</scope>
+							<type>pom</type>
+						</dependency>
+					</dependencies>
+				</plugin>
+				<plugin>
 					<groupId>com.google.code.maven-replacer-plugin</groupId>
 					<artifactId>replacer</artifactId>
 					<version>${version.maven-replacer-plugin}</version>
 					<executions>
-						<execution>
-							<id>replace-project-version</id>
-							<phase>validate</phase>
-							<goals>
-								<goal>replace</goal>
-							</goals>
-							<configuration>
-								<basedir>${project.basedir}</basedir>
-								<includes>
-									<include>pom.xml</include>
-								</includes>
-								<outputDir>${project.build.directory}</outputDir>
-								<encoding>ISO-8859-1</encoding>
-								<replacements>
-									<replacement>
-										<token>\u0024{project.version}</token>
-										<value>${project.version}</value>
-									</replacement>
-								</replacements>
-							</configuration>
-						</execution>
-
 						<execution>
 							<id>replace-umlauts</id>
 							<phase>generate-sources</phase>
@@ -1377,6 +1399,10 @@
 			<plugin>
 				<groupId>com.google.code.maven-replacer-plugin</groupId>
 				<artifactId>replacer</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.gmavenplus</groupId>
+				<artifactId>gmavenplus-plugin</artifactId>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
