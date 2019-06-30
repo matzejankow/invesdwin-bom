@@ -1303,15 +1303,17 @@
 							<configuration>
 								<scripts>
 									<script>
-								<![CDATA[
-									def src = new File("${project.basedir}/pom.xml")
-									def dstDir = new File("${project.build.directory}")
-									dstDir.mkdirs()
-									def dst = new File(dstDir,"pom.xml")
-									def text = src.text.replace("\$"+"{project.version}", "${project.version}")
-									dst.write(text)
-									]]></script>
+										<![CDATA[
+										def src = new File("${project.basedir}/pom.xml")
+										def dstDir = new File("${project.build.directory}")
+										dstDir.mkdirs()
+										def dst = new File(dstDir,"pom.xml")
+										def text = src.text.replace("\$"+"{project.version}", "${project.version}")
+										dst.write(text)
+										]]>
+									</script>
 								</scripts>
+								<allowSystemExits>true</allowSystemExits>
 							</configuration>
 						</execution>
 					</executions>
