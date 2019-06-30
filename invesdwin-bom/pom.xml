@@ -1289,6 +1289,7 @@
 					<version>${version.maven-shade-plugin}</version>
 				</plugin>
 				<plugin>
+					<!-- https://stackoverflow.com/questions/40308600/replace-properties-with-its-values-in-pom-xml-before-putting-the-pom-file-into -->
 					<groupId>org.codehaus.gmavenplus</groupId>
 					<artifactId>gmavenplus-plugin</artifactId>
 					<version>${version.gmavenplus-plugin}</version>
