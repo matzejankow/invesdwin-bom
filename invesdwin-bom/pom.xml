@@ -1295,7 +1295,7 @@
 					<executions>
 						<execution>
 							<id>replace-project-version</id>
-							<phase>analyse</phase>
+							<phase>validate</phase>
 							<goals>
 								<goal>execute</goal>
 							</goals>
