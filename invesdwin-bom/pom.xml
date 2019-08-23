@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.invesdwin</groupId>
@@ -467,6 +469,12 @@
 				<groupId>com.fasterxml.jackson.module</groupId>
 				<artifactId>jackson-module-jaxb-annotations</artifactId>
 				<version>${version.jackson}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>jakarta.activation</groupId>
+						<artifactId>jakarta.activation-api</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.datatype</groupId>
@@ -1050,7 +1058,8 @@
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
-							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence /> -->
+							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence 
+								/> -->
 						</rules>
 					</configuration>
 				</plugin>
