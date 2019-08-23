@@ -66,7 +66,7 @@
 		<version.netty>4.1.32.Final</version.netty>
 
 		<version.jaxb>2.3.2</version.jaxb>
-		<version.activation>1.2.0</version.activation>
+		<version.activation>1.2.1</version.activation>
 
 		<version.junit>4.12</version.junit>
 		<version.mockito>2.24.0</version.mockito>
@@ -469,12 +469,6 @@
 				<groupId>com.fasterxml.jackson.module</groupId>
 				<artifactId>jackson-module-jaxb-annotations</artifactId>
 				<version>${version.jackson}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>jakarta.activation</groupId>
-						<artifactId>jakarta.activation-api</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.datatype</groupId>
@@ -790,27 +784,15 @@
 				<groupId>org.glassfish.jaxb</groupId>
 				<artifactId>jaxb-xjc</artifactId>
 				<version>${version.jaxb}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>jakarta.activation</groupId>
-						<artifactId>jakarta.activation-api</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.glassfish.jaxb</groupId>
 				<artifactId>jaxb-runtime</artifactId>
 				<version>${version.jaxb}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>jakarta.activation</groupId>
-						<artifactId>jakarta.activation-api</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
-				<groupId>com.sun.activation</groupId>
-				<artifactId>javax.activation</artifactId>
+				<groupId>jakarta.activation</groupId>
+				<artifactId>jakarta.activation-api</artifactId>
 				<version>${version.activation}</version>
 			</dependency>
 
@@ -1047,8 +1029,8 @@
 									<exclude>javax.jdo:jdo-api</exclude>
 									<!-- use individual libs instead -->
 									<exclude>javax:javaee-api</exclude>
-									<!-- use com.sun.activation:javax.activation instead -->
-									<exclude>jakarta.activation:jakarta.activation-api</exclude>
+									<!-- use jakarta.activation:jakarta.activation-api instead -->
+									<exclude>com.sun.activation:javax.activation</exclude>
 									<exclude>javax.activation:activation</exclude>
 									<!-- use com.sun.mail:javax.mail instead -->
 									<exclude>javax.mail:mail</exclude>
@@ -1224,7 +1206,6 @@
 							<param>com\.jidesoft:jide-oss.*</param>
 							<param>org\.glassfish\.jersey.*</param>
 							<param>javax\.annotation:javax\.annotation-api.*</param>
-							<param>com\.sun\.activation:javax\.activation.*</param>
 							<param>org\.glassfish\.jaxb.*</param>
 							<param>javax\.servlet:javax\.servlet-api.*</param>
 							<param>javax\.jms:javax\.jms-api.*</param>
@@ -1237,6 +1218,8 @@
 							<!-- EPL -->
 							<param>org\.jvnet\.hudson.*</param>
 							<param>com\.sun\.xml\.messaging\.saaj:saaj-impl.*</param>
+							<!-- EDL -->
+							<param>jakarta\.activation:jakarta\.activation-api.*</param>
 							<!-- modified bsd license -->
 							<param>com\.jamonapi.*</param>
 							<param>com\.fifesoft.*</param>
