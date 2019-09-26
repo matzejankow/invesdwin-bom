@@ -1209,6 +1209,7 @@
 							<!-- epl license -->
 							<param>com\.h2database.*</param>
 							<param>org\.eclipse\.swt.*</param>
+							<param>org\.aspectj:aspectjweaver.*</param>
 							<!-- LGPL license -->
 							<param>org\.jboss\.logging:jboss-logging-generator.*</param>
 							<param>org\.hibernate.*</param>
