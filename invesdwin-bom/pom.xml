@@ -19,6 +19,7 @@
 		<version.guava>28.1-jre</version.guava>
 		<version.error_prone_annotations>2.3.3</version.error_prone_annotations>
 		<version.gson>2.8.6</version.gson>
+		<version.protobuf>3.10.0</version.protobuf>
 		<version.assertj-guava>3.2.1</version.assertj-guava>
 		<version.assertj-core>3.11.1</version.assertj-core>
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
@@ -31,7 +32,7 @@
 		<version.slf4j>1.7.26</version.slf4j>
 		<version.minlog-slf4j>1.12</version.minlog-slf4j>
 		<version.joda-time>2.10.1</version.joda-time>
-		<version.commons-codec>1.11</version.commons-codec>
+		<version.commons-codec>1.13</version.commons-codec>
 		<version.commons-lang>2.6</version.commons-lang>
 		<version.commons-io>2.6</version.commons-io>
 		<version.curvesapi>1.05-inv</version.curvesapi>
@@ -312,6 +313,11 @@
 				<groupId>com.google.code.gson</groupId>
 				<artifactId>gson</artifactId>
 				<version>${version.gson}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.protobuf</groupId>
+				<artifactId>protobuf-java</artifactId>
+				<version>${version.protobuf}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.assertj</groupId>
