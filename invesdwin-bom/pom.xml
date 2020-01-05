@@ -24,7 +24,7 @@
 		<version.assertj-core>3.11.1</version.assertj-core>
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
 		<version.spring>5.1.7.RELEASE</version.spring>
-		<version.spring-data>2.1.8.RELEASE</version.spring-data>
+		<version.spring-data>2.2.3.RELEASE</version.spring-data>
 		<!-- this is a snapshot from: https://bugs.eclipse.org/bugs/show_bug.cgi?id=547808 -->
 		<version.aspectj>1.9.5-inv</version.aspectj>
 		<version.javassist>3.24.1-GA</version.javassist>
