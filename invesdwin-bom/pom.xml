@@ -25,8 +25,7 @@
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
 		<version.spring>5.1.7.RELEASE</version.spring>
 		<version.spring-data>2.2.3.RELEASE</version.spring-data>
-		<!-- this is a snapshot from: https://bugs.eclipse.org/bugs/show_bug.cgi?id=547808 -->
-		<version.aspectj>1.9.5-inv</version.aspectj>
+		<version.aspectj>1.9.5</version.aspectj>
 		<version.javassist>3.24.1-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
 		<version.slf4j>1.7.26</version.slf4j>
