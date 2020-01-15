@@ -78,7 +78,8 @@
 		<version.objenesis>3.0.1</version.objenesis>
 		<version.ow2asm>7.1</version.ow2asm>
 
-		<version.zt-exec>1.10</version.zt-exec>
+		<version.zt-exec>1.11</version.zt-exec>
+		<version.zt-zip>1.13</version.zt-zip>
 		<version.lz4>1.6.0</version.lz4>
 
 		<version.quandl>2.0.0</version.quandl>
@@ -808,6 +809,11 @@
 				<groupId>org.zeroturnaround</groupId>
 				<artifactId>zt-exec</artifactId>
 				<version>${version.zt-exec}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.zeroturnaround</groupId>
+				<artifactId>zt-zip</artifactId>
+				<version>${version.zt-zip}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.lz4</groupId>
