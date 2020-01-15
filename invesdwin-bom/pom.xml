@@ -1276,6 +1276,7 @@
 							<param>javax\.jms:javax\.jms-api.*</param>
 							<param>javax\.xml\.soap:javax\.xml\.soap-api.*</param>
 							<param>org\.glassfish:javax\.el.*</param>
+							<param>org\.openjfx:javafx.*</param>
 							<!-- public domain -->
 							<param>org\.freedesktop\.tango.*</param>
 							<!-- MPL -->
