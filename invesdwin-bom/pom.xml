@@ -56,7 +56,7 @@
 		<version.shiro>1.4.0</version.shiro>
 		<version.jquery>3.3.1-2</version.jquery>
 
-		<version.hibernate-validator>6.0.16.Final</version.hibernate-validator>
+		<version.hibernate-validator>6.1.1.Final</version.hibernate-validator>
 		<version.javax.el>3.0.0</version.javax.el>
 		<version.validation-api>2.0.1.Final</version.validation-api>
 		<version.querydsl>4.2.1</version.querydsl>
