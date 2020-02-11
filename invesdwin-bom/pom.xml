@@ -53,7 +53,7 @@
 		<version.jettison>1.4.0</version.jettison>
 		<version.jsoup>1.11.3</version.jsoup>
 		<version.args4j>2.33</version.args4j>
-		<version.shiro>1.4.0</version.shiro>
+		<version.shiro>1.5.0</version.shiro>
 		<version.jquery>3.3.1-2</version.jquery>
 
 		<version.hibernate-validator>6.1.1.Final</version.hibernate-validator>
