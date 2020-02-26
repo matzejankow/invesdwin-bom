@@ -1231,7 +1231,7 @@
 							<param>org\.bouncycastle.*</param>
 							<param>org\.postgresql.*</param>
 							<param>org\.codehaus\.janino.*</param>
-							<param>org\.jquantlib.*</param>
+							<param>jquantlib.*</param>
 							<param>ta-lib:ta-lib.*</param>
 							<param>org\.clojars.edbond:talib.*</param>
 							<param>org\.ow2\.asm.*</param>
