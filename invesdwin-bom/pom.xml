@@ -34,7 +34,7 @@
 		<version.commons-codec>1.13</version.commons-codec>
 		<version.commons-lang>2.6</version.commons-lang>
 		<version.commons-io>2.6</version.commons-io>
-		<version.curvesapi>1.05-inv</version.curvesapi>
+		<version.curvesapi>1.06</version.curvesapi>
 		<version.commons-collections>3.2.2</version.commons-collections>
 		<version.commons-collections4>4.3</version.commons-collections4>
 		<version.commons-pool>1.6</version.commons-pool>
