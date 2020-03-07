@@ -71,7 +71,7 @@
 		<version.activation>1.2.1</version.activation>
 
 		<version.junit>4.12</version.junit>
-		<version.mockito>2.24.0</version.mockito>
+		<version.mockito>3.3.0</version.mockito>
 		<version.byte-buddy>1.9.10</version.byte-buddy>
 		<version.objenesis>3.0.1</version.objenesis>
 		<version.ow2asm>7.1</version.ow2asm>
