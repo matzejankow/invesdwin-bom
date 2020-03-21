@@ -1268,6 +1268,9 @@
 							<param>com\.github\.asbachb:ftp4j.*</param>
 							<param>org\.biojava:jcolorbrewer.*</param>
 							<param>org\.swingexplorer:swingexplorer-core.*</param>
+							<param>org\.swingexplorer:swingexplorer-core.*</param>
+							<param>com\.googlecode\.soundlibs:mp3spi.*</param>
+							<param>com\.googlecode\.soundlibs:vorbisspi.*</param>
 							<!-- zlib -->
 							<param>com\.github\.mrj0:jep.*</param>
 							<!-- CPL -->
@@ -1286,6 +1289,7 @@
 							<param>org\.openjfx:javafx.*</param>
 							<!-- public domain -->
 							<param>org\.freedesktop\.tango.*</param>
+							<param>net\.sourceforge\.jaadec:jaad.*</param>
 							<!-- MPL -->
 							<param>org\.javassist.*</param>
 							<!-- EPL -->
