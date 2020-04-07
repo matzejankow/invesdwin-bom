@@ -80,8 +80,6 @@
 		<version.zt-zip>1.13</version.zt-zip>
 		<version.lz4>1.6.0</version.lz4>
 
-		<version.quandl>2.0.0</version.quandl>
-
 		<version.fastutil>8.2.2</version.fastutil>
 		<version.dsiutils>2.5.4</version.dsiutils>
 		<version.koloboke>1.0.0</version.koloboke>
@@ -854,12 +852,6 @@
 				<groupId>com.sun.activation</groupId>
 				<artifactId>jakarta.activation</artifactId>
 				<version>${version.activation}</version>
-			</dependency>
-
-			<dependency>
-				<groupId>com.jimmoores</groupId>
-				<artifactId>quandl-core</artifactId>
-				<version>${version.quandl}</version>
 			</dependency>
 
 			<dependency>
