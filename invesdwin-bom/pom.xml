@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.invesdwin</groupId>
@@ -14,19 +16,19 @@
 	</licenses>
 
 	<properties>
-		<version.guava>28.1-jre</version.guava>
-		<version.error_prone_annotations>2.3.3</version.error_prone_annotations>
+		<version.guava>28.2-jre</version.guava>
+		<version.error_prone_annotations>2.3.4</version.error_prone_annotations>
 		<version.gson>2.8.6</version.gson>
-		<version.protobuf>3.10.0</version.protobuf>
+		<version.protobuf>3.11.4</version.protobuf>
 		<version.assertj-guava>3.2.1</version.assertj-guava>
 		<version.assertj-core>3.11.1</version.assertj-core>
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
-		<version.spring>5.2.3.RELEASE</version.spring>
-		<version.spring-data>2.2.4.RELEASE</version.spring-data>
+		<version.spring>5.2.5.RELEASE</version.spring>
+		<version.spring-data>2.2.6.RELEASE</version.spring-data>
 		<version.aspectj>1.9.5</version.aspectj>
 		<version.javassist>3.24.1-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
-		<version.slf4j>1.7.26</version.slf4j>
+		<version.slf4j>1.7.30</version.slf4j>
 		<version.minlog-slf4j>1.12</version.minlog-slf4j>
 		<version.joda-time>2.10.1</version.joda-time>
 		<version.commons-codec>1.13</version.commons-codec>
@@ -45,9 +47,9 @@
 		<version.wicket>8.6.1</version.wicket>
 		<version.wicketstuff>8.6.0</version.wicketstuff>
 		<version.wicket-bootstrap>2.0.11</version.wicket-bootstrap>
-		<version.spring-security>5.2.1.RELEASE</version.spring-security>
+		<version.spring-security>5.3.1.RELEASE</version.spring-security>
 		<version.javax-servlet>4.0.1</version.javax-servlet>
-		<version.jackson>2.10.2</version.jackson>
+		<version.jackson>2.10.3</version.jackson>
 		<version.jettison>1.4.0</version.jettison>
 		<version.jsoup>1.11.3</version.jsoup>
 		<version.args4j>2.33</version.args4j>
@@ -61,8 +63,8 @@
 		<version.cglib>3.2.12</version.cglib>
 		<version.ecj>3.16.0</version.ecj>
 		<version.classmate>1.4.0</version.classmate>
-		<version.caffeine>2.6.2</version.caffeine>
-		<version.jcache>1.1.0</version.jcache>
+		<version.caffeine>2.8.1</version.caffeine>
+		<version.jcache>1.1.1</version.jcache>
 		<version.javax.persistence-api>2.2</version.javax.persistence-api>
 
 		<version.netty>4.1.45.Final</version.netty>
@@ -96,7 +98,7 @@
 		<version.maven-plugin-plugin>3.6.0</version.maven-plugin-plugin>
 		<version.maven-compiler-plugin>3.8.1</version.maven-compiler-plugin>
 		<version.plexus-compiler-javac-errorprone>2.8.5</version.plexus-compiler-javac-errorprone>
-		<version.errorprone>2.3.3</version.errorprone>
+		<version.checker-qual>3.3.0</version.checker-qual>
 		<version.maven-enforcer-plugin>3.0.0-atlassian-m01</version.maven-enforcer-plugin>
 		<version.lifecycle-mapping>1.0.0</version.lifecycle-mapping>
 		<version.license-check-maven-plugin>0.5.6-inv</version.license-check-maven-plugin>
@@ -310,6 +312,11 @@
 				<groupId>com.google.errorprone</groupId>
 				<artifactId>error_prone_annotations</artifactId>
 				<version>${version.error_prone_annotations}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.checkerframework</groupId>
+				<artifactId>checker-qual</artifactId>
+				<version>${version.checker-qual}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.code.gson</groupId>
@@ -999,12 +1006,7 @@
 						<compilerArgument>-proc:none</compilerArgument>
 						<Xlint>ignore</Xlint>
 						<verbose>false</verbose>
-						<!-- <compilerId>javac-with-errorprone</compilerId> <forceJavacCompilerUse>true</forceJavacCompilerUse> -->
 					</configuration>
-					<!-- <dependencies> <dependency> <groupId>org.codehaus.plexus</groupId> 
-						<artifactId>plexus-compiler-javac-errorprone</artifactId> <version>${version.plexus-compiler-javac-errorprone}</version> 
-						</dependency> <dependency> <groupId>com.google.errorprone</groupId> <artifactId>error_prone_core</artifactId> 
-						<version>${version.errorprone}</version> </dependency> </dependencies> -->
 				</plugin>
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
@@ -1104,7 +1106,8 @@
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
-							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence /> -->
+							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence 
+								/> -->
 						</rules>
 					</configuration>
 				</plugin>
