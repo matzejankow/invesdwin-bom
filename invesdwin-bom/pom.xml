@@ -1217,6 +1217,7 @@
 							<param>commons-io.*</param>
 							<param>ecs:ecs.*</param>
 							<param>de\.jollyday.*</param>
+							<param>org\.assertj.*</param>
 							<!-- bsd license -->
 							<!-- MIT license -->
 							<param>org\.slf4j.*</param>
