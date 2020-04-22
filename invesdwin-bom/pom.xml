@@ -20,8 +20,8 @@
 		<version.error_prone_annotations>2.3.4</version.error_prone_annotations>
 		<version.gson>2.8.6</version.gson>
 		<version.protobuf>3.11.4</version.protobuf>
-		<version.assertj-guava>3.2.1</version.assertj-guava>
-		<version.assertj-core>3.11.1</version.assertj-core>
+		<version.assertj-guava>3.3.0</version.assertj-guava>
+		<version.assertj-core>3.15.0</version.assertj-core>
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
 		<version.spring>5.2.5.RELEASE</version.spring>
 		<version.spring-data>2.2.6.RELEASE</version.spring-data>
