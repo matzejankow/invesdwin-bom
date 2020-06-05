@@ -43,6 +43,7 @@
 		<version.commons-beanutils>1.9.4</version.commons-beanutils>
 		<version.commons-fileupload>1.4</version.commons-fileupload>
 		<version.commons-text>1.8</version.commons-text>
+		<version.httpclient>4.5.12</version.httpclient>
 
 		<version.wicket>8.6.1</version.wicket>
 		<version.wicketstuff>8.6.0</version.wicketstuff>
@@ -906,6 +907,17 @@
 				<groupId>com.github.jbellis</groupId>
 				<artifactId>jamm</artifactId>
 				<version>${version.jamm}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.httpcomponents</groupId>
+				<artifactId>httpclient</artifactId>
+				<version>${version.httpclient}</version>
+				<exclusions>
+					<exclusion>
+						<artifactId>commons-logging</artifactId>
+						<groupId>commons-logging</groupId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<dependency>
