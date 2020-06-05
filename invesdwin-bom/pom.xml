@@ -23,7 +23,7 @@
 		<version.assertj-guava>3.3.0</version.assertj-guava>
 		<version.assertj-core>3.15.0</version.assertj-core>
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
-		<version.spring>5.2.5.RELEASE</version.spring>
+		<version.spring>5.2.6.RELEASE</version.spring>
 		<version.spring-data>2.2.6.RELEASE</version.spring-data>
 		<version.aspectj>1.9.5</version.aspectj>
 		<version.javassist>3.24.1-GA</version.javassist>
