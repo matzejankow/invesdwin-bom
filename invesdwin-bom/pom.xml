@@ -69,6 +69,7 @@
 		<version.javax.persistence-api>2.2</version.javax.persistence-api>
 
 		<version.netty>4.1.45.Final</version.netty>
+		<version.conscrypt>2.4.0</version.conscrypt>
 
 		<version.jaxb>2.3.2</version.jaxb>
 		<version.activation>1.2.1</version.activation>
@@ -817,6 +818,11 @@
 				<groupId>io.netty</groupId>
 				<artifactId>netty-resolver</artifactId>
 				<version>${version.netty}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.conscrypt</groupId>
+				<artifactId>conscrypt-openjdk-uber</artifactId>
+				<version>${version.conscrypt}</version>
 			</dependency>
 
 			<dependency>
