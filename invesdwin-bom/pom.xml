@@ -79,7 +79,7 @@
 		<version.mockito>3.3.0</version.mockito>
 		<version.byte-buddy>1.9.10</version.byte-buddy>
 		<version.objenesis>3.0.1</version.objenesis>
-		<version.ow2asm>7.1</version.ow2asm>
+		<version.ow2asm>7.3.1</version.ow2asm>
 
 		<version.zt-exec>1.11</version.zt-exec>
 		<version.zt-zip>1.13</version.zt-zip>
@@ -551,6 +551,11 @@
 			<dependency>
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-stdlib</artifactId>
+				<version>${version.kotlin}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-reflect</artifactId>
 				<version>${version.kotlin}</version>
 			</dependency>
 			<dependency>
