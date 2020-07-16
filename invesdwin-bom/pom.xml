@@ -64,7 +64,7 @@
 		<version.querydsl>4.2.1</version.querydsl>
 		<version.cglib>3.2.12</version.cglib>
 		<version.ecj>3.16.0</version.ecj>
-		<version.classmate>1.4.0</version.classmate>
+		<version.classmate>1.5.1</version.classmate>
 		<version.caffeine>2.8.1</version.caffeine>
 		<version.jcache>1.1.1</version.jcache>
 		<version.javax.persistence-api>2.2</version.javax.persistence-api>
