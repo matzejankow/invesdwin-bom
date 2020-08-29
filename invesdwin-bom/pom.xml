@@ -1324,6 +1324,7 @@
 							<param>de\.jollyday.*</param>
 							<param>org\.assertj.*</param>
 							<param>org\.conscrypt:conscrypt.*</param>
+							<param>org\.roaringbitmap:RoaringBitmap.*</param>
 							<!-- bsd license -->
 							<!-- MIT license -->
 							<param>org\.slf4j.*</param>
