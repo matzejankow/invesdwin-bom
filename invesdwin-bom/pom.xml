@@ -1432,6 +1432,8 @@
 							<param>com\.github\.yannrichet:Rsession.*</param>
 							<!-- WARNING: optional, you need to buy a license to use this dependency -->
 							<param>org\.webjars:highstock.*</param>
+							<!-- WARNING: ITPCL is not open source -->
+							<param>com\.irisalpha:irisalpha.*</param>
 						</excludesRegex>
 					</configuration>
 				</plugin>
