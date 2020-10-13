@@ -74,7 +74,7 @@
 		<version.jaxb>2.3.2</version.jaxb>
 		<version.activation>1.2.1</version.activation>
 
-		<version.junit>4.12</version.junit>
+		<version.junit>4.13.1</version.junit>
 		<version.mockito>3.3.0</version.mockito>
 		<version.byte-buddy>1.9.10</version.byte-buddy>
 		<version.objenesis>3.0.1</version.objenesis>
