@@ -1171,7 +1171,7 @@
 									<!-- use jboss jta specification instead -->
 									<exclude>org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec</exclude>
 									<exclude>javax.transaction:jta</exclude>
-									<!-- use bcprov-jdk15on instead -->
+									<!-- use bcprov-jdk15on or bcpkix-jdk15on instead -->
 									<exclude>org.bouncycastle:bcprov-jdk16</exclude>
 									<exclude>org.bouncycastle:bcprov-jdk15</exclude>
 									<exclude>org.bouncycastle:bcprov-jdk15+</exclude>
