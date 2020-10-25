@@ -6,7 +6,7 @@ This project consists of a BOM-POM ([bill of materials](https://maven.apache.org
 
 Releases and snapshots are deployed to this maven repository:
 ```
-https://invesdwin.de/repo/invesdwin-oss-remote
+https://invesdwin.de/repo/invesdwin-oss-remote/
 ```
 
 Dependency declaration:
