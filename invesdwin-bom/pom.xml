@@ -1473,9 +1473,6 @@
 						<reuseForks>true</reuseForks>
 						<parallel>suitesAndClasses</parallel>
 						<threadCount>1</threadCount>
-						<threadCountClasses>1</threadCountClasses>
-						<threadCountMethods>1</threadCountMethods>
-						<threadCountSuites>1</threadCountSuites>
 						<!-- timeout test suite of any module if it takes longer than 30 minutes -->
 						<forkedProcessTimeoutInSeconds>1800</forkedProcessTimeoutInSeconds>
 						<!-- Assertions make jforex fail in unit tests even if they normally 
