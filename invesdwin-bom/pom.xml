@@ -1543,6 +1543,18 @@
 									<goal>restore-instrumented-classes</goal>
 								</goals>
 							</execution>
+							<execution>
+								<id>default-report</id>
+								<goals>
+									<goal>report</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>default-report-integration</id>
+								<goals>
+									<goal>report-integration</goal>
+								</goals>
+							</execution>
 						</executions>
 					</plugin>
 				</plugins>
