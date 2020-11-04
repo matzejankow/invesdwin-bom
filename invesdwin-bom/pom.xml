@@ -1469,7 +1469,7 @@
 					<version>${version.maven-surefire-plugin}</version>
 					<configuration>
 						<!-- parallelize tests -->
-						<forkCount>1C</forkCount>
+						<forkCount>2</forkCount>
 						<reuseForks>true</reuseForks>
 						<!-- timeout test suite of any module if it takes longer than 30 minutes -->
 						<forkedProcessTimeoutInSeconds>1800</forkedProcessTimeoutInSeconds>
