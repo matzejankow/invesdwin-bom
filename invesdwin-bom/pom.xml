@@ -1523,6 +1523,16 @@
 			<activation>
 				<activeByDefault>false</activeByDefault>
 			</activation>
+			<dependencies>
+				<dependency>
+					<!-- https://stackoverflow.com/questions/40067455/jacoco-caused-by-java-lang-classnotfoundexception-org-jacoco-agent-rt-inter -->
+					<groupId>org.jacoco</groupId>
+					<artifactId>org.jacoco.agent</artifactId>
+					<classifier>runtime</classifier>
+					<scope>test</scope>
+					<version>${version.jacoco}</version>
+				</dependency>
+			</dependencies>
 			<build>
 				<plugins>
 					<plugin>
