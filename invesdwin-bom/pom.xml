@@ -1522,7 +1522,8 @@
 		<profile>
 			<id>jacoco</id>
 			<activation>
-			<!-- use "-Pjacoco -Dmaven.war.skip=true" to enable target/jacoco.exec file generation -->
+				<!-- use "-Pjacoco" to enable target/jacoco.exec file generation, though 
+					war and shade plugins need to be disabled when that profile is active -->
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<dependencies>
