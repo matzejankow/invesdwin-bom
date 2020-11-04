@@ -1468,7 +1468,16 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>${version.maven-surefire-plugin}</version>
 					<configuration>
+						<!-- parallelize tests -->
 						<forkCount>1C</forkCount>
+						<reuseForks>true</reuseForks>
+						<!-- timeout test suite of any module if it takes longer than 30 minutes -->
+						<forkedProcessTimeoutInSeconds>1800</forkedProcessTimeoutInSeconds>
+						<!-- Assertions make jforex fail in unit tests even if they normally 
+							should not fail. To be safe about this regarding any framework, assertions 
+							are disabled by default here. -->
+						<enableAssertions>false</enableAssertions>
+						<argLine>-Xmx2g</argLine>
 					</configuration>
 				</plugin>
 			</plugins>
@@ -1485,6 +1494,10 @@
 			<plugin>
 				<groupId>org.complykit</groupId>
 				<artifactId>license-check-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
