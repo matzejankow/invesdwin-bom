@@ -1471,8 +1471,8 @@
 						<!-- parallelize tests -->
 						<forkCount>2</forkCount>
 						<reuseForks>true</reuseForks>
-						<parallel>suitesAndClasses</parallel>
-						<threadCount>1</threadCount>
+						<!-- <parallel>suitesAndClasses</parallel>
+						<threadCount>1</threadCount>-->
 						<!-- timeout test suite of any module if it takes longer than 30 minutes -->
 						<forkedProcessTimeoutInSeconds>1800</forkedProcessTimeoutInSeconds>
 						<!-- Assertions make jforex fail in unit tests even if they normally 
