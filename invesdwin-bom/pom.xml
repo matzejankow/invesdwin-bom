@@ -1462,26 +1462,6 @@
 					<artifactId>maven-shade-plugin</artifactId>
 					<version>${version.maven-shade-plugin}</version>
 				</plugin>
-				<plugin>
-					<groupId>org.jacoco</groupId>
-					<artifactId>jacoco-maven-plugin</artifactId>
-					<version>${version.jacoco-maven-plugin}</version>
-					<executions>
-						<execution>
-							<id>default-instrument</id>
-							<goals>
-								<goal>instrument</goal>
-							</goals>
-						</execution>
-						<execution>
-							<id>default-restore-instrumented-classes</id>
-							<phase>post-integration-test</phase>
-							<goals>
-								<goal>restore-instrumented-classes</goal>
-							</goals>
-						</execution>
-					</executions>
-				</plugin>
 			</plugins>
 		</pluginManagement>
 		<plugins>
@@ -1496,10 +1476,6 @@
 			<plugin>
 				<groupId>org.complykit</groupId>
 				<artifactId>license-check-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.jacoco</groupId>
-				<artifactId>jacoco-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
@@ -1540,5 +1516,38 @@
 		<system>jenkins</system>
 		<url>https://invesdwin.de/jenkins/job/dgr-deploy-invesdwin-bom/</url>
 	</ciManagement>
+
+	<profiles>
+		<profile>
+			<id>jacoco</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.jacoco</groupId>
+						<artifactId>jacoco-maven-plugin</artifactId>
+						<version>${version.jacoco-maven-plugin}</version>
+						<executions>
+							<execution>
+								<id>default-instrument</id>
+								<goals>
+									<goal>instrument</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>default-restore-instrumented-classes</id>
+								<phase>post-integration-test</phase>
+								<goals>
+									<goal>restore-instrumented-classes</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 
 </project>
