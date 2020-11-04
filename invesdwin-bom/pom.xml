@@ -112,7 +112,7 @@
 		<version.jacoco-maven-plugin>0.8.6</version.jacoco-maven-plugin>
 		<version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
 
-		<version.jetty>9.4.29.v20200521</version.jetty>
+		<version.jetty>9.4.34.v20201102</version.jetty>
 
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
