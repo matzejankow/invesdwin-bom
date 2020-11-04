@@ -1522,6 +1522,7 @@
 		<profile>
 			<id>jacoco</id>
 			<activation>
+			<!-- use "-Pjacoco -Dmaven.war.skip=true" to enable target/jacoco.exec file generation -->
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<dependencies>
