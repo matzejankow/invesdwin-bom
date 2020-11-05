@@ -1099,8 +1099,24 @@
 				<artifactId>maven-shade-plugin</artifactId>
 				<version>${version.maven-shade-plugin}</version>
 			</dependency>
+
+			<dependency>
+				<groupId>org.jacoco</groupId>
+				<artifactId>org.jacoco.agent</artifactId>
+				<classifier>runtime</classifier>
+				<version>${version.jacoco-maven-plugin}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<dependencies>
+		<dependency>
+			<!-- support for eclemma in eclipse, thus only test scope -->
+			<groupId>org.jacoco</groupId>
+			<artifactId>org.jacoco.agent</artifactId>
+			<classifier>runtime</classifier>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<pluginManagement>
@@ -1471,8 +1487,7 @@
 						<!-- parallelize tests -->
 						<forkCount>2</forkCount>
 						<reuseForks>true</reuseForks>
-						<!-- <parallel>suitesAndClasses</parallel>
-						<threadCount>1</threadCount>-->
+						<!-- <parallel>suitesAndClasses</parallel> <threadCount>1</threadCount> -->
 						<!-- timeout test suite of any module if it takes longer than 30 minutes -->
 						<forkedProcessTimeoutInSeconds>1800</forkedProcessTimeoutInSeconds>
 						<!-- Assertions make jforex fail in unit tests even if they normally 
@@ -1480,6 +1495,48 @@
 							are disabled by default here. -->
 						<enableAssertions>false</enableAssertions>
 						<argLine>-Xmx2g</argLine>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.jacoco</groupId>
+					<artifactId>jacoco-maven-plugin</artifactId>
+					<version>${version.jacoco-maven-plugin}</version>
+					<executions>
+						<execution>
+							<id>default-instrument</id>
+							<goals>
+								<goal>instrument</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>default-restore-instrumented-classes</id>
+							<phase>post-integration-test</phase>
+							<goals>
+								<goal>restore-instrumented-classes</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>default-report</id>
+							<goals>
+								<goal>report</goal>
+							</goals>
+						</execution>
+						<execution>
+							<id>default-report-integration</id>
+							<goals>
+								<goal>report-integration</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>${version.maven-surefire-plugin}</version>
+					<configuration>
+						<systemPropertyVariables>
+							<jacoco-agent.destfile>${project.build.directory}/jacoco.exec</jacoco-agent.destfile>
+						</systemPropertyVariables>
 					</configuration>
 				</plugin>
 			</plugins>
@@ -1557,7 +1614,7 @@
 					<classifier>runtime</classifier>
 					<!-- not using test scope so that annotation processors work properly, 
 						requires less overrides in pom.xmls -->
-					<version>${version.jacoco-maven-plugin}</version>
+					<scope>compile</scope>
 				</dependency>
 			</dependencies>
 			<build>
@@ -1565,44 +1622,6 @@
 					<plugin>
 						<groupId>org.jacoco</groupId>
 						<artifactId>jacoco-maven-plugin</artifactId>
-						<version>${version.jacoco-maven-plugin}</version>
-						<executions>
-							<execution>
-								<id>default-instrument</id>
-								<goals>
-									<goal>instrument</goal>
-								</goals>
-							</execution>
-							<execution>
-								<id>default-restore-instrumented-classes</id>
-								<phase>post-integration-test</phase>
-								<goals>
-									<goal>restore-instrumented-classes</goal>
-								</goals>
-							</execution>
-							<execution>
-								<id>default-report</id>
-								<goals>
-									<goal>report</goal>
-								</goals>
-							</execution>
-							<execution>
-								<id>default-report-integration</id>
-								<goals>
-									<goal>report-integration</goal>
-								</goals>
-							</execution>
-						</executions>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-surefire-plugin</artifactId>
-						<version>${version.maven-surefire-plugin}</version>
-						<configuration>
-							<systemPropertyVariables>
-								<jacoco-agent.destfile>${project.build.directory}/jacoco.exec</jacoco-agent.destfile>
-							</systemPropertyVariables>
-						</configuration>
 					</plugin>
 				</plugins>
 			</build>
