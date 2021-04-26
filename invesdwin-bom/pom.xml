@@ -33,7 +33,7 @@
 		<version.joda-time>2.10.1</version.joda-time>
 		<version.commons-codec>1.14</version.commons-codec>
 		<version.commons-lang>2.6</version.commons-lang>
-		<version.commons-io>2.6</version.commons-io>
+		<version.commons-io>2.7</version.commons-io>
 		<version.curvesapi>1.06</version.curvesapi>
 		<version.t-digest>3.2</version.t-digest>
 		<version.commons-collections>3.2.2</version.commons-collections>
