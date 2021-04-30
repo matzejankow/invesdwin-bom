@@ -35,7 +35,7 @@
 		<version.commons-lang>2.6</version.commons-lang>
 		<version.commons-io>2.7</version.commons-io>
 		<version.curvesapi>1.06</version.curvesapi>
-		<version.t-digest>3.2</version.t-digest>
+		<version.t-digest>4.0-pre-release-1</version.t-digest>
 		<version.commons-collections>3.2.2</version.commons-collections>
 		<version.commons-collections4>4.4</version.commons-collections4>
 		<version.commons-pool>1.6</version.commons-pool>
@@ -441,7 +441,7 @@
 				<version>${version.curvesapi}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.tdunning</groupId>
+				<groupId>com.techascent</groupId>
 				<artifactId>t-digest</artifactId>
 				<version>${version.t-digest}</version>
 			</dependency>
