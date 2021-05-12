@@ -31,7 +31,7 @@
 		<version.slf4j>1.7.30</version.slf4j>
 		<version.minlog-slf4j>1.12</version.minlog-slf4j>
 		<version.joda-time>2.10.1</version.joda-time>
-		<version.commons-codec>1.14</version.commons-codec>
+		<version.commons-codec>1.15</version.commons-codec>
 		<version.commons-lang>2.6</version.commons-lang>
 		<version.commons-io>2.7</version.commons-io>
 		<version.curvesapi>1.06</version.curvesapi>
