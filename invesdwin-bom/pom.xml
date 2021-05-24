@@ -71,7 +71,7 @@
 		<version.javax.persistence-api>2.2</version.javax.persistence-api>
 
 		<version.netty>4.1.51.Final</version.netty>
-		<version.conscrypt>2.5.1</version.conscrypt>
+		<version.conscrypt>2.5.2</version.conscrypt>
 		<version.kotlin>1.4.30</version.kotlin>
 
 		<version.jaxb>2.3.2</version.jaxb>
