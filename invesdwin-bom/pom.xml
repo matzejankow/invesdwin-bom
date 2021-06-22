@@ -24,11 +24,11 @@
 		<version.assertj-core>3.16.1</version.assertj-core>
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
 		<version.spring>5.3.8</version.spring>
-		<version.spring-data>2.3.2.RELEASE</version.spring-data>
+		<version.spring-data>2.5.1</version.spring-data>
 		<version.aspectj>1.9.6</version.aspectj>
-		<version.javassist>3.24.1-GA</version.javassist>
+		<version.javassist>3.28.0-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
-		<version.slf4j>2.0.0-alpha1</version.slf4j>
+		<version.slf4j>1.7.31</version.slf4j>
 		<version.minlog-slf4j>2.0</version.minlog-slf4j>
 		<version.joda-time>2.10.10</version.joda-time>
 		<version.commons-codec>1.15</version.commons-codec>
