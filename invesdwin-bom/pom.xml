@@ -28,8 +28,8 @@
 		<version.aspectj>1.9.6</version.aspectj>
 		<version.javassist>3.24.1-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
-		<version.slf4j>1.7.30</version.slf4j>
-		<version.minlog-slf4j>1.12</version.minlog-slf4j>
+		<version.slf4j>2.0.0-alpha1</version.slf4j>
+		<version.minlog-slf4j>2.0</version.minlog-slf4j>
 		<version.joda-time>2.10.10</version.joda-time>
 		<version.commons-codec>1.15</version.commons-codec>
 		<version.commons-lang>2.6</version.commons-lang>
@@ -50,7 +50,7 @@
 		<version.wicket>8.6.1</version.wicket>
 		<version.wicketstuff>8.6.0</version.wicketstuff>
 		<version.wicket-bootstrap>2.0.11</version.wicket-bootstrap>
-		<version.spring-security>5.3.9.RELEASE</version.spring-security>
+		<version.spring-security>5.5.0</version.spring-security>
 		<version.javax-servlet>4.0.1</version.javax-servlet>
 		<version.jackson>2.12.3</version.jackson>
 		<version.jettison>1.4.0</version.jettison>
@@ -81,7 +81,7 @@
 		<version.mockito>3.3.0</version.mockito>
 		<version.byte-buddy>1.9.10</version.byte-buddy>
 		<version.objenesis>3.0.1</version.objenesis>
-		<version.ow2asm>9.0</version.ow2asm>
+		<version.ow2asm>9.1</version.ow2asm>
 
 		<version.zt-exec>1.11</version.zt-exec>
 		<version.zt-zip>1.13</version.zt-zip>
