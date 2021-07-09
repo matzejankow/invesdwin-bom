@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.invesdwin</groupId>
@@ -91,8 +93,9 @@
 		<version.jamm>0.3.3</version.jamm>
 		<version.groovy>2.5.14</version.groovy>
 
-		<version.jollyday>0.5.8</version.jollyday>
+		<version.jollyday>0.5.10</version.jollyday>
 		<version.threeten-extra>1.5.0</version.threeten-extra>
+		<version.strata>2.10.5</version.strata>
 
 		<version.maven>3.6.0</version.maven>
 		<version.plexus-build-api>0.0.7</version.plexus-build-api>
@@ -1042,6 +1045,11 @@
 				<version>${version.jollyday}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.opengamma.strata</groupId>
+				<artifactId>strata-basics</artifactId>
+				<version>${version.strata}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.threeten</groupId>
 				<artifactId>threeten-extra</artifactId>
 				<version>${version.threeten-extra}</version>
@@ -1232,7 +1240,8 @@
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
-							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence /> -->
+							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence 
+								/> -->
 						</rules>
 					</configuration>
 				</plugin>
