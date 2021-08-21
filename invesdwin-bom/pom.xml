@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.invesdwin</groupId>
@@ -115,8 +117,9 @@
 		<version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
 
 		<version.jetty>9.4.34.v20201102</version.jetty>
-		
+
 		<version.chronicle-queue>5.21ea87</version.chronicle-queue>
+		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
 
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
@@ -1132,11 +1135,16 @@
 				<artifactId>jetty-alpn-openjdk8-server</artifactId>
 				<version>${version.jetty}</version>
 			</dependency>
-			
+
 			<dependency>
 				<groupId>net.openhft</groupId>
 				<artifactId>chronicle-queue</artifactId>
 				<version>${version.chronicle-queue}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains</groupId>
+				<artifactId>annotations</artifactId>
+				<version>${version.jetbrains-annotations}</version>
 			</dependency>
 
 			<dependency>
@@ -1268,7 +1276,8 @@
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps />
-							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence /> -->
+							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence 
+								/> -->
 						</rules>
 					</configuration>
 				</plugin>
