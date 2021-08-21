@@ -115,6 +115,8 @@
 		<version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
 
 		<version.jetty>9.4.34.v20201102</version.jetty>
+		
+		<version.chronicle-queue>5.21ea87</version.chronicle-queue>
 
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
@@ -1129,6 +1131,12 @@
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-alpn-openjdk8-server</artifactId>
 				<version>${version.jetty}</version>
+			</dependency>
+			
+			<dependency>
+				<groupId>net.openhft</groupId>
+				<artifactId>chronicle-queue</artifactId>
+				<version>${version.chronicle-queue}</version>
 			</dependency>
 
 			<dependency>
