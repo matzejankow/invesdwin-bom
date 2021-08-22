@@ -120,6 +120,7 @@
 
 		<version.chronicle-queue>5.21ea87</version.chronicle-queue>
 		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
+		<version.agrona>1.12.0</version.agrona>
 
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
@@ -1145,6 +1146,11 @@
 				<groupId>org.jetbrains</groupId>
 				<artifactId>annotations</artifactId>
 				<version>${version.jetbrains-annotations}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.agrona</groupId>
+				<artifactId>agrona</artifactId>
+				<version>${version.agrona}</version>
 			</dependency>
 
 			<dependency>
