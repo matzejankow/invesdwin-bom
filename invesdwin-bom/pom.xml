@@ -118,7 +118,8 @@
 
 		<version.jetty>9.4.34.v20201102</version.jetty>
 
-		<version.chronicle-queue>5.21ea87</version.chronicle-queue>
+		<version.chronicle-queue>5.21.89</version.chronicle-queue>
+		<version.chronicle-bytes>2.21.89</version.chronicle-bytes>
 		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
 		<version.agrona>1.12.0</version.agrona>
 
@@ -1141,6 +1142,11 @@
 				<groupId>net.openhft</groupId>
 				<artifactId>chronicle-queue</artifactId>
 				<version>${version.chronicle-queue}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.openhft</groupId>
+				<artifactId>chronicle-bytes</artifactId>
+				<version>${version.chronicle-bytes}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jetbrains</groupId>
