@@ -1404,6 +1404,7 @@
 							<param>org\.roaringbitmap:RoaringBitmap.*</param>
 							<param>com\.techascent:t-digest.*</param>
 							<!-- bsd license -->
+							<param>com\.esotericsoftware:kryonet.*</param>
 							<!-- MIT license -->
 							<param>org\.slf4j.*</param>
 							<param>org\.bouncycastle.*</param>
@@ -1452,6 +1453,7 @@
 							<param>org\.swingexplorer:swingexplorer-core.*</param>
 							<param>com\.googlecode\.soundlibs:mp3spi.*</param>
 							<param>com\.googlecode\.soundlibs:vorbisspi.*</param>
+							<param>org\.zeromq:jzmq-api.*</param>
 							<!-- zlib -->
 							<param>com\.github\.mrj0:jep.*</param>
 							<!-- CPL -->
