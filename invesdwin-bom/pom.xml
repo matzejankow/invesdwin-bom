@@ -88,6 +88,7 @@
 		<version.zt-exec>1.11</version.zt-exec>
 		<version.zt-zip>1.13</version.zt-zip>
 		<version.lz4>1.8.0</version.lz4>
+		<version.kafka>2.8.0</version.kafka>
 
 		<version.fastutil>8.2.2</version.fastutil>
 		<version.dsiutils>2.5.4</version.dsiutils>
@@ -895,6 +896,11 @@
 				<groupId>org.lz4</groupId>
 				<artifactId>lz4-java</artifactId>
 				<version>${version.lz4}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka-clients</artifactId>
+				<version>${version.kafka}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.glassfish.jaxb</groupId>
