@@ -118,6 +118,7 @@
 		<version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
 
 		<version.jetty>9.4.34.v20201102</version.jetty>
+		<version.netty>4.1.67.Final</version.netty>
 
 		<version.chronicle-queue>5.21.89</version.chronicle-queue>
 		<version.chronicle-bytes>2.21.89</version.chronicle-bytes>
@@ -1144,6 +1145,11 @@
 				<version>${version.jetty}</version>
 			</dependency>
 
+			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-common</artifactId>
+				<version>${version.netty}</version>
+			</dependency>
 			<dependency>
 				<groupId>net.openhft</groupId>
 				<artifactId>chronicle-queue</artifactId>
