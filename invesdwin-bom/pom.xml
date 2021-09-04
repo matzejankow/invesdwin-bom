@@ -72,7 +72,6 @@
 		<version.jcache>1.1.1</version.jcache>
 		<version.javax.persistence-api>2.2</version.javax.persistence-api>
 
-		<version.netty>4.1.51.Final</version.netty>
 		<version.conscrypt>2.5.2</version.conscrypt>
 		<version.kotlin>1.5.10</version.kotlin>
 
@@ -119,6 +118,7 @@
 
 		<version.jetty>9.4.34.v20201102</version.jetty>
 		<version.netty>4.1.67.Final</version.netty>
+		<version.netty-tcnative>2.0.41.Final</version.netty-tcnative>
 
 		<version.chronicle-queue>5.21.89</version.chronicle-queue>
 		<version.chronicle-bytes>2.21.89</version.chronicle-bytes>
@@ -878,6 +878,21 @@
 				<version>${version.netty}</version>
 			</dependency>
 			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-transport-native-epoll</artifactId>
+				<version>${version.netty}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-transport-native-kqueue</artifactId>
+				<version>${version.netty}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-tcnative-boringssl-static</artifactId>
+				<version>${version.netty-tcnative}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.conscrypt</groupId>
 				<artifactId>conscrypt-openjdk-uber</artifactId>
 				<version>${version.conscrypt}</version>
@@ -1146,11 +1161,6 @@
 			</dependency>
 
 			<dependency>
-				<groupId>io.netty</groupId>
-				<artifactId>netty-common</artifactId>
-				<version>${version.netty}</version>
-			</dependency>
-			<dependency>
 				<groupId>net.openhft</groupId>
 				<artifactId>chronicle-queue</artifactId>
 				<version>${version.chronicle-queue}</version>
@@ -1415,6 +1425,7 @@
 							<param>org\.conscrypt:conscrypt.*</param>
 							<param>org\.roaringbitmap:RoaringBitmap.*</param>
 							<param>com\.techascent:t-digest.*</param>
+							<param>io\.netty:netty-tcnative-boringssl-static.*</param>
 							<!-- bsd license -->
 							<param>com\.esotericsoftware:kryonet.*</param>
 							<!-- MIT license -->
