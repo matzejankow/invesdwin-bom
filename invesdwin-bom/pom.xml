@@ -63,7 +63,7 @@
 
 		<version.hibernate-validator>6.1.5.Final</version.hibernate-validator>
 		<version.javax.el>3.0.0</version.javax.el>
-		<version.validation-api>2.0.1.Final</version.validation-api>
+		<version.jakarta.validation-api>2.0.2</version.jakarta.validation-api>
 		<version.querydsl>4.3.1</version.querydsl>
 		<version.cglib>3.2.12</version.cglib>
 		<version.ecj>3.16.0</version.ecj>
@@ -775,9 +775,9 @@
 				<version>${version.javax.el}</version>
 			</dependency>
 			<dependency>
-				<groupId>javax.validation</groupId>
-				<artifactId>validation-api</artifactId>
-				<version>${version.validation-api}</version>
+				<groupId>jakarta.validation</groupId>
+				<artifactId>jakarta.validation-api</artifactId>
+				<version>${version.jakarta.validation-api}</version>
 			</dependency>
 			<dependency>
 				<groupId>joda-time</groupId>
@@ -1285,6 +1285,8 @@
 									<exclude>org.junit.platform:junit-platform-runner</exclude>
 									<exclude>org.apache.geronimo.specs:geronimo-jms_1.1_spec</exclude>
 									<exclude>com.sun.jna:jna</exclude>
+									<!-- use jakarta.validation:jakarta.validation-api instead -->
+									<exclude>javax.validation:validation-api</exclude>
 									<!-- use caffeine instead -->
 									<exclude>org.ehcache:ehcache</exclude>
 									<exclude>net.sf.ehcache:ehcache-core</exclude>
@@ -1586,24 +1588,6 @@
 					<version>${version.maven-shade-plugin}</version>
 				</plugin>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>${version.maven-surefire-plugin}</version>
-					<configuration>
-						<!-- parallelize tests -->
-						<forkCount>2</forkCount>
-						<reuseForks>true</reuseForks>
-						<!-- <parallel>suitesAndClasses</parallel> <threadCount>1</threadCount> -->
-						<!-- timeout test suite of any module if it takes longer than 30 minutes -->
-						<forkedProcessTimeoutInSeconds>1800</forkedProcessTimeoutInSeconds>
-						<!-- Assertions make jforex fail in unit tests even if they normally 
-							should not fail. To be safe about this regarding any framework, assertions 
-							are disabled by default here. -->
-						<enableAssertions>false</enableAssertions>
-						<argLine>-Xmx2g</argLine>
-					</configuration>
-				</plugin>
-				<plugin>
 					<groupId>org.jacoco</groupId>
 					<artifactId>jacoco-maven-plugin</artifactId>
 					<version>${version.jacoco-maven-plugin}</version>
@@ -1643,6 +1627,17 @@
 						<systemPropertyVariables>
 							<jacoco-agent.destfile>${project.build.directory}/jacoco.exec</jacoco-agent.destfile>
 						</systemPropertyVariables>
+						<!-- parallelize tests -->
+						<forkCount>2</forkCount>
+						<reuseForks>true</reuseForks>
+						<!-- <parallel>suitesAndClasses</parallel> <threadCount>1</threadCount> -->
+						<!-- timeout test suite of any module if it takes longer than 30 minutes -->
+						<forkedProcessTimeoutInSeconds>1800</forkedProcessTimeoutInSeconds>
+						<!-- Assertions make jforex fail in unit tests even if they normally 
+							should not fail. To be safe about this regarding any framework, assertions 
+							are disabled by default here. -->
+						<enableAssertions>false</enableAssertions>
+						<argLine>-Xmx2g</argLine>
 					</configuration>
 				</plugin>
 			</plugins>
