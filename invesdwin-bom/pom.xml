@@ -121,6 +121,7 @@
 
 		<version.jetty>9.4.43.v20210629</version.jetty>
 		<version.netty>4.1.67.Final</version.netty>
+		<version.netty-io_uring>0.0.5.Final</version.netty-io_uring>
 		<version.netty-tcnative>2.0.41.Final</version.netty-tcnative>
 
 		<version.chronicle-queue>5.21.89</version.chronicle-queue>
@@ -943,6 +944,17 @@
 				<artifactId>netty-tcnative-boringssl-static</artifactId>
 				<classifier>linux-x86_64</classifier>
 				<version>${version.netty-tcnative}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.netty.incubator</groupId>
+				<artifactId>netty-incubator-transport-native-io_uring</artifactId>
+				<version>${version.netty-io_uring}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.netty.incubator</groupId>
+				<artifactId>netty-incubator-transport-native-io_uring</artifactId>
+				<version>${version.netty-io_uring}</version>
+				<classifier>linux-x86_64</classifier>
 			</dependency>
 			<dependency>
 				<groupId>org.conscrypt</groupId>
