@@ -940,12 +940,6 @@
 				<version>${version.netty-tcnative}</version>
 			</dependency>
 			<dependency>
-				<groupId>io.netty</groupId>
-				<artifactId>netty-tcnative-boringssl-static</artifactId>
-				<classifier>linux-x86_64</classifier>
-				<version>${version.netty-tcnative}</version>
-			</dependency>
-			<dependency>
 				<groupId>io.netty.incubator</groupId>
 				<artifactId>netty-incubator-transport-native-io_uring</artifactId>
 				<version>${version.netty-io_uring}</version>
