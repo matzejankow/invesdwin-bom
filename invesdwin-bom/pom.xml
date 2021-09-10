@@ -120,7 +120,7 @@
 		<version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
 
 		<version.jetty>9.4.43.v20210629</version.jetty>
-		<version.netty>4.1.67.Final</version.netty>
+		<version.netty>4.1.68.Final</version.netty>
 		<version.netty-io_uring>0.0.5.Final</version.netty-io_uring>
 		<version.netty-tcnative>2.0.41.Final</version.netty-tcnative>
 
