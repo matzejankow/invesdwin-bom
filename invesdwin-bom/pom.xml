@@ -128,6 +128,7 @@
 		<version.chronicle-bytes>2.22ea1</version.chronicle-bytes>
 		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
 		<version.agrona>1.12.0</version.agrona>
+		<version.burningwave-core>9.5.1</version.burningwave-core>
 
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
@@ -1255,6 +1256,12 @@
 				<artifactId>org.jacoco.agent</artifactId>
 				<classifier>runtime</classifier>
 				<version>${version.jacoco-maven-plugin}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.burningwave</groupId>
+				<artifactId>core</artifactId>
+				<version>${version.burningwave-core}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
