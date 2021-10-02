@@ -130,6 +130,7 @@
 		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
 		<version.agrona>1.12.0</version.agrona>
 		<version.burningwave-core>10.0.0</version.burningwave-core>
+		<version.jna>5.9.0</version.jna>
 
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
@@ -1268,6 +1269,11 @@
 				<groupId>org.burningwave</groupId>
 				<artifactId>core</artifactId>
 				<version>${version.burningwave-core}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.java.dev.jna</groupId>
+				<artifactId>jna</artifactId>
+				<version>${version.jna}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
