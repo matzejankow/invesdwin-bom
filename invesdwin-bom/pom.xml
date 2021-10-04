@@ -1530,7 +1530,7 @@
 							<param>com\.github\.virtuald:curvesapi.*</param>
 							<param>com\.jgoodies:jgoodies-.*</param>
 							<param>com\.miglayout:miglayout.*</param>
-							<param>io\.sisu:nng-java</param>
+							<param>io\.sisu:nng-java.*</param>
 							<!-- psfl (bsd-like) license -->
 							<param>org\.scijava:jython-shaded.*</param>
 							<!-- epl license -->
