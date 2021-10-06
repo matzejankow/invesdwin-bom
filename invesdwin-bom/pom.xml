@@ -1726,8 +1726,8 @@
 						<useCommonsLang3>true</useCommonsLang3>
 						<useDoubleNumbers>true</useDoubleNumbers>
 						<useLongIntegers>true</useLongIntegers>
-						<dateType>de.invesdwin.util.time.fdate.FDate</dateType>
-						<dateTimeType>de.invesdwin.util.time.fdate.FDate</dateTimeType>
+						<dateType>de.invesdwin.util.time.FDate</dateType>
+						<dateTimeType>de.invesdwin.util.time.FDate</dateTimeType>
 						<includeJsr303Annotations>true</includeJsr303Annotations>
 						<outputDirectory>${project.build.directory}/generated-sources/jsonschema</outputDirectory>
 					</configuration>
