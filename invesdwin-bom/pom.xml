@@ -132,6 +132,8 @@
 		<version.burningwave-core>10.0.0</version.burningwave-core>
 		<version.jna>5.9.0</version.jna>
 
+		<version.jsonschema2pojo>1.1.1</version.jsonschema2pojo>
+
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
 
@@ -1275,6 +1277,21 @@
 				<artifactId>jna</artifactId>
 				<version>${version.jna}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.jsonschema2pojo</groupId>
+				<artifactId>jsonschema2pojo-core</artifactId>
+				<version>${version.jsonschema2pojo}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>commons-logging</groupId>
+						<artifactId>commons-logging</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>javax.validation</groupId>
+						<artifactId>validation-api</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -1698,6 +1715,29 @@
 						<enableAssertions>false</enableAssertions>
 						<argLine>-Xmx2g</argLine>
 					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.jsonschema2pojo</groupId>
+					<artifactId>jsonschema2pojo-maven-plugin</artifactId>
+					<version>${version.jsonschema2pojo}</version>
+					<configuration>
+						<sourceDirectory>${project.basedir}/src/main/java/META-INF/jsonschema</sourceDirectory>
+						<targetPackage>de.invesdwin.jsonschema</targetPackage>
+						<useCommonsLang3>true</useCommonsLang3>
+						<useDoubleNumbers>true</useDoubleNumbers>
+						<useLongIntegers>true</useLongIntegers>
+						<dateType>de.invesdwin.util.time.fdate.FDate</dateType>
+						<dateTimeType>de.invesdwin.util.time.fdate.FDate</dateTimeType>
+						<includeJsr303Annotations>true</includeJsr303Annotations>
+						<outputDirectory>${project.build.directory}/generated-sources/jsonschema</outputDirectory>
+					</configuration>
+					<executions>
+						<execution>
+							<goals>
+								<goal>generate</goal>
+							</goals>
+						</execution>
+					</executions>
 				</plugin>
 			</plugins>
 		</pluginManagement>
