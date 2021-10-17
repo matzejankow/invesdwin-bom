@@ -24,8 +24,8 @@
 		<version.assertj-guava>3.4.0</version.assertj-guava>
 		<version.assertj-core>3.16.1</version.assertj-core>
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
-		<version.spring>5.3.9</version.spring>
-		<version.spring-data>2.5.1</version.spring-data>
+		<version.spring>5.3.11</version.spring>
+		<version.spring-data>2.5.5</version.spring-data>
 		<version.aspectj>1.9.8.M1</version.aspectj>
 		<version.javassist>3.28.0-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
@@ -85,7 +85,7 @@
 		<version.junit>4.13.1</version.junit>
 		<version.mockito>3.3.0</version.mockito>
 		<version.byte-buddy>1.9.10</version.byte-buddy>
-		<version.objenesis>3.0.1</version.objenesis>
+		<version.objenesis>3.2</version.objenesis>
 		<version.ow2asm>9.1</version.ow2asm>
 
 		<version.zt-exec>1.11</version.zt-exec>
