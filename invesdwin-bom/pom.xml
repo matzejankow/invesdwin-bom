@@ -126,6 +126,7 @@
 		<version.netty-io_uring>0.0.5.Final</version.netty-io_uring>
 		<version.netty-tcnative>2.0.41.Final</version.netty-tcnative>
 
+		<version.chronicle-algorithms>2.22ea1</version.chronicle-algorithms>
 		<version.chronicle-bytes>2.22ea1</version.chronicle-bytes>
 		<version.chronicle-core>2.22ea6</version.chronicle-core>
 		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
@@ -1320,6 +1321,17 @@
 			</dependency>
 			<dependency>
 				<groupId>net.openhft</groupId>
+				<artifactId>chronicle-algorithms</artifactId>
+				<version>${version.chronicle-algorithms}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>backport-util-concurrent</groupId>
+						<artifactId>backport-util-concurrent</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>net.openhft</groupId>
 				<artifactId>chronicle-core</artifactId>
 				<version>${version.chronicle-core}</version>
 			</dependency>
@@ -1414,6 +1426,7 @@
 									<exclude>org.hibernate.javax.persistence:hibernate-jpa-2.0-api</exclude>
 									<exclude>org.hibernate.javax.persistence:hibernate-jpa-2.1-api</exclude>
 									<exclude>org.hibernate.javax.persistence:hibernate-jpa-2.2-api</exclude>
+									<exclude>backport-util-concurrent:backport-util-concurrent</exclude>
 									<exclude>javassist:javassist</exclude>
 									<exclude>org.junit.jupiter:junit-jupiter-engine</exclude>
 									<exclude>org.junit.jupiter:junit-jupiter-api</exclude>
