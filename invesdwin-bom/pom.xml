@@ -22,10 +22,10 @@
 		<version.gson>2.8.6</version.gson>
 		<version.protobuf>3.11.4</version.protobuf>
 		<version.assertj-guava>3.4.0</version.assertj-guava>
-		<version.assertj-core>3.16.1</version.assertj-core>
+		<version.assertj-core>3.21.0</version.assertj-core>
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
-		<version.spring>5.3.11</version.spring>
-		<version.spring-data>2.5.5</version.spring-data>
+		<version.spring>5.3.13</version.spring>
+		<version.spring-data>2.6.0</version.spring-data>
 		<version.aspectj>1.9.8.M1</version.aspectj>
 		<version.javassist>3.28.0-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
@@ -34,6 +34,7 @@
 		<version.janino>2.7.8</version.janino>
 		<version.joda-time>2.10.10</version.joda-time>
 		<version.commons-codec>1.15</version.commons-codec>
+		<version.commons-cli>1.5.0</version.commons-cli>
 		<version.commons-lang>2.6</version.commons-lang>
 		<version.commons-io>2.11.0</version.commons-io>
 		<version.curvesapi>1.06</version.curvesapi>
@@ -41,19 +42,19 @@
 		<version.commons-collections>3.2.2</version.commons-collections>
 		<version.commons-collections4>4.4</version.commons-collections4>
 		<version.commons-pool>1.6</version.commons-pool>
-		<version.commons-pool2>2.8.1</version.commons-pool2>
+		<version.commons-pool2>2.11.1</version.commons-pool2>
 		<version.commons-math3>3.6.1</version.commons-math3>
 		<version.commons-lang3>3.12.0</version.commons-lang3>
 		<version.commons-beanutils>1.9.4</version.commons-beanutils>
 		<version.commons-fileupload>1.4</version.commons-fileupload>
-		<version.commons-text>1.8</version.commons-text>
+		<version.commons-text>1.9</version.commons-text>
 		<version.httpclient>4.5.13</version.httpclient>
 		<version.httpclient5>5.0.3</version.httpclient5>
 
-		<version.wicket>9.5.0</version.wicket>
-		<version.wicketstuff>9.5.0</version.wicketstuff>
+		<version.wicket>9.7.0</version.wicket>
+		<version.wicketstuff>9.7.0</version.wicketstuff>
 		<version.wicket-bootstrap>4.0.4</version.wicket-bootstrap>
-		<version.spring-security>5.5.2</version.spring-security>
+		<version.spring-security>5.6.0</version.spring-security>
 		<version.javax-servlet>4.0.1</version.javax-servlet>
 		<version.jackson>2.13.0</version.jackson>
 		<version.jettison>1.4.0</version.jettison>
@@ -64,13 +65,17 @@
 		<version.jdk-serializable-functional>1.9.0</version.jdk-serializable-functional>
 		<version.openjson>1.0.12</version.openjson>
 		<version.woodstox>6.2.6</version.woodstox>
+		<version.xstream>1.4.18</version.xstream>
+		<version.jclipboardhelper>0.1.2</version.jclipboardhelper>
+		<version.istack>3.0.12</version.istack>
+		<version.xerces>2.12.1</version.xerces>
 
-		<version.hibernate-validator>6.1.5.Final</version.hibernate-validator>
-		<version.javax.el>3.0.0</version.javax.el>
+		<version.hibernate-validator>6.2.0.Final</version.hibernate-validator>
+		<version.jakarta.el>3.0.3</version.jakarta.el>
 		<version.jakarta.validation-api>2.0.2</version.jakarta.validation-api>
-		<version.querydsl>4.3.1</version.querydsl>
-		<version.cglib>3.2.12</version.cglib>
-		<version.ecj>3.16.0</version.ecj>
+		<version.querydsl>5.0.0</version.querydsl>
+		<version.cglib>3.3.0</version.cglib>
+		<version.ecj>3.28.0</version.ecj>
 		<version.classmate>1.5.1</version.classmate>
 		<version.caffeine>2.9.2</version.caffeine>
 		<version.jcache>1.1.1</version.jcache>
@@ -84,8 +89,8 @@
 		<version.activation>1.2.2</version.activation>
 
 		<version.junit>4.13.1</version.junit>
-		<version.mockito>3.3.0</version.mockito>
-		<version.byte-buddy>1.9.10</version.byte-buddy>
+		<version.mockito>3.12.4</version.mockito>
+		<version.byte-buddy>1.12.3</version.byte-buddy>
 		<version.objenesis>3.2</version.objenesis>
 		<version.ow2asm>9.2</version.ow2asm>
 
@@ -94,8 +99,8 @@
 		<version.lz4>1.8.0</version.lz4>
 		<version.kafka>2.8.0</version.kafka>
 
-		<version.fastutil>8.2.2</version.fastutil>
-		<version.dsiutils>2.5.4</version.dsiutils>
+		<version.fastutil>8.5.6</version.fastutil>
+		<version.dsiutils>2.6.17</version.dsiutils>
 		<version.koloboke>1.0.0</version.koloboke>
 		<version.jamm>0.3.3</version.jamm>
 		<version.groovy>2.5.14</version.groovy>
@@ -106,13 +111,15 @@
 
 		<version.maven>3.6.0</version.maven>
 		<version.plexus-build-api>0.0.7</version.plexus-build-api>
-		<version.plexus-utils>3.2.0</version.plexus-utils>
+		<version.plexus-utils>3.4.1</version.plexus-utils>
 		<version.plexus-classworlds>2.6.0</version.plexus-classworlds>
+		<version.plexus-container-default>2.1.0</version.plexus-container-default>
 		<version.maven-plugin-plugin>3.6.0</version.maven-plugin-plugin>
 		<version.maven-compiler-plugin>3.8.1</version.maven-compiler-plugin>
 		<version.plexus-compiler-javac-errorprone>2.8.5</version.plexus-compiler-javac-errorprone>
 		<version.checker-qual>3.18.0</version.checker-qual>
-		<version.maven-enforcer-plugin>3.0.0-atlassian-m01</version.maven-enforcer-plugin>
+		<!-- 3.0.0 causes issues with provided dependencies: https://issues.apache.org/jira/browse/MENFORCER-402 -->
+		<version.maven-enforcer-plugin>3.0.0</version.maven-enforcer-plugin>
 		<version.lifecycle-mapping>1.0.0</version.lifecycle-mapping>
 		<version.license-check-maven-plugin>0.5.6-inv</version.license-check-maven-plugin>
 		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
@@ -132,7 +139,9 @@
 		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
 		<version.agrona>1.12.0</version.agrona>
 		<version.burningwave-core>10.0.0</version.burningwave-core>
-		<version.jna>5.9.0</version.jna>
+		<version.jna>5.10.0</version.jna>
+
+		<version.xml-apis>1.4.01</version.xml-apis>
 
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
@@ -402,6 +411,11 @@
 				<groupId>commons-codec</groupId>
 				<artifactId>commons-codec</artifactId>
 				<version>${version.commons-codec}</version>
+			</dependency>
+			<dependency>
+				<groupId>commons-cli</groupId>
+				<artifactId>commons-cli</artifactId>
+				<version>${version.commons-cli}</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-collections</groupId>
@@ -769,16 +783,46 @@
 				<groupId>org.wicketstuff</groupId>
 				<artifactId>wicketstuff-htmlcompressor</artifactId>
 				<version>${version.wicketstuff}</version>
+				<exclusions>
+					<exclusion>
+						<!-- upperbound deps -->
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.velocity</groupId>
+						<artifactId>velocity-tools</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.wicketstuff</groupId>
 				<artifactId>wicketstuff-servlet3-auth</artifactId>
 				<version>${version.wicketstuff}</version>
+				<exclusions>
+					<exclusion>
+						<!-- upperbound deps -->
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-api</artifactId>
+					</exclusion>
+					<exclusion>
+						<!-- upperbound deps -->
+						<groupId>org.hamcrest</groupId>
+						<artifactId>hamcrest</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.wicketstuff</groupId>
 				<artifactId>wicketstuff-html5</artifactId>
 				<version>${version.wicketstuff}</version>
+				<exclusions>
+					<exclusion>
+						<!-- upperbound deps -->
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-api</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.wicketstuff</groupId>
@@ -792,6 +836,11 @@
 					<exclusion>
 						<artifactId>log4j</artifactId>
 						<groupId>log4j</groupId>
+					</exclusion>
+					<exclusion>
+						<!-- upperbound deps -->
+						<groupId>org.slf4j</groupId>
+						<artifactId>slf4j-api</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
@@ -864,6 +913,26 @@
 				<version>${version.woodstox}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.thoughtworks.xstream</groupId>
+				<artifactId>xstream</artifactId>
+				<version>${version.xstream}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.fracpete</groupId>
+				<artifactId>jclipboardhelper</artifactId>
+				<version>${version.jclipboardhelper}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.istack</groupId>
+				<artifactId>istack-commons-runtime</artifactId>
+				<version>${version.istack}</version>
+			</dependency>
+			<dependency>
+				<groupId>xerces</groupId>
+				<artifactId>xercesImpl</artifactId>
+				<version>${version.xerces}</version>
+			</dependency>
+			<dependency>
 				<groupId>args4j</groupId>
 				<artifactId>args4j</artifactId>
 				<version>${version.args4j}</version>
@@ -881,8 +950,8 @@
 			</dependency>
 			<dependency>
 				<groupId>org.glassfish</groupId>
-				<artifactId>javax.el</artifactId>
-				<version>${version.javax.el}</version>
+				<artifactId>jakarta.el</artifactId>
+				<version>${version.jakarta.el}</version>
 			</dependency>
 			<dependency>
 				<groupId>jakarta.validation</groupId>
@@ -922,6 +991,10 @@
 					<exclusion>
 						<groupId>org.eclipse.jdt.core.compiler</groupId>
 						<artifactId>ecj</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.mongodb.morphia</groupId>
+						<artifactId>morphia</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
@@ -1080,6 +1153,17 @@
 				</exclusions>
 			</dependency>
 			<dependency>
+				<groupId>org.glassfish.jaxb</groupId>
+				<artifactId>txw2</artifactId>
+				<version>${version.glassfish-jaxb}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>jakarta.activation</groupId>
+						<artifactId>jakarta.activation-api</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
 				<groupId>jakarta.xml.bind</groupId>
 				<artifactId>jakarta.xml.bind-api</artifactId>
 				<version>${version.jakarta-jaxb}</version>
@@ -1188,6 +1272,11 @@
 				<groupId>org.codehaus.plexus</groupId>
 				<artifactId>plexus-utils</artifactId>
 				<version>${version.plexus-utils}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.plexus</groupId>
+				<artifactId>plexus-container-default</artifactId>
+				<version>${version.plexus-container-default}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.codehaus.plexus</groupId>
@@ -1364,6 +1453,16 @@
 				<artifactId>jna</artifactId>
 				<version>${version.jna}</version>
 			</dependency>
+			<dependency>
+				<groupId>net.java.dev.jna</groupId>
+				<artifactId>jna-platform</artifactId>
+				<version>${version.jna}</version>
+			</dependency>
+			<dependency>
+				<groupId>xml-apis</groupId>
+				<artifactId>xml-apis</artifactId>
+				<version>${version.xml-apis}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -1415,11 +1514,13 @@
 									<exclude>commons-logging:commons-logging-api</exclude>
 									<exclude>javax.persistence:persistence-api</exclude>
 									<exclude>log4j:log4j</exclude>
+									<exclude>org.apache.logging.log4j:log4j-api</exclude>
 									<exclude>org.slf4j:slf4j-log4j12</exclude>
 									<exclude>com.esotericsoftware:minlog</exclude>
 									<exclude>javax.servlet.jsp:jsp-api</exclude>
 									<exclude>javax.enterprise:cdi-api</exclude>
 									<exclude>net.jcip:jcip-annotations</exclude>
+									<exclude>com.google.code.findbugs:annotations</exclude>
 									<exclude>org.glassfish:javax.servlet</exclude>
 									<exclude>org.hibernate:hibernate-c3p0</exclude>
 									<exclude>org.hibernate:hibernate-hikaricp</exclude>
@@ -1433,6 +1534,7 @@
 									<exclude>org.junit.platform:junit-platform-runner</exclude>
 									<exclude>org.apache.geronimo.specs:geronimo-jms_1.1_spec</exclude>
 									<exclude>com.sun.jna:jna</exclude>
+									<exclude>org.osgi:org.osgi.core</exclude>
 									<!-- use jakarta.validation:jakarta.validation-api instead -->
 									<exclude>javax.validation:validation-api</exclude>
 									<!-- use caffeine instead -->
@@ -1464,8 +1566,9 @@
 									<exclude>org.jfree:jcommon</exclude>
 									<!-- use jaxb-runtime instead -->
 									<exclude>javax.xml.bind:jaxb-api</exclude>
-									<!-- use org.glassfish:javax.el instead -->
+									<!-- use org.glassfish:jakarta.el instead -->
 									<exclude>javax.el:javax.el-api</exclude>
+									<exclude>org.glassfish:javax.el-api</exclude>
 									<!-- use org.eclipse.jdt:ecj instead -->
 									<exclude>org.eclipse.jdt.core.compiler:ecj</exclude>
 									<!-- use org.datanucleus:javax.jdo instead -->
@@ -1483,7 +1586,18 @@
 									<exclude>org.hibernate:hibernate-validator</exclude>
 								</excludes>
 							</bannedDependencies>
-							<requireUpperBoundDeps />
+							<requireUpperBoundDeps>
+								<excludes>
+									<!-- banned -->
+									<exclude>javax.el:javax.el-api</exclude>
+									<exclude>javax.servlet:servlet-api</exclude>
+									<exclude>javax.enterprise:cdi-api</exclude>
+									<exclude>org.osgi:org.osgi.core</exclude>
+									<exclude>log4j:log4j</exclude>
+									<exclude>commons-logging:commons-logging</exclude>
+									<exclude>com.google.code.findbugs:annotations</exclude>
+								</excludes>
+							</requireUpperBoundDeps>
 							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence 
 								/> -->
 						</rules>
@@ -1628,6 +1742,7 @@
 							<param>com\.h2database.*</param>
 							<param>org\.eclipse\.swt.*</param>
 							<param>org\.aspectj:aspectjweaver.*</param>
+							<param>org\.glassfish:jakarta\.el.*</param>
 							<!-- LGPL license -->
 							<param>org\.jboss\.logging:jboss-logging-generator.*</param>
 							<param>org\.hibernate.*</param>
@@ -1705,7 +1820,9 @@
 							<param>org\.renjin\.cran:DEoptim.*</param>
 							<param>org\.scilab\.modules:javasci.*</param>
 							<param>org\.scilab\.modules:types.*</param>
-							<param>nz\.ac\.waikato\.cms\.weka:weka-dev.*</param>
+							<param>nz\.ac\.waikato\.cms\.weka:.*</param>
+							<param>nz\.ac\.waikato\.cms\.moa:.*</param>
+							<param>net\.sf\.meka:meka.*</param>
 							<!-- WARNING: no license specified, though since it interacts with 
 								R over a socket, we expect it to be GPL -->
 							<param>com\.github\.yannrichet:Rsession.*</param>
