@@ -33,7 +33,7 @@
 		<version.slf4j>1.7.32</version.slf4j>
 		<version.minlog-slf4j>2.0</version.minlog-slf4j>
 		<version.janino>2.7.8</version.janino>
-		<version.joda-time>2.10.10</version.joda-time>
+		<version.joda-time>2.10.13</version.joda-time>
 		<version.commons-codec>1.15</version.commons-codec>
 		<version.commons-cli>1.5.0</version.commons-cli>
 		<version.commons-lang>2.6</version.commons-lang>
@@ -89,7 +89,8 @@
 		<version.jakarta-jaxb>2.3.3</version.jakarta-jaxb>
 		<version.activation>1.2.2</version.activation>
 
-		<version.junit>4.13.1</version.junit>
+		<version.junit>5.8.2</version.junit>
+		<version.junit-platform>1.8.2</version.junit-platform>
 		<version.mockito>3.12.4</version.mockito>
 		<version.byte-buddy>1.12.3</version.byte-buddy>
 		<version.objenesis>3.2</version.objenesis>
@@ -646,9 +647,44 @@
 			</dependency>
 
 			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-engine</artifactId>
 				<version>${version.junit}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-api</artifactId>
+				<version>${version.junit}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.platform</groupId>
+				<artifactId>junit-platform-suite-engine</artifactId>
+				<version>${version.junit-platform}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.platform</groupId>
+				<artifactId>junit-platform-suite-api</artifactId>
+				<version>${version.junit-platform}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.platform</groupId>
+				<artifactId>junit-platform-suite-commons</artifactId>
+				<version>${version.junit-platform}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.platform</groupId>
+				<artifactId>junit-platform-commons</artifactId>
+				<version>${version.junit-platform}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.platform</groupId>
+				<artifactId>junit-platform-engine</artifactId>
+				<version>${version.junit-platform}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.junit.platform</groupId>
+				<artifactId>junit-platform-launcher</artifactId>
+				<version>${version.junit-platform}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.mockito</groupId>
@@ -1530,9 +1566,6 @@
 									<exclude>org.hibernate.javax.persistence:hibernate-jpa-2.2-api</exclude>
 									<exclude>backport-util-concurrent:backport-util-concurrent</exclude>
 									<exclude>javassist:javassist</exclude>
-									<exclude>org.junit.jupiter:junit-jupiter-engine</exclude>
-									<exclude>org.junit.jupiter:junit-jupiter-api</exclude>
-									<exclude>org.junit.platform:junit-platform-runner</exclude>
 									<exclude>org.apache.geronimo.specs:geronimo-jms_1.1_spec</exclude>
 									<exclude>com.sun.jna:jna</exclude>
 									<exclude>org.osgi:org.osgi.core</exclude>
@@ -1585,6 +1618,8 @@
 									<!-- use org.hibernate.validator:... instead -->
 									<exclude>org.hibernate:hibernate-validator-annotation-processor</exclude>
 									<exclude>org.hibernate:hibernate-validator</exclude>
+									<!-- use org.junit.jupiter:junit-jupiter-engine instead -->
+									<exclude>junit:junit</exclude>
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps>
