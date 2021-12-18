@@ -27,7 +27,7 @@
 		<version.spring>5.3.13</version.spring>
 		<!-- 2.5.6, 2.5.6 and 2.6.0 cause an error in datanucleus: https://github.com/spring-projects/spring-data-jpa/issues/2357 -->
 		<version.spring-data>2.6.0</version.spring-data>
-		<version.aspectj>1.9.8.M1</version.aspectj>
+		<version.aspectj>1.9.8.RC3</version.aspectj>
 		<version.javassist>3.28.0-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
 		<version.slf4j>1.7.32</version.slf4j>
