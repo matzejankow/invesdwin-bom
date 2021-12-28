@@ -1787,7 +1787,6 @@
 							<param>com\.github\.rssdev10:julia4j.*</param>
 							<param>com\.cnuernber:libjulia-clj.*</param>
 							<!-- psfl (bsd-like) license -->
-							<param>org\.scijava:jython-shaded.*</param>
 							<param>org\.python:jython-slim.*</param>
 							<!-- epl license -->
 							<param>com\.h2database.*</param>
