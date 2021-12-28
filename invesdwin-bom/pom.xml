@@ -84,6 +84,7 @@
 
 		<version.conscrypt>2.5.2</version.conscrypt>
 		<version.kotlin>1.5.31</version.kotlin>
+		<version.clojure>1.10.3</version.clojure>
 
 		<version.glassfish-jaxb>2.3.5</version.glassfish-jaxb>
 		<version.jakarta-jaxb>2.3.3</version.jakarta-jaxb>
@@ -638,6 +639,11 @@
 				<groupId>org.codehaus.jettison</groupId>
 				<artifactId>jettison</artifactId>
 				<version>${version.jettison}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.clojure</groupId>
+				<artifactId>clojure</artifactId>
+				<version>${version.clojure}</version>
 			</dependency>
 
 			<dependency>
@@ -1251,6 +1257,12 @@
 				<groupId>com.koloboke</groupId>
 				<artifactId>koloboke-impl-jdk8</artifactId>
 				<version>${version.koloboke}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>com.google.auto.value</groupId>
+						<artifactId>auto-value</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.github.jbellis</groupId>
@@ -1772,13 +1784,17 @@
 							<param>com\.jgoodies:jgoodies-.*</param>
 							<param>com\.miglayout:miglayout.*</param>
 							<param>io\.sisu:nng-java.*</param>
+							<param>com\.github\.rssdev10:julia4j.*</param>
+							<param>com\.cnuernber:libjulia-clj.*</param>
 							<!-- psfl (bsd-like) license -->
 							<param>org\.scijava:jython-shaded.*</param>
+							<param>org\.python:jython-slim.*</param>
 							<!-- epl license -->
 							<param>com\.h2database.*</param>
 							<param>org\.eclipse\.swt.*</param>
 							<param>org\.aspectj:aspectjweaver.*</param>
 							<param>org\.glassfish:jakarta\.el.*</param>
+							<param>clj-python:libpython-clj.*</param>
 							<!-- LGPL license -->
 							<param>org\.jboss\.logging:jboss-logging-generator.*</param>
 							<param>org\.hibernate.*</param>
