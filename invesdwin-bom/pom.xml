@@ -1911,6 +1911,7 @@
 							<!-- EPL -->
 							<param>org\.jvnet\.hudson.*</param>
 							<param>com\.sun\.xml\.messaging\.saaj:saaj-impl.*</param>
+							<param>org\.clojars\.ato:clojure-jsr223.*</param>
 							<!-- EDL -->
 							<param>jakarta\.activation:jakarta\.activation-api.*</param>
 							<param>com\.sun\.activation:jakarta\.activation.*</param>
