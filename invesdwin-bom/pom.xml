@@ -284,6 +284,12 @@
 				<artifactId>groovy-jsr223</artifactId>
 				<version>${version.groovy}</version>
 				<classifier>indy</classifier>
+				<exclusions>
+					<exclusion>
+						<groupId>org.codehaus.groovy</groupId>
+						<artifactId>groovy</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<dependency>
