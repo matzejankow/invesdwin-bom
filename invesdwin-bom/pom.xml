@@ -698,12 +698,6 @@
 				<artifactId>jruby-stdlib</artifactId>
 				<version>${version.jruby}</version>
 			</dependency>
-			<dependency>
-				<groupId>org.jruby</groupId>
-				<artifactId>jruby-complete</artifactId>
-				<version>${version.jruby}</version>
-			</dependency>
-
 
 			<dependency>
 				<groupId>javax.servlet</groupId>
