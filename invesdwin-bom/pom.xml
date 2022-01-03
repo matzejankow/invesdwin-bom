@@ -83,9 +83,6 @@
 		<version.javax.persistence-api>2.2</version.javax.persistence-api>
 
 		<version.conscrypt>2.5.2</version.conscrypt>
-		<version.kotlin>1.5.31</version.kotlin>
-		<version.clojure>1.10.3</version.clojure>
-
 		<version.glassfish-jaxb>2.3.5</version.glassfish-jaxb>
 		<version.jakarta-jaxb>2.3.3</version.jakarta-jaxb>
 		<version.activation>1.2.2</version.activation>
@@ -107,7 +104,11 @@
 		<version.dsiutils>2.6.17</version.dsiutils>
 		<version.koloboke>1.0.0</version.koloboke>
 		<version.jamm>0.3.3</version.jamm>
-		<version.groovy>2.5.14</version.groovy>
+		<version.groovy>3.0.9</version.groovy>
+		<version.scala>3.1.0</version.scala>
+		<version.kotlin>1.6.10</version.kotlin>
+		<version.clojure>1.10.3</version.clojure>
+		<version.clojure-jsr223>1.5.1</version.clojure-jsr223>
 
 		<version.jollyday>0.5.10</version.jollyday>
 		<version.threeten-extra>1.5.0</version.threeten-extra>
@@ -275,6 +276,12 @@
 			<dependency>
 				<groupId>org.codehaus.groovy</groupId>
 				<artifactId>groovy</artifactId>
+				<version>${version.groovy}</version>
+				<classifier>indy</classifier>
+			</dependency>
+			<dependency>
+				<groupId>org.codehaus.groovy</groupId>
+				<artifactId>groovy-jsr223</artifactId>
 				<version>${version.groovy}</version>
 				<classifier>indy</classifier>
 			</dependency>
@@ -631,12 +638,22 @@
 			</dependency>
 			<dependency>
 				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-stdlib-jdk8</artifactId>
+				<version>${version.kotlin}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-reflect</artifactId>
 				<version>${version.kotlin}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jetbrains.kotlin</groupId>
 				<artifactId>kotlin-stdlib-common</artifactId>
+				<version>${version.kotlin}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-scripting-jsr223</artifactId>
 				<version>${version.kotlin}</version>
 			</dependency>
 			<dependency>
@@ -649,6 +666,22 @@
 				<artifactId>clojure</artifactId>
 				<version>${version.clojure}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.clojars.ato</groupId>
+				<artifactId>clojure-jsr223</artifactId>
+				<version>${version.clojure-jsr223}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scala-lang</groupId>
+				<artifactId>scala3-library_3</artifactId>
+				<version>${version.scala}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.scala-lang</groupId>
+				<artifactId>scala3-compiler_3</artifactId>
+				<version>${version.scala}</version>
+			</dependency>
+
 
 			<dependency>
 				<groupId>javax.servlet</groupId>
