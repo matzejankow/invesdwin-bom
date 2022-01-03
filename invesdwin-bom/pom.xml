@@ -109,6 +109,7 @@
 		<version.kotlin>1.6.10</version.kotlin>
 		<version.clojure>1.10.3</version.clojure>
 		<version.clojure-jsr223>1.5.1</version.clojure-jsr223>
+		<version.jruby>9.3.2.0</version.jruby>
 
 		<version.jollyday>0.5.10</version.jollyday>
 		<version.threeten-extra>1.5.0</version.threeten-extra>
@@ -686,6 +687,21 @@
 				<groupId>org.scala-lang</groupId>
 				<artifactId>scala3-compiler_3</artifactId>
 				<version>${version.scala}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jruby</groupId>
+				<artifactId>jruby-core</artifactId>
+				<version>${version.jruby}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jruby</groupId>
+				<artifactId>jruby-stdlib</artifactId>
+				<version>${version.jruby}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jruby</groupId>
+				<artifactId>jruby-complete</artifactId>
+				<version>${version.jruby}</version>
 			</dependency>
 
 
