@@ -697,6 +697,12 @@
 				<groupId>org.jruby</groupId>
 				<artifactId>jruby-stdlib</artifactId>
 				<version>${version.jruby}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>rubygems</groupId>
+						<artifactId>*</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 
 			<dependency>
@@ -1872,6 +1878,8 @@
 							<param>org\.aspectj:aspectjweaver.*</param>
 							<param>org\.glassfish:jakarta\.el.*</param>
 							<param>clj-python:libpython-clj.*</param>
+							<!-- WARNING: some parts (gems) could be GPL -->
+							<param>org\.jruby:jruby.*</param>
 							<!-- LGPL license -->
 							<param>org\.jboss\.logging:jboss-logging-generator.*</param>
 							<param>org\.hibernate.*</param>
