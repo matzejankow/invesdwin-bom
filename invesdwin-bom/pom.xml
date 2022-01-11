@@ -110,6 +110,7 @@
 		<version.clojure>1.10.3</version.clojure>
 		<version.clojure-jsr223>1.5.1</version.clojure-jsr223>
 		<version.jruby>9.3.2.0</version.jruby>
+		<version.graalvm>21.3.0</version.graalvm>
 
 		<version.jollyday>0.5.10</version.jollyday>
 		<version.threeten-extra>1.5.0</version.threeten-extra>
@@ -704,6 +705,17 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+			<dependency>
+				<groupId>org.graalvm.js</groupId>
+				<artifactId>js</artifactId>
+				<version>${version.graalvm}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.graalvm.js</groupId>
+				<artifactId>js-scriptengine</artifactId>
+				<version>${version.graalvm}</version>
+			</dependency>
+
 
 			<dependency>
 				<groupId>javax.servlet</groupId>
