@@ -105,7 +105,7 @@
 		<version.koloboke>1.0.0</version.koloboke>
 		<version.jamm>0.3.3</version.jamm>
 		<version.groovy>3.0.9</version.groovy>
-		<version.scala>3.1.0</version.scala>
+		<version.scala>2.13.8</version.scala>
 		<version.kotlin>1.6.10</version.kotlin>
 		<version.clojure>1.10.3</version.clojure>
 		<version.clojure-jsr223>1.5.1</version.clojure-jsr223>
@@ -681,12 +681,12 @@
 			</dependency>
 			<dependency>
 				<groupId>org.scala-lang</groupId>
-				<artifactId>scala3-library_3</artifactId>
+				<artifactId>scala-library</artifactId>
 				<version>${version.scala}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.scala-lang</groupId>
-				<artifactId>scala3-compiler_3</artifactId>
+				<artifactId>scala-compiler</artifactId>
 				<version>${version.scala}</version>
 			</dependency>
 			<dependency>
