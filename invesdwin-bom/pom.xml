@@ -1948,6 +1948,8 @@
 							<!-- modified bsd license -->
 							<param>com\.jamonapi.*</param>
 							<param>com\.fifesoft.*</param>
+							<!-- universal permissive license -->
+							<param>org\.graalvm\.js:js.*</param>
 							<!-- not everything is open sourced -->
 							<param>de\.invesdwin.*</param>
 							<!-- WARNING: CCA 2.5 license, you need to put a link to this when 
