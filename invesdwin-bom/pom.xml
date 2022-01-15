@@ -1859,6 +1859,7 @@
 							<param>com\.techascent:t-digest.*</param>
 							<param>io\.netty:netty-tcnative-boringssl-static.*</param>
 							<param>com\.github\.estraier:tkrzw-java.*</param>
+							<param>com\.github\.rjolly:jshellscriptengine.*</param>
 							<!-- bsd license -->
 							<param>com\.esotericsoftware:kryonet.*</param>
 							<!-- MIT license -->
