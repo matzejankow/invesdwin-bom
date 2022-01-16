@@ -108,7 +108,6 @@
 		<version.scala>2.13.8</version.scala>
 		<version.kotlin>1.6.10</version.kotlin>
 		<version.clojure>1.10.3</version.clojure>
-		<version.clojure-jsr223>1.5.1</version.clojure-jsr223>
 		<version.jruby>9.3.2.0</version.jruby>
 		<version.graalvm>21.3.0</version.graalvm>
 
@@ -673,11 +672,6 @@
 				<groupId>org.clojure</groupId>
 				<artifactId>clojure</artifactId>
 				<version>${version.clojure}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.clojars.ato</groupId>
-				<artifactId>clojure-jsr223</artifactId>
-				<version>${version.clojure-jsr223}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.scala-lang</groupId>
