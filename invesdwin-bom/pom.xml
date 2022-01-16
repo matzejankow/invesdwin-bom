@@ -24,7 +24,7 @@
 		<version.assertj-guava>3.4.0</version.assertj-guava>
 		<version.assertj-core>3.21.0</version.assertj-core>
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
-		<version.spring>5.3.14</version.spring>
+		<version.spring>5.3.15</version.spring>
 		<!-- 2.5.6, 2.5.6 and 2.6.0 cause an error in datanucleus: https://github.com/spring-projects/spring-data-jpa/issues/2357 -->
 		<version.spring-data>2.6.0</version.spring-data>
 		<version.aspectj>1.9.8.RC3</version.aspectj>
