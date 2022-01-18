@@ -149,6 +149,7 @@
 		<version.jnr-constants>0.10.3</version.jnr-constants>
 		<version.jnr-ffi>2.2.10</version.jnr-ffi>
 		<version.jffi>1.3.8</version.jffi>
+		<version.dtype-next>8.058</version.dtype-next>
 
 		<version.xml-apis>1.4.01</version.xml-apis>
 
@@ -1601,6 +1602,11 @@
 				<groupId>com.github.jnr</groupId>
 				<artifactId>jffi</artifactId>
 				<version>${version.jffi}</version>
+			</dependency>
+			<dependency>
+				<groupId>cnuernber</groupId>
+				<artifactId>dtype-next</artifactId>
+				<version>${version.dtype-next}</version>
 			</dependency>
 			<dependency>
 				<groupId>xml-apis</groupId>
