@@ -69,7 +69,7 @@
 		<version.xstream>1.4.18</version.xstream>
 		<version.jclipboardhelper>0.1.2</version.jclipboardhelper>
 		<version.istack>3.0.12</version.istack>
-		<version.xerces>2.12.1</version.xerces>
+		<version.xerces>2.12.2</version.xerces>
 
 		<version.hibernate-validator>6.2.0.Final</version.hibernate-validator>
 		<version.jakarta.el>3.0.3</version.jakarta.el>
