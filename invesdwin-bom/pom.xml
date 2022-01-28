@@ -1559,6 +1559,12 @@
 				<groupId>net.openhft</groupId>
 				<artifactId>chronicle-core</artifactId>
 				<version>${version.chronicle-core}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>net.openhft</groupId>
+						<artifactId>chronicle-analytics</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>org.agrona</groupId>
@@ -1739,6 +1745,9 @@
 									<exclude>org.hibernate:hibernate-validator</exclude>
 									<!-- use org.junit.jupiter:junit-jupiter-engine instead -->
 									<exclude>junit:junit</exclude>
+									<!-- it automatically connects to google analytics which we don't 
+										want -->
+									<exclude>net.openhft:chronicle-analytics</exclude>
 								</excludes>
 							</bannedDependencies>
 							<requireUpperBoundDeps>
