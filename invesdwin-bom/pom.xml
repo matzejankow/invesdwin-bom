@@ -18,7 +18,7 @@
 	<properties>
 		<version.guava>30.1.1-jre</version.guava>
 		<version.j2objc-annotations>1.3</version.j2objc-annotations>
-		<version.error_prone_annotations>2.5.1</version.error_prone_annotations>
+		<version.error_prone_annotations>2.10.0</version.error_prone_annotations>
 		<version.gson>2.8.6</version.gson>
 		<version.protobuf>3.19.2</version.protobuf>
 		<version.assertj-guava>3.4.0</version.assertj-guava>
@@ -32,7 +32,7 @@
 		<version.jsr305>3.0.2</version.jsr305>
 		<version.slf4j>1.7.32</version.slf4j>
 		<version.minlog-slf4j>2.0</version.minlog-slf4j>
-		<version.janino>2.7.8</version.janino>
+		<version.janino>3.1.6</version.janino>
 		<version.joda-time>2.10.13</version.joda-time>
 		<version.commons-codec>1.15</version.commons-codec>
 		<version.commons-cli>1.5.0</version.commons-cli>
@@ -78,7 +78,7 @@
 		<version.cglib>3.3.0</version.cglib>
 		<version.ecj>3.28.0</version.ecj>
 		<version.classmate>1.5.1</version.classmate>
-		<version.caffeine>2.9.2</version.caffeine>
+		<version.caffeine>2.9.3</version.caffeine>
 		<version.jcache>1.1.1</version.jcache>
 		<version.javax.persistence-api>2.2</version.javax.persistence-api>
 
@@ -124,9 +124,9 @@
 		<version.maven-plugin-plugin>3.6.0</version.maven-plugin-plugin>
 		<version.maven-compiler-plugin>3.8.1</version.maven-compiler-plugin>
 		<version.plexus-compiler-javac-errorprone>2.8.5</version.plexus-compiler-javac-errorprone>
-		<version.checker-qual>3.18.0</version.checker-qual>
+		<version.checker-qual>3.19.0</version.checker-qual>
 		<!-- 3.0.0 causes issues with provided dependencies: https://issues.apache.org/jira/browse/MENFORCER-402 -->
-		<version.maven-enforcer-plugin>3.0.0</version.maven-enforcer-plugin>
+		<version.maven-enforcer-plugin>3.0.1-inv</version.maven-enforcer-plugin>
 		<version.lifecycle-mapping>1.0.0</version.lifecycle-mapping>
 		<version.license-check-maven-plugin>0.5.6-inv</version.license-check-maven-plugin>
 		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
@@ -1625,6 +1625,37 @@
 				<groupId>techascent</groupId>
 				<artifactId>tech.ml.dataset</artifactId>
 				<version>${version.tech.ml.dataset}</version>
+				<exclusions>
+				<!-- provided transient upperbound deps (bug in maven-enforcer-plugin) -->
+					<exclusion>
+						<groupId>org.apache.spark</groupId>
+						<artifactId>spark-core_2.12</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.spark</groupId>
+						<artifactId>spark-hive_2.12</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.spark</groupId>
+						<artifactId>spark-mllib_2.12</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.spark</groupId>
+						<artifactId>spark-sql_2.12</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.spark</groupId>
+						<artifactId>spark-streaming_2.12</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>org.apache.hadoop</groupId>
+						<artifactId>hadoop-common</artifactId>
+					</exclusion>
+					<exclusion>
+						<groupId>ero.one</groupId>
+						<artifactId>geni</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>xml-apis</groupId>
