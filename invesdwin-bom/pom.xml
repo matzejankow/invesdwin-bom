@@ -31,6 +31,7 @@
 		<version.javassist>3.28.0-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
 		<version.slf4j>1.7.32</version.slf4j>
+		<version.log4j-to-slf4j>2.17.1</version.log4j-to-slf4j>
 		<version.minlog-slf4j>2.0</version.minlog-slf4j>
 		<version.janino>3.1.6</version.janino>
 		<version.joda-time>2.10.13</version.joda-time>
@@ -537,6 +538,11 @@
 				<groupId>org.slf4j</groupId>
 				<artifactId>log4j-over-slf4j</artifactId>
 				<version>${version.slf4j}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-to-slf4j</artifactId>
+				<version>${version.log4j-to-slf4j}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.slf4j</groupId>
@@ -1626,7 +1632,7 @@
 				<artifactId>tech.ml.dataset</artifactId>
 				<version>${version.tech.ml.dataset}</version>
 				<exclusions>
-				<!-- provided transient upperbound deps (bug in maven-enforcer-plugin) -->
+					<!-- provided transient upperbound deps (bug in maven-enforcer-plugin) -->
 					<exclusion>
 						<groupId>org.apache.spark</groupId>
 						<artifactId>spark-core_2.12</artifactId>
@@ -1713,7 +1719,7 @@
 									<exclude>commons-logging:commons-logging-api</exclude>
 									<exclude>javax.persistence:persistence-api</exclude>
 									<exclude>log4j:log4j</exclude>
-									<exclude>org.apache.logging.log4j:log4j-api</exclude>
+									<exclude>org.apache.logging.log4j:log4j-core</exclude>
 									<exclude>org.slf4j:slf4j-log4j12</exclude>
 									<exclude>com.esotericsoftware:minlog</exclude>
 									<exclude>javax.servlet.jsp:jsp-api</exclude>
