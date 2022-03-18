@@ -2031,6 +2031,7 @@
 							<param>org\.webjars:highstock.*</param>
 							<!-- WARNING: commercial license needs to be bought -->
 							<param>com\.nj4x:jfx.*</param>
+							<param>online\.mtapi:.*</param>
 							<!-- WARNING: gpl license, only use when you conform to its terms -->
 							<param>org\.renjin:renjin-script-engine.*</param>
 							<param>org\.renjin\.cran:DEoptim.*</param>
