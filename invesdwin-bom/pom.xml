@@ -1720,6 +1720,7 @@
 									<exclude>javax.persistence:persistence-api</exclude>
 									<exclude>log4j:log4j</exclude>
 									<exclude>org.apache.logging.log4j:log4j-core</exclude>
+									<exclude>org.apache.logging.log4j:log4j-jcl</exclude>
 									<exclude>org.slf4j:slf4j-log4j12</exclude>
 									<exclude>com.esotericsoftware:minlog</exclude>
 									<exclude>javax.servlet.jsp:jsp-api</exclude>
