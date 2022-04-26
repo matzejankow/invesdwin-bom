@@ -1926,6 +1926,7 @@
 							<param>com\.github\.rjolly:jshellscriptengine.*</param>
 							<!-- bsd license -->
 							<param>com\.esotericsoftware:kryonet.*</param>
+							<param>sg-cdb:sg-cdb.*</param>
 							<!-- MIT license -->
 							<param>org\.slf4j.*</param>
 							<param>org\.bouncycastle.*</param>
