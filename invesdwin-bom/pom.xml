@@ -19,7 +19,7 @@
 		<version.guava>30.1.1-jre</version.guava>
 		<version.j2objc-annotations>1.3</version.j2objc-annotations>
 		<version.error_prone_annotations>2.10.0</version.error_prone_annotations>
-		<version.gson>2.8.6</version.gson>
+		<version.gson>2.8.9</version.gson>
 		<version.protobuf>3.19.2</version.protobuf>
 		<version.assertj-guava>3.4.0</version.assertj-guava>
 		<version.assertj-core>3.21.0</version.assertj-core>
