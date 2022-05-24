@@ -58,7 +58,7 @@
 		<version.wicket-bootstrap>4.0.4</version.wicket-bootstrap>
 		<version.spring-security>5.6.0</version.spring-security>
 		<version.javax-servlet>4.0.1</version.javax-servlet>
-		<version.jackson>2.13.2</version.jackson>
+		<version.jackson>2.13.3</version.jackson>
 		<version.jettison>1.4.0</version.jettison>
 		<version.jsoup>1.14.2</version.jsoup>
 		<version.args4j>2.33</version.args4j>
