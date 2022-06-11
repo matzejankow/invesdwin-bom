@@ -2036,6 +2036,7 @@
 							<param>com\.nj4x:jfx.*</param>
 							<param>online\.mtapi:.*</param>
 							<param>cloud\.metaapi\.sdk:metaapi-.*</param>
+							<param>dev\.nm:nmdev.*</param>
 							<!-- WARNING: gpl license, only use when you conform to its terms -->
 							<param>org\.renjin:renjin-script-engine.*</param>
 							<param>org\.renjin\.cran:DEoptim.*</param>
@@ -2044,6 +2045,10 @@
 							<param>nz\.ac\.waikato\.cms\.weka:.*</param>
 							<param>nz\.ac\.waikato\.cms\.moa:.*</param>
 							<param>net\.sf\.meka:meka.*</param>
+							<param>jdistlib:jdistlib.*</param>
+							<!--  WARNING: agpl license, only use when you conform to its terms -->
+							<param>jdistlib:jdistlib.*</param>
+							<param>de\.lmu\.ifi\.dbs\.elki:elki.*</param>
 							<!-- WARNING: no license specified, though since it interacts with 
 								R over a socket, we expect it to be GPL -->
 							<param>com\.github\.yannrichet:Rsession.*</param>
