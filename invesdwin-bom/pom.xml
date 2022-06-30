@@ -40,7 +40,7 @@
 		<version.commons-lang>2.6</version.commons-lang>
 		<version.commons-io>2.11.0</version.commons-io>
 		<version.curvesapi>1.06</version.curvesapi>
-		<version.t-digest>4.0-pre-release-1</version.t-digest>
+		<version.t-digest>3.4-inv</version.t-digest>
 		<version.commons-collections>3.2.2</version.commons-collections>
 		<version.commons-collections4>4.4</version.commons-collections4>
 		<version.commons-pool>1.6</version.commons-pool>
@@ -2167,19 +2167,6 @@
 			<url>https://invesdwin.de/repo/invesdwin-oss</url>
 		</snapshotRepository>
 	</distributionManagement>
-
-	<repositories>
-		<repository>
-			<id>invesdwin-oss</id>
-			<url>https://invesdwin.de/repo/invesdwin-oss-remote</url>
-		</repository>
-	</repositories>
-	<pluginRepositories>
-		<pluginRepository>
-			<id>invesdwin-oss</id>
-			<url>https://invesdwin.de/repo/invesdwin-oss-remote</url>
-		</pluginRepository>
-	</pluginRepositories>
 
 	<scm>
 		<url>https://github.com/invesdwin/invesdwin-bom</url>
