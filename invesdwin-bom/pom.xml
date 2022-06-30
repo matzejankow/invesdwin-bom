@@ -509,7 +509,7 @@
 				<version>${version.curvesapi}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.techascent</groupId>
+				<groupId>com.tdunning</groupId>
 				<artifactId>t-digest</artifactId>
 				<version>${version.t-digest}</version>
 			</dependency>
@@ -1921,7 +1921,7 @@
 							<param>org\.assertj.*</param>
 							<param>org\.conscrypt:conscrypt.*</param>
 							<param>org\.roaringbitmap:RoaringBitmap.*</param>
-							<param>com\.techascent:t-digest.*</param>
+							<param>com\.tdunning:t-digest.*</param>
 							<param>io\.netty:netty-tcnative-boringssl-static.*</param>
 							<param>com\.github\.estraier:tkrzw-java.*</param>
 							<param>com\.github\.rjolly:jshellscriptengine.*</param>
