@@ -136,7 +136,7 @@
 		<version.jacoco-maven-plugin>0.8.6</version.jacoco-maven-plugin>
 		<version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
 
-		<version.jetty>9.4.44.v20210927</version.jetty>
+		<version.jetty>9.4.48.v20220622</version.jetty>
 		<version.netty>4.1.68.Final</version.netty>
 		<version.netty-io_uring>0.0.5.Final</version.netty-io_uring>
 		<version.netty-tcnative>2.0.41.Final</version.netty-tcnative>
