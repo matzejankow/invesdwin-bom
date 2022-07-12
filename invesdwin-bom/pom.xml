@@ -94,7 +94,7 @@
 		<version.mockito>3.12.4</version.mockito>
 		<version.byte-buddy>1.12.3</version.byte-buddy>
 		<version.objenesis>3.2</version.objenesis>
-		<version.ow2asm>9.2</version.ow2asm>
+		<version.ow2asm>9.3</version.ow2asm>
 		<version.asm>3.3.1</version.asm>
 
 		<version.zt-exec>1.11</version.zt-exec>
