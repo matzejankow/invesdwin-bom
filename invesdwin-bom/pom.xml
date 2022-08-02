@@ -88,6 +88,7 @@
 		<version.jakarta-jaxb>2.3.3</version.jakarta-jaxb>
 		<version.activation>1.2.2</version.activation>
 		<version.jakarta.annotation-api>1.3.5</version.jakarta.annotation-api>
+		<version.jakarta.websocket-api>1.1.2</version.jakarta.websocket-api>
 
 		<version.junit>5.8.2</version.junit>
 		<version.junit-platform>1.8.2</version.junit-platform>
@@ -1309,6 +1310,12 @@
 				<artifactId>jakarta.annotation-api</artifactId>
 				<version>${version.jakarta.annotation-api}</version>
 			</dependency>
+			<dependency>
+				<groupId>jakarta.websocket</groupId>
+				<artifactId>jakarta.websocket-api</artifactId>
+				<version>${version.jakarta.websocket-api}</version>
+			</dependency>
+
 
 			<dependency>
 				<groupId>it.unimi.dsi</groupId>
@@ -1766,7 +1773,8 @@
 									<exclude>org.bouncycastle:bcprov-jdk15+</exclude>
 									<exclude>org.bouncycastle:bcprov-jdk14</exclude>
 									<exclude>org.bouncycastle:bcprov-jdk12</exclude>
-									<!-- bcprov-ext is the same as bcprov just with some more obscure algos -->
+									<!-- bcprov-ext is the same as bcprov just with some more obscure 
+										algos -->
 									<exclude>org.bouncycastle:bcprov-ext-jdk18on</exclude>
 									<exclude>org.bouncycastle:bcprov-ext-jdk16</exclude>
 									<exclude>org.bouncycastle:bcprov-ext-jdk15</exclude>
