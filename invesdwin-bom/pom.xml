@@ -138,16 +138,16 @@
 		<version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
 
 		<version.jetty>9.4.48.v20220622</version.jetty>
-		<version.netty>4.1.68.Final</version.netty>
-		<version.netty-io_uring>0.0.5.Final</version.netty-io_uring>
-		<version.netty-tcnative>2.0.41.Final</version.netty-tcnative>
+		<version.netty>4.1.79.Final</version.netty>
+		<version.netty-io_uring>0.0.14.Final</version.netty-io_uring>
+		<version.netty-tcnative>2.0.54.Final</version.netty-tcnative>
 
-		<version.chronicle-algorithms>2.22ea1</version.chronicle-algorithms>
-		<version.chronicle-bytes>2.22ea1</version.chronicle-bytes>
-		<version.chronicle-core>2.22ea6</version.chronicle-core>
+		<version.chronicle-algorithms>2.22.3</version.chronicle-algorithms>
+		<version.chronicle-bytes>2.22.25</version.chronicle-bytes>
+		<version.chronicle-core>2.22.34</version.chronicle-core>
 		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
 		<version.agrona>1.16.0</version.agrona>
-		<version.burningwave-core>10.0.0</version.burningwave-core>
+		<version.burningwave-core>12.59.0</version.burningwave-core>
 		<version.jna>5.12.1</version.jna>
 		<version.jnr-constants>0.10.3</version.jnr-constants>
 		<version.jnr-ffi>2.2.10</version.jnr-ffi>
