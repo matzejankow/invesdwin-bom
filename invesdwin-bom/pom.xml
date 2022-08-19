@@ -1,6 +1,4 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.invesdwin</groupId>
@@ -1226,6 +1224,11 @@
 				<version>${version.netty-tcnative}</version>
 			</dependency>
 			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-tcnative</artifactId>
+				<version>${version.netty-tcnative}</version>
+			</dependency>
+			<dependency>
 				<groupId>io.netty.incubator</groupId>
 				<artifactId>netty-incubator-transport-native-io_uring</artifactId>
 				<version>${version.netty-io_uring}</version>
@@ -1968,7 +1971,7 @@
 							<param>org\.conscrypt:conscrypt.*</param>
 							<param>org\.roaringbitmap:RoaringBitmap.*</param>
 							<param>com\.tdunning:t-digest.*</param>
-							<param>io\.netty:netty-tcnative-boringssl-static.*</param>
+							<param>io\.netty:netty-tcnative.*</param>
 							<param>com\.github\.estraier:tkrzw-java.*</param>
 							<param>com\.github\.rjolly:jshellscriptengine.*</param>
 							<!-- bsd license -->
