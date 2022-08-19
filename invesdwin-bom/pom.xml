@@ -1227,6 +1227,7 @@
 				<groupId>io.netty</groupId>
 				<artifactId>netty-tcnative</artifactId>
 				<version>${version.netty-tcnative}</version>
+				<classifier>linux-x86_64</classifier>
 			</dependency>
 			<dependency>
 				<groupId>io.netty.incubator</groupId>
