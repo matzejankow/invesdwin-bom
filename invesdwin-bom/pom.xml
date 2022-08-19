@@ -128,7 +128,7 @@
 		<version.plexus-compiler-javac-errorprone>2.8.5</version.plexus-compiler-javac-errorprone>
 		<version.checker-qual>3.19.0</version.checker-qual>
 		<!-- 3.0.0 causes issues with provided dependencies: https://issues.apache.org/jira/browse/MENFORCER-402 -->
-		<version.maven-enforcer-plugin>3.0.1-inv</version.maven-enforcer-plugin>
+		<version.maven-enforcer-plugin>3.1.0</version.maven-enforcer-plugin>
 		<version.lifecycle-mapping>1.0.0</version.lifecycle-mapping>
 		<version.license-check-maven-plugin>0.5.6-inv</version.license-check-maven-plugin>
 		<version.maven-release-plugin>2.5.3</version.maven-release-plugin>
