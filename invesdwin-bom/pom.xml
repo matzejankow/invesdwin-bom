@@ -51,8 +51,8 @@
 		<version.httpclient>4.5.13</version.httpclient>
 		<version.httpclient5>5.0.3</version.httpclient5>
 
-		<version.wicket>9.7.0</version.wicket>
-		<version.wicketstuff>9.7.0</version.wicketstuff>
+		<version.wicket>9.11.0</version.wicket>
+		<version.wicketstuff>9.11.0</version.wicketstuff>
 		<version.wicket-bootstrap>4.0.4</version.wicket-bootstrap>
 		<version.spring-security>5.7.2</version.spring-security>
 		<version.javax-servlet>4.0.1</version.javax-servlet>
