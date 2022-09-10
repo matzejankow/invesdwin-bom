@@ -61,7 +61,7 @@
 		<version.jsoup>1.15.3</version.jsoup>
 		<version.args4j>2.33</version.args4j>
 		<version.shiro>1.9.1</version.shiro>
-		<version.jquery>3.3.1-2</version.jquery>
+		<version.jquery>3.6.1</version.jquery>
 		<version.jdk-serializable-functional>1.9.0</version.jdk-serializable-functional>
 		<version.openjson>1.0.12</version.openjson>
 		<version.woodstox>6.2.7</version.woodstox>
