@@ -2063,6 +2063,8 @@
 							<!-- EDL -->
 							<param>jakarta\.activation:jakarta\.activation-api.*</param>
 							<param>com\.sun\.activation:jakarta\.activation.*</param>
+							<!-- CC BY 3.0 (requires attribution) -->
+							<param>org\.webjars:font-awesome.*</param>
 							<!-- modified bsd license -->
 							<param>com\.jamonapi.*</param>
 							<param>com\.fifesoft.*</param>
