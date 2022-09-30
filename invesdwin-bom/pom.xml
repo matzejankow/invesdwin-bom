@@ -108,7 +108,7 @@
 		<version.koloboke>1.0.0</version.koloboke>
 		<version.jamm>0.3.3</version.jamm>
 		<version.groovy>3.0.9</version.groovy>
-		<version.scala>2.13.8</version.scala>
+		<version.scala>2.13.9</version.scala>
 		<version.kotlin>1.6.10</version.kotlin>
 		<version.clojure>1.10.3</version.clojure>
 		<version.jruby>9.3.2.0</version.jruby>
