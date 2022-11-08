@@ -2186,7 +2186,7 @@
 							<jacoco-agent.destfile>${project.build.directory}/jacoco.exec</jacoco-agent.destfile>
 						</systemPropertyVariables>
 						<!-- parallelize tests -->
-						<forkCount>2</forkCount>
+						<forkCount>1</forkCount>
 						<reuseForks>true</reuseForks>
 						<!-- <parallel>suitesAndClasses</parallel> <threadCount>1</threadCount> -->
 						<!-- timeout test suite of any module if it takes longer than 30 minutes -->
