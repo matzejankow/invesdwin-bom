@@ -31,7 +31,7 @@
 		<version.slf4j>2.0.3</version.slf4j>
 		<version.log4j-to-slf4j>2.19.0</version.log4j-to-slf4j>
 		<version.minlog-slf4j>2.0</version.minlog-slf4j>
-		<version.janino>3.1.6</version.janino>
+		<version.janino>3.1.9</version.janino>
 		<version.joda-time>2.11.1</version.joda-time>
 		<version.commons-codec>1.15</version.commons-codec>
 		<version.commons-cli>1.5.0</version.commons-cli>
