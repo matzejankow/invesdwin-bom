@@ -66,7 +66,7 @@
 		<version.jquery>3.6.1</version.jquery>
 		<version.jdk-serializable-functional>1.9.0</version.jdk-serializable-functional>
 		<version.openjson>1.0.12</version.openjson>
-		<version.woodstox>6.3.1</version.woodstox>
+		<version.woodstox>6.4.0</version.woodstox>
 		<version.xstream>1.4.19</version.xstream>
 		<version.jclipboardhelper>0.1.2</version.jclipboardhelper>
 		<version.istack>3.0.12</version.istack>
