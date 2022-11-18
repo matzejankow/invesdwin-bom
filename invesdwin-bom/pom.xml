@@ -22,13 +22,15 @@
 		<version.assertj-guava>3.4.0</version.assertj-guava>
 		<version.assertj-core>3.21.0</version.assertj-core>
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
-		<version.spring>5.3.24</version.spring>
+		<version.spring>6.0.0</version.spring>
 		<!-- 2.5.6, 2.5.6 and 2.6.0 cause an error in datanucleus: https://github.com/spring-projects/spring-data-jpa/issues/2357 -->
-		<version.spring-data>2.7.5</version.spring-data>
+		<version.spring-data>3.0.0-RC1</version.spring-data>
 		<version.aspectj>1.9.9.1</version.aspectj>
+		<version.micrometer>1.10.1</version.micrometer>
 		<version.javassist>3.28.0-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
 		<version.slf4j>2.0.3</version.slf4j>
+		<version.log4j>2.19.0</version.log4j>
 		<version.log4j-to-slf4j>2.19.0</version.log4j-to-slf4j>
 		<version.minlog-slf4j>2.0</version.minlog-slf4j>
 		<version.janino>3.1.9</version.janino>
@@ -49,15 +51,16 @@
 		<version.commons-fileupload>1.4</version.commons-fileupload>
 		<version.commons-text>1.10.0</version.commons-text>
 		<version.httpclient>4.5.13</version.httpclient>
-		<version.httpclient5>5.0.3</version.httpclient5>
+		<version.httpclient5>5.2</version.httpclient5>
 
-		<version.wicket>9.12.0</version.wicket>
+		<version.wicket>10.0.0-M1-SNAPSHOT</version.wicket>
 		<version.wicketstuff>9.12.0</version.wicketstuff>
 		<version.wicket-bootstrap>6.0.0-M8</version.wicket-bootstrap>
 		<version.bootstrap>5.2.0</version.bootstrap>
 		<version.popperjs>2.9.3</version.popperjs>
-		<version.spring-security>5.7.5</version.spring-security>
-		<version.javax-servlet>4.0.1</version.javax-servlet>
+		<version.spring-security>6.0.0-M6</version.spring-security>
+		<version.spring-security-cas>5.8.0-M2</version.spring-security-cas>
+		<version.jakarta-servlet>6.0.0</version.jakarta-servlet>
 		<version.jackson>2.14.0</version.jackson>
 		<version.jettison>1.5.1</version.jettison>
 		<version.jsoup>1.15.3</version.jsoup>
@@ -69,7 +72,7 @@
 		<version.woodstox>6.4.0</version.woodstox>
 		<version.xstream>1.4.19</version.xstream>
 		<version.jclipboardhelper>0.1.2</version.jclipboardhelper>
-		<version.istack>3.0.12</version.istack>
+		<version.istack>4.1.1</version.istack>
 		<version.xerces>2.12.2</version.xerces>
 
 		<version.hibernate-validator>8.0.0.Final</version.hibernate-validator>
@@ -81,14 +84,18 @@
 		<version.classmate>1.5.1</version.classmate>
 		<version.caffeine>3.1.1</version.caffeine>
 		<version.jcache>1.1.1</version.jcache>
-		<version.javax.persistence-api>2.2</version.javax.persistence-api>
+		<version.jakarta.persistence-api>3.1.0</version.jakarta.persistence-api>
+		<version.osgi.annotation>8.1.0</version.osgi.annotation>
 
 		<version.conscrypt>2.5.2</version.conscrypt>
-		<version.glassfish-jaxb>2.3.5</version.glassfish-jaxb>
-		<version.jakarta-jaxb>2.3.3</version.jakarta-jaxb>
-		<version.activation>1.2.2</version.activation>
-		<version.jakarta.annotation-api>1.3.5</version.jakarta.annotation-api>
-		<version.jakarta.websocket-api>1.1.2</version.jakarta.websocket-api>
+		<version.glassfish-jaxb>4.0.1</version.glassfish-jaxb>
+		<version.jakarta-jaxb>4.0.0</version.jakarta-jaxb>
+		<version.stax-ex>2.1.0</version.stax-ex>
+		<version.activation>2.0.1</version.activation>
+		<version.jakarta-activation>2.1.0</version.jakarta-activation>
+		<version.jakarta.annotation-api>2.1.1</version.jakarta.annotation-api>
+		<version.jakarta.inject-api>2.0.1</version.jakarta.inject-api>
+		<version.jakarta.websocket-api>2.1.0</version.jakarta.websocket-api>
 
 		<version.junit>5.8.2</version.junit>
 		<version.junit-platform>1.8.2</version.junit-platform>
@@ -123,8 +130,8 @@
 		<version.plexus-utils>3.4.1</version.plexus-utils>
 		<version.plexus-classworlds>2.6.0</version.plexus-classworlds>
 		<version.plexus-container-default>2.1.0</version.plexus-container-default>
-		<version.maven-plugin-plugin>3.6.0</version.maven-plugin-plugin>
-		<version.maven-compiler-plugin>3.8.1</version.maven-compiler-plugin>
+		<version.maven-plugin-plugin>3.7.0</version.maven-plugin-plugin>
+		<version.maven-compiler-plugin>3.10.1</version.maven-compiler-plugin>
 		<version.plexus-compiler-javac-errorprone>2.8.5</version.plexus-compiler-javac-errorprone>
 		<version.checker-qual>3.27.0</version.checker-qual>
 		<!-- 3.0.0 causes issues with provided dependencies: https://issues.apache.org/jira/browse/MENFORCER-402 -->
@@ -137,9 +144,9 @@
 		<version.jacoco-maven-plugin>0.8.6</version.jacoco-maven-plugin>
 		<version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
 
-		<version.jetty>9.4.48.v20220622</version.jetty>
-		<version.netty>4.1.79.Final</version.netty>
-		<version.netty-io_uring>0.0.14.Final</version.netty-io_uring>
+		<version.jetty>11.0.12</version.jetty>
+		<version.netty>4.1.85.Final</version.netty>
+		<version.netty-io_uring>0.0.16.Final</version.netty-io_uring>
 		<version.netty-tcnative>2.0.54.Final</version.netty-tcnative>
 
 		<version.chronicle-algorithms>2.22.3</version.chronicle-algorithms>
@@ -147,11 +154,11 @@
 		<version.chronicle-core>2.22.34</version.chronicle-core>
 		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
 		<version.agrona>1.16.0</version.agrona>
-		<version.burningwave-core>12.59.0</version.burningwave-core>
+		<version.burningwave-core>12.62.0</version.burningwave-core>
 		<version.jna>5.12.1</version.jna>
-		<version.jnr-constants>0.10.3</version.jnr-constants>
-		<version.jnr-ffi>2.2.10</version.jnr-ffi>
-		<version.jffi>1.3.8</version.jffi>
+		<version.jnr-constants>0.10.4</version.jnr-constants>
+		<version.jnr-ffi>2.2.13</version.jnr-ffi>
+		<version.jffi>1.3.10</version.jffi>
 		<version.dtype-next>9.011</version.dtype-next>
 		<version.tech.ml.dataset>6.063</version.tech.ml.dataset>
 
@@ -218,6 +225,16 @@
 				<groupId>org.aspectj</groupId>
 				<artifactId>aspectjweaver</artifactId>
 				<version>${version.aspectj}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.micrometer</groupId>
+				<artifactId>micrometer-core</artifactId>
+				<version>${version.micrometer}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.micrometer</groupId>
+				<artifactId>micrometer-observation</artifactId>
+				<version>${version.micrometer}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.javassist</groupId>
@@ -337,7 +354,7 @@
 			<dependency>
 				<groupId>org.springframework.security</groupId>
 				<artifactId>spring-security-cas</artifactId>
-				<version>${version.spring-security}</version>
+				<version>${version.spring-security-cas}</version>
 				<exclusions>
 					<exclusion>
 						<artifactId>jcip-annotations</artifactId>
@@ -370,6 +387,11 @@
 				<artifactId>spring-data-ldap</artifactId>
 				<version>${version.spring-data}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.springframework.ldap</groupId>
+				<artifactId>spring-ldap-core</artifactId>
+				<version>${version.spring-data}</version>
+			</dependency>
 
 			<dependency>
 				<groupId>com.github.ben-manes.caffeine</groupId>
@@ -385,6 +407,12 @@
 				<groupId>javax.cache</groupId>
 				<artifactId>cache-api</artifactId>
 				<version>${version.jcache}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.osgi</groupId>
+				<artifactId>osgi.annotation</artifactId>
+				<version>${version.osgi.annotation}</version>
+				<scope>provided</scope>
 			</dependency>
 			<dependency>
 				<groupId>com.google.guava</groupId>
@@ -570,6 +598,11 @@
 				<version>${version.minlog-slf4j}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.apache.logging.log4j</groupId>
+				<artifactId>log4j-api</artifactId>
+				<version>${version.log4j}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.codehaus.janino</groupId>
 				<artifactId>janino</artifactId>
 				<version>${version.janino}</version>
@@ -622,7 +655,7 @@
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.module</groupId>
-				<artifactId>jackson-module-jaxb-annotations</artifactId>
+				<artifactId>jackson-module-jakarta-xmlbind-annotations</artifactId>
 				<version>${version.jackson}</version>
 				<exclusions>
 					<exclusion>
@@ -736,9 +769,9 @@
 
 
 			<dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>javax.servlet-api</artifactId>
-				<version>${version.javax-servlet}</version>
+				<groupId>jakarta.servlet</groupId>
+				<artifactId>jakarta.servlet-api</artifactId>
+				<version>${version.jakarta-servlet}</version>
 			</dependency>
 
 			<dependency>
@@ -1109,6 +1142,7 @@
 			<dependency>
 				<groupId>com.querydsl</groupId>
 				<artifactId>querydsl-jpa</artifactId>
+				<classifier>jakarta</classifier>
 				<version>${version.querydsl}</version>
 				<exclusions>
 					<exclusion>
@@ -1128,6 +1162,7 @@
 			<dependency>
 				<groupId>com.querydsl</groupId>
 				<artifactId>querydsl-apt</artifactId>
+				<classifier>jakarta</classifier>
 				<version>${version.querydsl}</version>
 				<exclusions>
 					<exclusion>
@@ -1167,9 +1202,9 @@
 				<version>${version.classmate}</version>
 			</dependency>
 			<dependency>
-				<groupId>javax.persistence</groupId>
-				<artifactId>javax.persistence-api</artifactId>
-				<version>${version.javax.persistence-api}</version>
+				<groupId>jakarta.persistence</groupId>
+				<artifactId>jakarta.persistence-api</artifactId>
+				<version>${version.jakarta.persistence-api}</version>
 			</dependency>
 
 			<dependency>
@@ -1302,8 +1337,30 @@
 			</dependency>
 			<dependency>
 				<groupId>org.glassfish.jaxb</groupId>
+				<artifactId>jaxb-core</artifactId>
+				<version>${version.glassfish-jaxb}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>jakarta.activation</groupId>
+						<artifactId>jakarta.activation-api</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.glassfish.jaxb</groupId>
 				<artifactId>txw2</artifactId>
 				<version>${version.glassfish-jaxb}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>jakarta.activation</groupId>
+						<artifactId>jakarta.activation-api</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<dependency>
+				<groupId>org.jvnet.staxex</groupId>
+				<artifactId>stax-ex</artifactId>
+				<version>${version.stax-ex}</version>
 				<exclusions>
 					<exclusion>
 						<groupId>jakarta.activation</groupId>
@@ -1315,6 +1372,12 @@
 				<groupId>jakarta.xml.bind</groupId>
 				<artifactId>jakarta.xml.bind-api</artifactId>
 				<version>${version.jakarta-jaxb}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>jakarta.activation</groupId>
+						<artifactId>jakarta.activation-api</artifactId>
+					</exclusion>
+				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.sun.activation</groupId>
@@ -1322,9 +1385,19 @@
 				<version>${version.activation}</version>
 			</dependency>
 			<dependency>
+				<groupId>jakarta.activation</groupId>
+				<artifactId>jakarta.activation-api</artifactId>
+				<version>${version.jakarta-activation}</version>
+			</dependency>
+			<dependency>
 				<groupId>jakarta.annotation</groupId>
 				<artifactId>jakarta.annotation-api</artifactId>
 				<version>${version.jakarta.annotation-api}</version>
+			</dependency>
+			<dependency>
+				<groupId>jakarta.inject</groupId>
+				<artifactId>jakarta.inject-api</artifactId>
+				<version>${version.jakarta.inject-api}</version>
 			</dependency>
 
 			<dependency>
@@ -1538,7 +1611,7 @@
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty.websocket</groupId>
-				<artifactId>javax-websocket-server-impl</artifactId>
+				<artifactId>websocket-jakarta-server</artifactId>
 				<version>${version.jetty}</version>
 				<exclusions>
 					<exclusion>
@@ -1563,7 +1636,7 @@
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.jetty.websocket</groupId>
-				<artifactId>websocket-client</artifactId>
+				<artifactId>websocket-jakarta-client</artifactId>
 				<version>${version.jetty}</version>
 			</dependency>
 			<dependency>
@@ -1584,6 +1657,11 @@
 			<dependency>
 				<groupId>org.eclipse.jetty</groupId>
 				<artifactId>jetty-alpn-openjdk8-server</artifactId>
+				<version>${version.jetty}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty.websocket</groupId>
+				<artifactId>websocket-jetty-client</artifactId>
 				<version>${version.jetty}</version>
 			</dependency>
 
@@ -1760,10 +1838,14 @@
 									<exclude>commons-logging:commons-logging</exclude>
 									<exclude>org.aspectj:aspectjrt</exclude>
 									<exclude>javax.servlet:servlet-api</exclude>
+									<exclude>javax.servlet:javax.servlet-api</exclude>
+									<exclude>javax.xml.soap:javax.xml.soap-api</exclude>
 									<exclude>org.eclipse.jetty.orbit:javax.servlet</exclude>
+									<exclude>org.eclipse.jetty.websocket:websocket-client</exclude>
 									<exclude>org.apache.geronimo.specs:geronimo-jaxb_2.1_spec</exclude>
 									<exclude>commons-logging:commons-logging-api</exclude>
 									<exclude>javax.persistence:persistence-api</exclude>
+									<exclude>javax.persistence:javax.persistence-api</exclude>
 									<exclude>log4j:log4j</exclude>
 									<exclude>ch.qos.reload4j:reload4j</exclude>
 									<exclude>org.apache.logging.log4j:log4j-core</exclude>
@@ -2013,18 +2095,12 @@
 							<param>com\.cnuernber:libjulia-clj.*</param>
 							<!-- psfl (bsd-like) license -->
 							<param>org\.python.*</param>
-							<!-- epl license -->
-							<param>com\.h2database.*</param>
-							<param>org\.eclipse\.swt.*</param>
-							<param>org\.aspectj:aspectjweaver.*</param>
-							<param>org\.glassfish:jakarta\.el.*</param>
-							<param>clj-python:libpython-clj.*</param>
 							<!-- WARNING: some parts (gems) could be GPL -->
 							<param>org\.jruby:jruby.*</param>
 							<!-- LGPL license -->
 							<param>org\.jboss\.logging:jboss-logging-generator.*</param>
 							<param>org\.hibernate.*</param>
-							<param>net\.sourceforge.mydoggy.*</param>
+							<param>net\.sourceforge\.mydoggy.*</param>
 							<param>it\.tidalwave\.betterbeansbinding.*</param>
 							<param>org\.jdesktop\.bsaf.*</param>
 							<param>org\.swinglabs\.swingx:swingx-all.*</param>
@@ -2072,9 +2148,19 @@
 							<param>org\.jvnet\.hudson.*</param>
 							<param>com\.sun\.xml\.messaging\.saaj:saaj-impl.*</param>
 							<param>org\.clojars\.ato:clojure-jsr223.*</param>
+							<param>com\.h2database.*</param>
+							<param>org\.eclipse\.swt.*</param>
+							<param>org\.aspectj:aspectjweaver.*</param>
+							<param>org\.glassfish:jakarta\.el.*</param>
+							<param>clj-python:libpython-clj.*</param>
 							<!-- EDL -->
 							<param>jakarta\.activation:jakarta\.activation-api.*</param>
 							<param>com\.sun\.activation:jakarta\.activation.*</param>
+							<param>jakarta\.servlet:jakarta\.servlet-api.*</param>
+							<param>jakarta\.xml\.soap:jakarta\.xml\.soap-api.*</param>
+							<param>org\.jvnet\.staxex:stax-ex.*</param>
+							<param>jakarta\.xml\.bind:jakarta\.xml.bind-api.*</param>
+							<param>jakarta\.annotation:jakarta\.annotation-api.*</param>
 							<!-- CC BY 3.0 (requires attribution) -->
 							<param>org\.webjars:font-awesome.*</param>
 							<!-- modified bsd license -->
