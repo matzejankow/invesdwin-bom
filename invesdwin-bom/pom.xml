@@ -666,7 +666,7 @@
 			</dependency>
 			<dependency>
 				<groupId>com.fasterxml.jackson.datatype</groupId>
-				<artifactId>jackson-datatype-hibernate5</artifactId>
+				<artifactId>jackson-datatype-hibernate5-jakarta</artifactId>
 				<version>${version.jackson}</version>
 				<exclusions>
 					<exclusion>
