@@ -85,6 +85,7 @@
 		<version.caffeine>3.1.1</version.caffeine>
 		<version.jcache>1.1.1</version.jcache>
 		<version.jakarta.persistence-api>3.1.0</version.jakarta.persistence-api>
+		<version.jakarta.transaction-api>2.0.1</version.jakarta.transaction-api>
 		<version.osgi.annotation>8.1.0</version.osgi.annotation>
 
 		<version.conscrypt>2.5.2</version.conscrypt>
@@ -1205,6 +1206,11 @@
 				<groupId>jakarta.persistence</groupId>
 				<artifactId>jakarta.persistence-api</artifactId>
 				<version>${version.jakarta.persistence-api}</version>
+			</dependency>
+			<dependency>
+				<groupId>jakarta.transaction</groupId>
+				<artifactId>jakarta.transaction-api</artifactId>
+				<version>${version.jakarta.transaction-api}</version>
 			</dependency>
 
 			<dependency>
