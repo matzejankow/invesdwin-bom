@@ -121,7 +121,7 @@
 		<version.jruby>9.3.2.0</version.jruby>
 		<version.graalvm>21.3.0</version.graalvm>
 
-		<version.jollyday>0.5.10</version.jollyday>
+		<version.jollyday>0.10.0</version.jollyday>
 		<version.threeten-extra>1.5.0</version.threeten-extra>
 		<version.strata>2.10.5</version.strata>
 
@@ -1559,19 +1559,9 @@
 			</dependency>
 
 			<dependency>
-				<groupId>de.jollyday</groupId>
-				<artifactId>jollyday</artifactId>
+				<groupId>de.focus-shift</groupId>
+				<artifactId>jollyday-jaxb</artifactId>
 				<version>${version.jollyday}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>javax.xml.bind</groupId>
-						<artifactId>jaxb-api</artifactId>
-					</exclusion>
-					<exclusion>
-						<groupId>org.glassfish.jaxb</groupId>
-						<artifactId>jaxb-runtime</artifactId>
-					</exclusion>
-				</exclusions>
 			</dependency>
 			<dependency>
 				<groupId>com.opengamma.strata</groupId>
