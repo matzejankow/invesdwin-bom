@@ -117,7 +117,7 @@
 		<version.jamm>0.3.3</version.jamm>
 		<version.groovy>3.0.9</version.groovy>
 		<version.scala>2.13.9</version.scala>
-		<version.kotlin>1.7.20</version.kotlin>
+		<version.kotlin>1.7.21</version.kotlin>
 		<version.clojure>1.10.3</version.clojure>
 		<version.jruby>9.3.2.0</version.jruby>
 		<version.graalvm>21.3.0</version.graalvm>
