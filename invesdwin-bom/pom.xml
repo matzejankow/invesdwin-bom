@@ -2153,6 +2153,7 @@
 							<param>org\.aspectj:aspectjweaver.*</param>
 							<param>org\.glassfish:jakarta\.el.*</param>
 							<param>clj-python:libpython-clj.*</param>
+							<param>jakarta\.mail:jakarta\.mail-api.*</param>
 							<!-- EDL -->
 							<param>jakarta\.activation:jakarta\.activation-api.*</param>
 							<param>com\.sun\.activation:jakarta\.activation.*</param>
