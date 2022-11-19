@@ -86,6 +86,7 @@
 		<version.jcache>1.1.1</version.jcache>
 		<version.jakarta.persistence-api>3.1.0</version.jakarta.persistence-api>
 		<version.jakarta.transaction-api>2.0.1</version.jakarta.transaction-api>
+		<version.jakarta.annotation-api>2.1.1</version.jakarta.annotation-api>
 		<version.osgi.annotation>8.1.0</version.osgi.annotation>
 
 		<version.conscrypt>2.5.2</version.conscrypt>
@@ -94,7 +95,6 @@
 		<version.stax-ex>2.1.0</version.stax-ex>
 		<version.activation>2.0.1</version.activation>
 		<version.jakarta-activation>2.1.0</version.jakarta-activation>
-		<version.jakarta.annotation-api>2.1.1</version.jakarta.annotation-api>
 		<version.jakarta.inject-api>2.0.1</version.jakarta.inject-api>
 		<version.jakarta.websocket-api>2.1.0</version.jakarta.websocket-api>
 
@@ -144,6 +144,7 @@
 		<version.maven-shade-plugin>3.2.1</version.maven-shade-plugin>
 		<version.jacoco-maven-plugin>0.8.6</version.jacoco-maven-plugin>
 		<version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
+		<version.build-helper-maven-plugin>3.3.0</version.build-helper-maven-plugin>
 
 		<version.jetty>11.0.12</version.jetty>
 		<version.netty>4.1.85.Final</version.netty>
@@ -1842,6 +1843,7 @@
 									<exclude>javax.persistence:persistence-api</exclude>
 									<exclude>javax.persistence:javax.persistence-api</exclude>
 									<exclude>javax.jms:javax.jms-api</exclude>
+									<exclude>javax.annotation:javax.annotation-api</exclude>
 									<exclude>log4j:log4j</exclude>
 									<exclude>ch.qos.reload4j:reload4j</exclude>
 									<exclude>org.apache.logging.log4j:log4j-core</exclude>
@@ -2151,6 +2153,7 @@
 							<param>org\.glassfish:jakarta\.el.*</param>
 							<param>clj-python:libpython-clj.*</param>
 							<param>jakarta\.mail:jakarta\.mail-api.*</param>
+							<param>jakarta\.transaction:jakarta\.transaction-api.*</param>
 							<!-- EDL -->
 							<param>jakarta\.activation:jakarta\.activation-api.*</param>
 							<param>com\.sun\.activation:jakarta\.activation.*</param>
@@ -2282,6 +2285,26 @@
 						<enableAssertions>false</enableAssertions>
 						<argLine>-Xmx2g</argLine>
 					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>build-helper-maven-plugin</artifactId>
+					<version>${version.build-helper-maven-plugin}</version>
+					<executions>
+						<execution>
+							<id>add-source</id>
+							<phase>generate-sources</phase>
+							<goals>
+								<goal>add-source</goal>
+							</goals>
+							<configuration>
+								<sources>
+									<source>${project.build.directory}/generated-sources/apt</source>
+									<source>${project.build.directory}/generated-sources/invesdwin</source>
+								</sources>
+							</configuration>
+						</execution>
+					</executions>
 				</plugin>
 			</plugins>
 		</pluginManagement>
