@@ -114,7 +114,6 @@
 
 		<version.fastutil>8.5.9</version.fastutil>
 		<version.dsiutils>2.7.2</version.dsiutils>
-		<version.koloboke>1.0.0</version.koloboke>
 		<version.jamm>0.3.3</version.jamm>
 		<version.groovy>3.0.9</version.groovy>
 		<version.scala>2.13.9</version.scala>
@@ -1398,17 +1397,6 @@
 					<exclusion>
 						<groupId>org.slf4j</groupId>
 						<artifactId>slf4j-api</artifactId>
-					</exclusion>
-				</exclusions>
-			</dependency>
-			<dependency>
-				<groupId>com.koloboke</groupId>
-				<artifactId>koloboke-impl-jdk8</artifactId>
-				<version>${version.koloboke}</version>
-				<exclusions>
-					<exclusion>
-						<groupId>com.google.auto.value</groupId>
-						<artifactId>auto-value</artifactId>
 					</exclusion>
 				</exclusions>
 			</dependency>
