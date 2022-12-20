@@ -91,7 +91,7 @@
 		<version.saaj-impl>3.0.0</version.saaj-impl>
 		<version.jakarta.xml.soap-api>3.0.0</version.jakarta.xml.soap-api>
 
-		<version.conscrypt>2.5.2</version.conscrypt>
+		<version.conscrypt>2.6-inv</version.conscrypt>
 		<version.glassfish-jaxb>4.0.1</version.glassfish-jaxb>
 		<version.jakarta-jaxb>4.0.0</version.jakarta-jaxb>
 		<version.stax-ex>2.1.0</version.stax-ex>
