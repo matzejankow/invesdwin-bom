@@ -2012,6 +2012,7 @@
 							<param>io\.sisu:nng-java.*</param>
 							<param>com\.github\.rssdev10:julia4j.*</param>
 							<param>com\.cnuernber:libjulia-clj.*</param>
+							<param>org\.mpjexpress:mpj.*</param>
 							<!-- psfl (bsd-like) license -->
 							<param>org\.python.*</param>
 							<!-- WARNING: some parts (gems) could be GPL -->
@@ -2087,6 +2088,7 @@
 							<!-- modified bsd license -->
 							<param>com\.jamonapi.*</param>
 							<param>com\.fifesoft.*</param>
+							<param>org\.openmpi:mpi.*</param>
 							<!-- universal permissive license -->
 							<param>org\.graalvm\.js:js.*</param>
 							<!-- not everything is open sourced -->
@@ -2110,6 +2112,7 @@
 							<param>online\.mtapi:.*</param>
 							<param>cloud\.metaapi\.sdk:metaapi-.*</param>
 							<param>dev\.nm:nmdev.*</param>
+							<param>fastmpj:mpj.*</param>
 							<!-- WARNING: gpl license, only use when you conform to its terms -->
 							<param>org\.renjin:renjin-script-engine.*</param>
 							<param>org\.renjin\.cran:DEoptim.*</param>
