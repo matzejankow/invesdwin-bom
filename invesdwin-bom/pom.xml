@@ -1988,6 +1988,7 @@
 							<param>io\.netty:netty-tcnative.*</param>
 							<param>com\.github\.estraier:tkrzw-java.*</param>
 							<param>com\.github\.rjolly:jshellscriptengine.*</param>
+							<param>org\.rauschig:jarchivelib.*</param>
 							<!-- bsd license -->
 							<param>com\.esotericsoftware:kryonet.*</param>
 							<param>sg-cdb:sg-cdb.*</param>
