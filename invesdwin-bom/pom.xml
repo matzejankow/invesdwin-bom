@@ -1852,7 +1852,7 @@
 									<exclude>org.hibernate:hibernate-validator-annotation-processor</exclude>
 									<exclude>org.hibernate:hibernate-validator</exclude>
 									<!-- use org.junit.jupiter:junit-jupiter-engine instead -->
-									<exclude>junit:junit</exclude>
+									<!--<exclude>junit:junit</exclude>-->
 									<!-- it automatically connects to google analytics which we don't 
 										want -->
 									<exclude>net.openhft:chronicle-analytics</exclude>
