@@ -22,7 +22,7 @@
 		<version.spring>6.0.0</version.spring>
 		<!-- 2.5.6, 2.5.6 and 2.6.0 cause an error in datanucleus: https://github.com/spring-projects/spring-data-jpa/issues/2357 -->
 		<version.spring-data>3.0.0-RC1</version.spring-data>
-		<version.reactor-core>3.5.3</version.reactor-core>
+		<version.reactor>3.5.3</version.reactor>
 		<version.aspectj>1.9.9.1</version.aspectj>
 		<version.micrometer>1.10.1</version.micrometer>
 		<version.javassist>3.28.0-GA</version.javassist>
@@ -381,7 +381,12 @@
 			<dependency>
 				<groupId>io.projectreactor</groupId>
 				<artifactId>reactor-core</artifactId>
-				<version>${version.reactor-core}</version>
+				<version>${version.reactor}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.projectreactor</groupId>
+				<artifactId>reactor-test</artifactId>
+				<version>${version.reactor}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.github.ben-manes.caffeine</groupId>
