@@ -2112,6 +2112,7 @@
 								a license when using in a commercial application -->
 							<param>mysql.*</param>
 							<param>com\.mysql.*</param>
+							<param>de\.hhu\.bsinfo:hadronio.*</param>
 							<!-- WARNING: commercial license bound to broker account, not for 
 								free use -->
 							<param>com\.dukascopy.*</param>
