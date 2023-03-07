@@ -2118,6 +2118,7 @@
 							<param>com\.dukascopy.*</param>
 							<param>org\.fife:DDS2-TextEditor.*</param>
 							<param>com\.fxcm:.*</param>
+							<param>com\.interactivebrokers:tws-api.*</param>
 							<!-- WARNING: optional, you need to buy a license to use this dependency -->
 							<param>org\.webjars:highstock.*</param>
 							<!-- WARNING: commercial license needs to be bought -->
