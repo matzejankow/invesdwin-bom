@@ -152,6 +152,7 @@
 		<version.dtype-next>9.011</version.dtype-next>
 		<version.tech.ml.dataset>6.063</version.tech.ml.dataset>
 		<version.xml-apis>1.4.01</version.xml-apis>
+		<version.jfilechooser-bookmarks>0.1.9</version.jfilechooser-bookmarks>
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
 	<dependencyManagement>
@@ -1719,6 +1720,11 @@
 				<groupId>xml-apis</groupId>
 				<artifactId>xml-apis</artifactId>
 				<version>${version.xml-apis}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.fracpete</groupId>
+				<artifactId>jfilechooser-bookmarks</artifactId>
+				<version>${version.jfilechooser-bookmarks}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
