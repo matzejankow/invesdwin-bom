@@ -2113,6 +2113,7 @@
 							<param>mysql.*</param>
 							<param>com\.mysql.*</param>
 							<param>de\.hhu\.bsinfo:hadronio.*</param>
+							<param>de\.hhu\.bsinfo:neutrino.*</param>
 							<!-- WARNING: commercial license bound to broker account, not for 
 								free use -->
 							<param>com\.dukascopy.*</param>
