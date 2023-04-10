@@ -153,6 +153,7 @@
 		<version.tech.ml.dataset>6.063</version.tech.ml.dataset>
 		<version.xml-apis>1.4.01</version.xml-apis>
 		<version.jfilechooser-bookmarks>0.1.9</version.jfilechooser-bookmarks>
+		<version.flatlaf>3.1</version.flatlaf>
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
 	<dependencyManagement>
@@ -1725,6 +1726,11 @@
 				<groupId>com.github.fracpete</groupId>
 				<artifactId>jfilechooser-bookmarks</artifactId>
 				<version>${version.jfilechooser-bookmarks}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.formdev</groupId>
+				<artifactId>flatlaf</artifactId>
+				<version>${version.flatlaf}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
