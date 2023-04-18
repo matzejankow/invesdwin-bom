@@ -2015,6 +2015,7 @@
 							<!-- bsd license -->
 							<param>com\.esotericsoftware:kryonet.*</param>
 							<param>sg-cdb:sg-cdb.*</param>
+							<param>edu\.ohio-state\.cse\.mvapich:mvapich2-j.*</param>
 							<!-- MIT license -->
 							<param>org\.slf4j.*</param>
 							<param>org\.bouncycastle.*</param>
