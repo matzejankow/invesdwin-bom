@@ -143,7 +143,7 @@
 		<version.chronicle-bytes>2.24ea13</version.chronicle-bytes>
 		<version.chronicle-core>2.24ea20</version.chronicle-core>
 		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
-		<version.agrona>1.18.2</version.agrona>
+		<version.agrona>1.19.2</version.agrona>
 		<version.burningwave-core>12.62.0</version.burningwave-core>
 		<version.jna>5.12.1</version.jna>
 		<version.jnr-constants>0.10.4</version.jnr-constants>
