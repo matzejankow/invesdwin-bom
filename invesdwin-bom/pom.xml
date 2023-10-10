@@ -2068,6 +2068,7 @@
 							<param>com\.googlecode\.soundlibs:vorbisspi.*</param>
 							<param>org\.zeromq:jzmq-api.*</param>
 							<param>net\.java\.dev\.jna:jna.*</param>
+							<param>com\.googlecode\.efficient-java-matrix-library:ejml.*</param>
 							<!-- zlib -->
 							<param>com\.github\.mrj0:jep.*</param>
 							<!-- CPL -->
