@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.invesdwin</groupId>
 	<artifactId>invesdwin-bom</artifactId>
@@ -20,7 +22,8 @@
 		<version.assertj-core>3.21.0</version.assertj-core>
 		<version.assertj-joda-time>2.2.0</version.assertj-joda-time>
 		<version.spring>6.0.0</version.spring>
-		<!-- 2.5.6, 2.5.6 and 2.6.0 cause an error in datanucleus: https://github.com/spring-projects/spring-data-jpa/issues/2357 -->
+		<!-- 2.5.6, 2.5.6 and 2.6.0 cause an error in datanucleus:
+		https://github.com/spring-projects/spring-data-jpa/issues/2357 -->
 		<version.spring-data>3.0.0-RC1</version.spring-data>
 		<version.reactor>3.5.3</version.reactor>
 		<version.aspectj>1.9.9.1</version.aspectj>
@@ -125,7 +128,8 @@
 		<version.maven-compiler-plugin>3.10.1</version.maven-compiler-plugin>
 		<version.plexus-compiler-javac-errorprone>2.8.5</version.plexus-compiler-javac-errorprone>
 		<version.checker-qual>3.27.0</version.checker-qual>
-		<!-- 3.0.0 causes issues with provided dependencies: https://issues.apache.org/jira/browse/MENFORCER-402 -->
+		<!-- 3.0.0 causes issues with provided dependencies:
+		https://issues.apache.org/jira/browse/MENFORCER-402 -->
 		<version.maven-enforcer-plugin>3.1.0</version.maven-enforcer-plugin>
 		<version.lifecycle-mapping>1.0.0</version.lifecycle-mapping>
 		<version.license-check-maven-plugin>0.5.6-inv</version.license-check-maven-plugin>
@@ -135,6 +139,7 @@
 		<version.jacoco-maven-plugin>0.8.6</version.jacoco-maven-plugin>
 		<version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
 		<version.build-helper-maven-plugin>3.3.0</version.build-helper-maven-plugin>
+		<version.os-maven-plugin>1.7.1</version.os-maven-plugin>
 		<version.jetty>11.0.12</version.jetty>
 		<version.netty>4.1.94.Final</version.netty>
 		<version.netty-io_uring>0.0.21.Final</version.netty-io_uring>
@@ -451,7 +456,8 @@
 						<artifactId>guava</artifactId>
 					</exclusion>
 					<exclusion>
-						<!-- remove range dependency that causes errors in artifactory -->
+						<!-- remove range dependency that causes errors in
+						artifactory -->
 						<artifactId>assertj-core</artifactId>
 						<groupId>org.assertj</groupId>
 					</exclusion>
@@ -1686,7 +1692,8 @@
 				<artifactId>tech.ml.dataset</artifactId>
 				<version>${version.tech.ml.dataset}</version>
 				<exclusions>
-					<!-- provided transient upperbound deps (bug in maven-enforcer-plugin) -->
+					<!-- provided transient upperbound deps (bug in
+					maven-enforcer-plugin) -->
 					<exclusion>
 						<groupId>org.apache.spark</groupId>
 						<artifactId>spark-core_2.12</artifactId>
@@ -1778,14 +1785,19 @@
 									<exclude>org.aspectj:aspectjrt</exclude>
 									<exclude>javax.servlet:servlet-api</exclude>
 									<exclude>javax.xml.soap:javax.xml.soap-api</exclude>
-									<exclude>org.eclipse.jetty.orbit:javax.servlet</exclude>
-									<exclude>org.eclipse.jetty.websocket:websocket-client</exclude>
-									<exclude>org.apache.geronimo.specs:geronimo-jaxb_2.1_spec</exclude>
+									<exclude>
+										org.eclipse.jetty.orbit:javax.servlet</exclude>
+									<exclude>
+										org.eclipse.jetty.websocket:websocket-client</exclude>
+									<exclude>
+										org.apache.geronimo.specs:geronimo-jaxb_2.1_spec</exclude>
 									<exclude>commons-logging:commons-logging-api</exclude>
 									<exclude>javax.persistence:persistence-api</exclude>
-									<exclude>javax.persistence:javax.persistence-api</exclude>
+									<exclude>
+										javax.persistence:javax.persistence-api</exclude>
 									<exclude>javax.jms:javax.jms-api</exclude>
-									<exclude>javax.annotation:javax.annotation-api</exclude>
+									<exclude>
+										javax.annotation:javax.annotation-api</exclude>
 									<exclude>com.sun.xml.bind:jaxb-impl</exclude>
 									<exclude>log4j:log4j</exclude>
 									<exclude>ch.qos.reload4j:reload4j</exclude>
@@ -1796,33 +1808,48 @@
 									<exclude>javax.servlet.jsp:jsp-api</exclude>
 									<exclude>javax.enterprise:cdi-api</exclude>
 									<exclude>net.jcip:jcip-annotations</exclude>
-									<exclude>com.google.code.findbugs:annotations</exclude>
+									<exclude>
+										com.google.code.findbugs:annotations</exclude>
 									<exclude>org.glassfish:javax.servlet</exclude>
 									<exclude>org.hibernate:hibernate-c3p0</exclude>
 									<exclude>org.hibernate:hibernate-hikaricp</exclude>
-									<exclude>org.hibernate.javax.persistence:hibernate-jpa-2.0-api</exclude>
-									<exclude>org.hibernate.javax.persistence:hibernate-jpa-2.1-api</exclude>
-									<exclude>org.hibernate.javax.persistence:hibernate-jpa-2.2-api</exclude>
-									<exclude>backport-util-concurrent:backport-util-concurrent</exclude>
+									<exclude>
+										org.hibernate.javax.persistence:hibernate-jpa-2.0-api</exclude>
+									<exclude>
+										org.hibernate.javax.persistence:hibernate-jpa-2.1-api</exclude>
+									<exclude>
+										org.hibernate.javax.persistence:hibernate-jpa-2.2-api</exclude>
+									<exclude>
+										backport-util-concurrent:backport-util-concurrent</exclude>
 									<exclude>javassist:javassist</exclude>
-									<exclude>org.apache.geronimo.specs:geronimo-jms_1.1_spec</exclude>
+									<exclude>
+										org.apache.geronimo.specs:geronimo-jms_1.1_spec</exclude>
 									<exclude>com.sun.jna:jna</exclude>
 									<exclude>org.osgi:org.osgi.core</exclude>
-									<!-- use jakarta.validation:jakarta.validation-api instead -->
+									<!-- use
+									jakarta.validation:jakarta.validation-api
+									instead -->
 									<exclude>javax.validation:validation-api</exclude>
-									<!-- use jakarta.websocket:jakarta.websocket-api instead -->
+									<!-- use
+									jakarta.websocket:jakarta.websocket-api
+									instead -->
 									<exclude>javax.websocket:javax.websocket-api</exclude>
-									<!-- use jakarta.websocket:jakarta.websocket-client-api instead -->
-									<exclude>javax.websocket:javax.websocket-client-api</exclude>
+									<!-- use
+									jakarta.websocket:jakarta.websocket-client-api
+									instead -->
+									<exclude>
+										javax.websocket:javax.websocket-client-api</exclude>
 									<!-- use caffeine instead -->
 									<exclude>org.ehcache:ehcache</exclude>
 									<exclude>net.sf.ehcache:ehcache-core</exclude>
 									<!-- use org.lz4 version instead -->
 									<exclude>net.jpountz.lz4:lz4</exclude>
 									<!-- use jboss jta specification instead -->
-									<exclude>org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec</exclude>
+									<exclude>
+										org.apache.geronimo.specs:geronimo-jta_1.0.1B_spec</exclude>
 									<exclude>javax.transaction:jta</exclude>
-									<!-- use bcprov-jdk18on or bcpkix-jdk18on instead -->
+									<!-- use bcprov-jdk18on or bcpkix-jdk18on
+									instead -->
 									<exclude>org.bouncycastle:bcprov-jdk16</exclude>
 									<exclude>org.bouncycastle:bcprov-jdk15</exclude>
 									<exclude>org.bouncycastle:bcprov-jdk15to18</exclude>
@@ -1830,24 +1857,30 @@
 									<exclude>org.bouncycastle:bcprov-jdk15+</exclude>
 									<exclude>org.bouncycastle:bcprov-jdk14</exclude>
 									<exclude>org.bouncycastle:bcprov-jdk12</exclude>
-									<!-- bcprov-ext is the same as bcprov just with some more obscure 
+									<!-- bcprov-ext is the same as bcprov just
+									with some more obscure 
 										algos -->
 									<exclude>org.bouncycastle:bcprov-ext-jdk18on</exclude>
 									<exclude>org.bouncycastle:bcprov-ext-jdk16</exclude>
 									<exclude>org.bouncycastle:bcprov-ext-jdk15</exclude>
-									<exclude>org.bouncycastle:bcprov-ext-jdk15to18</exclude>
+									<exclude>
+										org.bouncycastle:bcprov-ext-jdk15to18</exclude>
 									<exclude>org.bouncycastle:bcprov-ext-jdk15on</exclude>
 									<exclude>org.bouncycastle:bcprov-ext-jdk15+</exclude>
 									<exclude>org.bouncycastle:bcprov-ext-jdk14</exclude>
 									<exclude>org.bouncycastle:bcprov-ext-jdk12</exclude>
-									<!-- use com.narupley:not-going-to-be-commons-ssl instead -->
+									<!-- use
+									com.narupley:not-going-to-be-commons-ssl
+									instead -->
 									<exclude>ca.juliusdavies:not-yet-commons-ssl</exclude>
-									<!-- use ta-lib:ta-lib from dukascopy instead -->
+									<!-- use ta-lib:ta-lib from dukascopy
+									instead -->
 									<exclude>org.clojars.edbond:talib</exclude>
 									<exclude>com.tictactec:ta-lib</exclude>
 									<!-- use com.jgoodies:jgoodies-forms instead -->
 									<exclude>com.jgoodies:forms</exclude>
-									<!-- use org.swinglabs.swingx:swingx-all instead -->
+									<!-- use org.swinglabs.swingx:swingx-all
+									instead -->
 									<exclude>org.swinglabs:swingx</exclude>
 									<!-- use org.jfree:jfreechart instead -->
 									<exclude>jfree:jfreechart</exclude>
@@ -1864,19 +1897,27 @@
 									<exclude>javax.jdo:jdo-api</exclude>
 									<!-- use individual libs instead -->
 									<exclude>javax:javaee-api</exclude>
-									<!-- use jakarta.activation:jakarta.activation-api instead -->
-									<exclude>com.sun.activation:jakarta.activation</exclude>
+									<!-- use
+									jakarta.activation:jakarta.activation-api
+									instead -->
+									<exclude>
+										com.sun.activation:jakarta.activation</exclude>
 									<exclude>com.sun.activation:javax.activation</exclude>
 									<exclude>javax.activation:activation</exclude>
-									<!-- use jakarta.mail:jakarat.mail.api instead -->
+									<!-- use jakarta.mail:jakarat.mail.api
+									instead -->
 									<exclude>javax.mail:mail</exclude>
 									<exclude>com.sun.mail:javax.mail</exclude>
 									<!-- use org.hibernate.validator:... instead -->
-									<exclude>org.hibernate:hibernate-validator-annotation-processor</exclude>
+									<exclude>
+										org.hibernate:hibernate-validator-annotation-processor</exclude>
 									<exclude>org.hibernate:hibernate-validator</exclude>
-									<!-- use org.junit.jupiter:junit-jupiter-engine instead -->
+									<!-- use
+									org.junit.jupiter:junit-jupiter-engine
+									instead -->
 									<!--<exclude>junit:junit</exclude>-->
-									<!-- it automatically connects to google analytics which we don't 
+									<!-- it automatically connects to google
+									analytics which we don't 
 										want -->
 									<exclude>net.openhft:chronicle-analytics</exclude>
 								</excludes>
@@ -1890,10 +1931,12 @@
 									<exclude>org.osgi:org.osgi.core</exclude>
 									<exclude>log4j:log4j</exclude>
 									<exclude>commons-logging:commons-logging</exclude>
-									<exclude>com.google.code.findbugs:annotations</exclude>
+									<exclude>
+										com.google.code.findbugs:annotations</exclude>
 								</excludes>
 							</requireUpperBoundDeps>
-							<!-- requireUpperBoundDeps is enough for multi projects <dependencyConvergence 
+							<!-- requireUpperBoundDeps is enough for multi
+							projects <dependencyConvergence 
 								/> -->
 						</rules>
 					</configuration>
@@ -2068,7 +2111,8 @@
 							<param>com\.googlecode\.soundlibs:vorbisspi.*</param>
 							<param>org\.zeromq:jzmq-api.*</param>
 							<param>net\.java\.dev\.jna:jna.*</param>
-							<param>com\.googlecode\.efficient-java-matrix-library:ejml.*</param>
+							<param>
+								com\.googlecode\.efficient-java-matrix-library:ejml.*</param>
 							<!-- zlib -->
 							<param>com\.github\.mrj0:jep.*</param>
 							<!-- CPL -->
@@ -2100,7 +2144,8 @@
 							<param>org\.glassfish:jakarta\.el.*</param>
 							<param>clj-python:libpython-clj.*</param>
 							<param>jakarta\.mail:jakarta\.mail-api.*</param>
-							<param>jakarta\.transaction:jakarta\.transaction-api.*</param>
+							<param>
+								jakarta\.transaction:jakarta\.transaction-api.*</param>
 							<!-- EDL -->
 							<param>jakarta\.activation:jakarta\.activation-api.*</param>
 							<param>com\.sun\.activation:jakarta\.activation.*</param>
@@ -2119,22 +2164,26 @@
 							<param>org\.graalvm\.js:js.*</param>
 							<!-- not everything is open sourced -->
 							<param>de\.invesdwin.*</param>
-							<!-- WARNING: CCA 2.5 license, you need to put a link to this when 
+							<!-- WARNING: CCA 2.5 license, you need to put a
+							link to this when 
 								using the icons -->
 							<param>com\.famfamfam:silk.*</param>
-							<!-- WARNING: gpl license, just a test dependency, you need to buy 
+							<!-- WARNING: gpl license, just a test dependency,
+							you need to buy 
 								a license when using in a commercial application -->
 							<param>mysql.*</param>
 							<param>com\.mysql.*</param>
 							<param>de\.hhu\.bsinfo:hadronio.*</param>
 							<param>de\.hhu\.bsinfo:neutrino.*</param>
-							<!-- WARNING: commercial license bound to broker account, not for 
+							<!-- WARNING: commercial license bound to broker
+							account, not for 
 								free use -->
 							<param>com\.dukascopy.*</param>
 							<param>org\.fife:DDS2-TextEditor.*</param>
 							<param>com\.fxcm:.*</param>
 							<param>com\.interactivebrokers:tws-api.*</param>
-							<!-- WARNING: optional, you need to buy a license to use this dependency -->
+							<!-- WARNING: optional, you need to buy a license to
+							use this dependency -->
 							<param>org\.webjars:highstock.*</param>
 							<!-- WARNING: commercial license needs to be bought -->
 							<param>com\.nj4x:jfx.*</param>
@@ -2142,7 +2191,8 @@
 							<param>cloud\.metaapi\.sdk:metaapi-.*</param>
 							<param>dev\.nm:nmdev.*</param>
 							<param>fastmpj:mpj.*</param>
-							<!-- WARNING: gpl license, only use when you conform to its terms -->
+							<!-- WARNING: gpl license, only use when you conform
+							to its terms -->
 							<param>org\.renjin:renjin-script-engine.*</param>
 							<param>org\.renjin\.cran:DEoptim.*</param>
 							<param>org\.scilab\.modules:javasci.*</param>
@@ -2151,13 +2201,16 @@
 							<param>nz\.ac\.waikato\.cms\.moa:.*</param>
 							<param>net\.sf\.meka:meka.*</param>
 							<param>jdistlib:jdistlib.*</param>
-							<!-- WARNING: agpl license, only use when you conform to its terms -->
+							<!-- WARNING: agpl license, only use when you
+							conform to its terms -->
 							<param>jdistlib:jdistlib.*</param>
 							<param>de\.lmu\.ifi\.dbs\.elki:elki.*</param>
-							<!-- WARNING: no license specified, though since it interacts with 
+							<!-- WARNING: no license specified, though since it
+							interacts with 
 								R over a socket, we expect it to be GPL -->
 							<param>com\.github\.yannrichet:Rsession.*</param>
-							<!-- WARNING: optional, you need to buy a license to use this dependency -->
+							<!-- WARNING: optional, you need to buy a license to
+							use this dependency -->
 							<param>org\.webjars:highstock.*</param>
 							<!-- WARNING: ITPCL is not open source -->
 							<param>com\.irisalpha:irisalpha.*</param>
@@ -2170,7 +2223,8 @@
 					<version>${version.maven-release-plugin}</version>
 					<configuration>
 						<autoVersionSubmodules>true</autoVersionSubmodules>
-						<!-- releaseProfiles configuration will actually force a Maven profile 
+						<!-- releaseProfiles configuration will actually force a
+						Maven profile 
 							– the `releases` profile – to become active during the Release process. -->
 						<releaseProfiles>releases</releaseProfiles>
 					</configuration>
@@ -2223,15 +2277,19 @@
 					<version>${version.maven-surefire-plugin}</version>
 					<configuration>
 						<systemPropertyVariables>
-							<jacoco-agent.destfile>${project.build.directory}/jacoco.exec</jacoco-agent.destfile>
+							<jacoco-agent.destfile>
+								${project.build.directory}/jacoco.exec</jacoco-agent.destfile>
 						</systemPropertyVariables>
 						<!-- parallelize tests -->
 						<forkCount>1</forkCount>
 						<reuseForks>true</reuseForks>
-						<!-- <parallel>suitesAndClasses</parallel> <threadCount>1</threadCount> -->
-						<!-- timeout test suite of any module if it takes longer than 30 minutes -->
+						<!-- <parallel>suitesAndClasses</parallel>
+						<threadCount>1</threadCount> -->
+						<!-- timeout test suite of any module if it takes longer
+						than 30 minutes -->
 						<forkedProcessTimeoutInSeconds>1800</forkedProcessTimeoutInSeconds>
-						<!-- Assertions make jforex fail in unit tests even if they normally 
+						<!-- Assertions make jforex fail in unit tests even if
+						they normally 
 							should not fail. To be safe about this regarding any framework, assertions 
 							are disabled by default here. -->
 						<enableAssertions>false</enableAssertions>
@@ -2263,6 +2321,13 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<extensions>
+			<extension>
+				<groupId>kr.motd.maven</groupId>
+				<artifactId>os-maven-plugin</artifactId>
+				<version>${version.os-maven-plugin}</version>
+			</extension>
+		</extensions>
 	</build>
 	<distributionManagement>
 		<repository>
@@ -2289,17 +2354,20 @@
 		<profile>
 			<id>jacoco</id>
 			<activation>
-				<!-- use "mvn clean install -Pjacoco" to enable target/jacoco.exec file 
+				<!-- use "mvn clean install -Pjacoco" to enable
+				target/jacoco.exec file 
 					generation -->
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<dependencies>
 				<dependency>
-					<!-- https://stackoverflow.com/questions/40067455/jacoco-caused-by-java-lang-classnotfoundexception-org-jacoco-agent-rt-inter -->
+					<!--
+					https://stackoverflow.com/questions/40067455/jacoco-caused-by-java-lang-classnotfoundexception-org-jacoco-agent-rt-inter -->
 					<groupId>org.jacoco</groupId>
 					<artifactId>org.jacoco.agent</artifactId>
 					<classifier>runtime</classifier>
-					<!-- not using test scope so that annotation processors work properly, 
+					<!-- not using test scope so that annotation processors work
+					properly, 
 						requires less overrides in pom.xmls -->
 					<scope>compile</scope>
 				</dependency>
