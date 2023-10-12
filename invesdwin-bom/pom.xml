@@ -141,7 +141,7 @@
 		<version.build-helper-maven-plugin>3.3.0</version.build-helper-maven-plugin>
 		<version.os-maven-plugin>1.7.1</version.os-maven-plugin>
 		<version.jetty>11.0.12</version.jetty>
-		<version.netty>4.1.94.Final</version.netty>
+		<version.netty>4.1.96.Final</version.netty>
 		<version.netty-io_uring>0.0.21.Final</version.netty-io_uring>
 		<version.netty-tcnative>2.0.61.Final</version.netty-tcnative>
 		<version.chronicle-algorithms>2.24ea0</version.chronicle-algorithms>
@@ -149,6 +149,7 @@
 		<version.chronicle-core>2.24ea20</version.chronicle-core>
 		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
 		<version.agrona>1.19.2</version.agrona>
+		<version.arrow>13.0.0</version.arrow>
 		<version.burningwave-core>12.62.0</version.burningwave-core>
 		<version.jna>5.12.1</version.jna>
 		<version.jnr-constants>0.10.4</version.jnr-constants>
@@ -1640,6 +1641,36 @@
 				<groupId>org.agrona</groupId>
 				<artifactId>agrona</artifactId>
 				<version>${version.agrona}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.arrow</groupId>
+				<artifactId>arrow-memory-netty</artifactId>
+				<version>${version.arrow}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.arrow</groupId>
+				<artifactId>arrow-memory-core</artifactId>
+				<version>${version.arrow}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.arrow</groupId>
+				<artifactId>flight-grpc</artifactId>
+				<version>${version.arrow}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.arrow</groupId>
+				<artifactId>arrow-flight-core</artifactId>
+				<version>${version.arrow}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.arrow</groupId>
+				<artifactId>arrow-vector</artifactId>
+				<version>${version.arrow}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.arrow</groupId>
+				<artifactId>arrow-format</artifactId>
+				<version>${version.arrow}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.maven.plugins</groupId>
