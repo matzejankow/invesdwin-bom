@@ -115,7 +115,7 @@
 		<version.kotlin>1.9.10</version.kotlin>
 		<version.clojure>1.11.1</version.clojure>
 		<version.jruby>9.4.4.0</version.jruby>
-		<version.graalvm>21.3.0</version.graalvm>
+		<version.graalvm>23.0.2</version.graalvm>
 		<version.jollyday>0.10.0</version.jollyday>
 		<version.threeten-extra>1.7.1</version.threeten-extra>
 		<version.strata>2.10.5</version.strata>
