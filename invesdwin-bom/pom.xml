@@ -50,7 +50,7 @@
 		<version.commons-math3>3.6.1</version.commons-math3>
 		<version.commons-lang3>3.13.0</version.commons-lang3>
 		<version.commons-beanutils>1.9.4</version.commons-beanutils>
-		<version.commons-fileupload>1.4</version.commons-fileupload>
+		<version.commons-fileupload>1.5</version.commons-fileupload>
 		<version.commons-text>1.10.0</version.commons-text>
 		<version.httpclient>4.5.13</version.httpclient>
 		<version.httpclient5>5.2</version.httpclient5>
@@ -62,7 +62,7 @@
 		<version.spring-security>6.2.0</version.spring-security>
 		<version.jakarta-servlet>6.0.0</version.jakarta-servlet>
 		<version.jackson>2.15.3</version.jackson>
-		<version.jettison>1.5.1</version.jettison>
+		<version.jettison>1.5.4</version.jettison>
 		<version.jsoup>1.15.3</version.jsoup>
 		<version.args4j>2.33</version.args4j>
 		<version.shiro>1.10.0</version.shiro>
