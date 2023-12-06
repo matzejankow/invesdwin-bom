@@ -1441,6 +1441,10 @@
 						<groupId>javax.enterprise</groupId>
 						<artifactId>cdi-api</artifactId>
 					</exclusion>
+					<exclusion>
+						<groupId>javax.annotation</groupId>
+						<artifactId>javax.annotation-api</artifactId>
+					</exclusion>
 				</exclusions>
 			</dependency>
 			<dependency>
