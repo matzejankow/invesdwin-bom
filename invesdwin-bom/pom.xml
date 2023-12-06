@@ -119,7 +119,7 @@
 		<version.jollyday>0.10.0</version.jollyday>
 		<version.threeten-extra>1.7.1</version.threeten-extra>
 		<version.strata>2.10.5</version.strata>
-		<version.maven>3.6.0</version.maven>
+		<version.maven>3.9.6</version.maven>
 		<version.plexus-build-api>0.0.7</version.plexus-build-api>
 		<version.plexus-utils>3.4.1</version.plexus-utils>
 		<version.plexus-classworlds>2.6.0</version.plexus-classworlds>
