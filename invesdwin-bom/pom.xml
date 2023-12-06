@@ -65,7 +65,7 @@
 		<version.jettison>1.5.4</version.jettison>
 		<version.jsoup>1.15.3</version.jsoup>
 		<version.args4j>2.33</version.args4j>
-		<version.shiro>1.10.0</version.shiro>
+		<version.shiro>1.13.0</version.shiro>
 		<version.jquery>3.6.1</version.jquery>
 		<version.jdk-serializable-functional>1.9.0</version.jdk-serializable-functional>
 		<version.openjson>1.0.13</version.openjson>
@@ -106,7 +106,7 @@
 		<version.zt-exec>1.11</version.zt-exec>
 		<version.zt-zip>1.13</version.zt-zip>
 		<version.lz4>1.8.0</version.lz4>
-		<version.kafka>2.8.0</version.kafka>
+		<version.kafka>3.6.0</version.kafka>
 		<version.fastutil>8.5.12</version.fastutil>
 		<version.dsiutils>2.7.3</version.dsiutils>
 		<version.jamm>0.3.3</version.jamm>
