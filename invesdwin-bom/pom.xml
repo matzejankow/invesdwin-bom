@@ -57,7 +57,7 @@
 		<version.wicket>10.0.0-M2</version.wicket>
 		<version.wicketstuff>10.0.0-M2</version.wicketstuff>
 		<version.wicket-bootstrap>6.0.0-M8</version.wicket-bootstrap>
-		<version.bootstrap>5.2.0</version.bootstrap>
+		<version.bootstrap>5.2.3</version.bootstrap>
 		<version.popperjs>2.9.3</version.popperjs>
 		<version.spring-security>6.2.0</version.spring-security>
 		<version.jakarta-servlet>6.0.0</version.jakarta-servlet>
