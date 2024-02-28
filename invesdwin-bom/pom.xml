@@ -61,6 +61,8 @@
 		<version.popperjs>2.11.7</version.popperjs>
 		<version.spring-security>6.2.0</version.spring-security>
 		<version.jakarta-servlet>6.0.0</version.jakarta-servlet>
+		<version.jakarta.mail-api>2.1.2</version.jakarta.mail-api>
+		<version.jakarta.mail>2.0.2</version.jakarta.mail>
 		<version.jackson>2.15.3</version.jackson>
 		<version.jettison>1.5.4</version.jettison>
 		<version.jsoup>1.15.3</version.jsoup>
@@ -758,6 +760,16 @@
 				<groupId>jakarta.servlet</groupId>
 				<artifactId>jakarta.servlet-api</artifactId>
 				<version>${version.jakarta-servlet}</version>
+			</dependency>
+			<dependency>
+				<groupId>jakarta.mail</groupId>
+				<artifactId>jakarta.mail-api</artifactId>
+				<version>${version.jakarta.mail-api}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.angus</groupId>
+				<artifactId>jakarta.mail</artifactId>
+				<version>${version.jakarta.mail}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.junit.jupiter</groupId>
@@ -2188,6 +2200,7 @@
 							<param>org\.glassfish:jakarta\.el.*</param>
 							<param>clj-python:libpython-clj.*</param>
 							<param>jakarta\.mail:jakarta\.mail-api.*</param>
+							<param>org\.eclipse\.angus:jakarta.mail.*</param>
 							<param>
 								jakarta\.transaction:jakarta\.transaction-api.*</param>
 							<!-- EDL -->
