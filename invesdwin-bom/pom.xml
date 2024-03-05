@@ -142,7 +142,7 @@
 		<version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
 		<version.build-helper-maven-plugin>3.3.0</version.build-helper-maven-plugin>
 		<version.os-maven-plugin>1.7.1</version.os-maven-plugin>
-		<version.jetty>11.0.12</version.jetty>
+		<version.jetty>11.0.17</version.jetty>
 		<version.netty>4.1.100.Final</version.netty>
 		<version.netty-io_uring>0.0.21.Final</version.netty-io_uring>
 		<version.netty-tcnative>2.0.61.Final</version.netty-tcnative>
