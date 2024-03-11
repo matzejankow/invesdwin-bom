@@ -28,7 +28,7 @@
 		<version.spring-ldap>3.2.0</version.spring-ldap>
 		<version.reactor>3.6.0</version.reactor>
 		<version.aspectj>1.9.20.1</version.aspectj>
-		<version.micrometer>1.12.0</version.micrometer>
+		<version.micrometer>1.12.3</version.micrometer>
 		<version.javassist>3.28.0-GA</version.javassist>
 		<version.jsr305>3.0.2</version.jsr305>
 		<version.slf4j>2.0.9</version.slf4j>
