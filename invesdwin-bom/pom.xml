@@ -163,6 +163,7 @@
 		<version.jfilechooser-bookmarks>0.1.9</version.jfilechooser-bookmarks>
 		<version.flatlaf>3.1</version.flatlaf>
 		<version.mina>2.2.3</version.mina>
+		<version.javacpp>1.5.10</version.javacpp>
 		<maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
 	<dependencyManagement>
@@ -1812,6 +1813,11 @@
 					</exclusion>
 				</exclusions>
 			</dependency>
+			<dependency>
+				<groupId>org.bytedeco</groupId>
+				<artifactId>javacpp</artifactId>
+				<version>${version.javacpp}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
@@ -2376,6 +2382,30 @@
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>build-helper-maven-plugin</artifactId>
 					<version>${version.build-helper-maven-plugin}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.bytedeco</groupId>
+					<artifactId>javacpp</artifactId>
+					<version>${version.javacpp}</version>
+					<configuration>
+						<classPath>${project.build.outputDirectory}</classPath>
+						<includePaths>
+							<includePath>${project.build.sourceDirectory}</includePath>
+						</includePaths>
+						<copyLibs>true</copyLibs>
+						<classOrPackageNames>
+							<classOrPackageName>de.invesdwin.*</classOrPackageName>
+						</classOrPackageNames>
+					</configuration>
+					<executions>
+						<execution>
+							<id>process-classes</id>
+							<phase>process-classes</phase>
+							<goals>
+								<goal>build</goal>
+							</goals>
+						</execution>
+					</executions>
 				</plugin>
 			</plugins>
 		</pluginManagement>
