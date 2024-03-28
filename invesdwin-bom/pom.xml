@@ -1818,6 +1818,11 @@
 				<artifactId>javacpp</artifactId>
 				<version>${version.javacpp}</version>
 			</dependency>
+			<dependency>
+				<groupId>org.bytedeco</groupId>
+				<artifactId>systems-platform</artifactId>
+				<version>${version.javacpp}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	<build>
@@ -2387,16 +2392,6 @@
 					<groupId>org.bytedeco</groupId>
 					<artifactId>javacpp</artifactId>
 					<version>${version.javacpp}</version>
-					<configuration>
-						<classPath>${project.build.outputDirectory}</classPath>
-						<includePaths>
-							<includePath>${project.build.sourceDirectory}</includePath>
-						</includePaths>
-						<copyLibs>true</copyLibs>
-						<classOrPackageNames>
-							<classOrPackageName>de.invesdwin.*</classOrPackageName>
-						</classOrPackageNames>
-					</configuration>
 					<executions>
 						<execution>
 							<id>process-classes</id>
