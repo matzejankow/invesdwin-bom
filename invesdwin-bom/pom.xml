@@ -1820,6 +1820,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.bytedeco</groupId>
+				<artifactId>javacpp-platform</artifactId>
+				<version>${version.javacpp}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.bytedeco</groupId>
 				<artifactId>systems-platform</artifactId>
 				<version>${version.javacpp}</version>
 			</dependency>
@@ -2392,15 +2397,6 @@
 					<groupId>org.bytedeco</groupId>
 					<artifactId>javacpp</artifactId>
 					<version>${version.javacpp}</version>
-					<executions>
-						<execution>
-							<id>process-classes</id>
-							<phase>process-classes</phase>
-							<goals>
-								<goal>build</goal>
-							</goals>
-						</execution>
-					</executions>
 				</plugin>
 			</plugins>
 		</pluginManagement>
