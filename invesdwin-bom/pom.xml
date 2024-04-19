@@ -148,11 +148,11 @@
 		<version.netty>4.1.100.Final</version.netty>
 		<version.netty-io_uring>0.0.21.Final</version.netty-io_uring>
 		<version.netty-tcnative>2.0.61.Final</version.netty-tcnative>
-		<version.chronicle-algorithms>2.24ea0</version.chronicle-algorithms>
-		<version.chronicle-bytes>2.24ea13</version.chronicle-bytes>
-		<version.chronicle-core>2.24ea20</version.chronicle-core>
+		<version.chronicle-algorithms>2.25ea0</version.chronicle-algorithms>
+		<version.chronicle-bytes>2.25ea9</version.chronicle-bytes>
+		<version.chronicle-core>2.25ea13</version.chronicle-core>
 		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
-		<version.agrona>1.19.2</version.agrona>
+		<version.agrona>1.21.1</version.agrona>
 		<version.arrow>13.0.0</version.arrow>
 		<version.burningwave-core>12.62.0</version.burningwave-core>
 		<version.jna>5.13.0</version.jna>
