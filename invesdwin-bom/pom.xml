@@ -141,6 +141,8 @@
 		<version.jacoco-maven-plugin>0.8.6</version.jacoco-maven-plugin>
 		<version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
 		<version.build-helper-maven-plugin>3.3.0</version.build-helper-maven-plugin>
+		<version.exec-maven-plugin>3.2.0</version.exec-maven-plugin>
+		<version.nar-maven-plugin>3.10.0</version.nar-maven-plugin>
 		<version.os-maven-plugin>1.7.1</version.os-maven-plugin>
 		<version.jetty>11.0.17</version.jetty>
 		<version.netty>4.1.100.Final</version.netty>
@@ -2397,6 +2399,17 @@
 					<groupId>org.bytedeco</groupId>
 					<artifactId>javacpp</artifactId>
 					<version>${version.javacpp}</version>
+				</plugin>
+				<plugin>
+					<groupId>org.codehaus.mojo</groupId>
+					<artifactId>exec-maven-plugin</artifactId>
+					<version>${version.exec-maven-plugin}</version>
+				</plugin>
+				<plugin>
+					<groupId>com.github.maven-nar</groupId>
+					<artifactId>nar-maven-plugin</artifactId>
+					<version>${nar-maven-plugin}</version>
+					<extensions>true</extensions>
 				</plugin>
 			</plugins>
 		</pluginManagement>
