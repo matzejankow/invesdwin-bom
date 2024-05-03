@@ -1486,6 +1486,11 @@
 				<version>${version.maven-resolver}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.apache.maven.resolver</groupId>
+				<artifactId>maven-resolver-named-locks</artifactId>
+				<version>${version.maven-resolver}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.apache.maven</groupId>
 				<artifactId>maven-plugin-api</artifactId>
 				<version>${version.maven}</version>
@@ -2310,7 +2315,8 @@
 							<param>jakarta\.mail:jakarta\.mail-api.*</param>
 							<param>org\.eclipse\.angus:jakarta.mail.*</param>
 							<param>eu\.maveniverse\.maven\.mima.*</param>
-							<param>jakarta\.transaction:jakarta\.transaction-api.*</param>
+							<param>
+								jakarta\.transaction:jakarta\.transaction-api.*</param>
 
 							<!-- EDL -->
 							<param>jakarta\.activation:jakarta\.activation-api.*</param>
