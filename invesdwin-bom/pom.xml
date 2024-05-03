@@ -100,7 +100,7 @@
 		<version.jakarta.websocket-api>2.1.0</version.jakarta.websocket-api>
 		<version.junit>5.10.2</version.junit>
 		<version.junit-platform>1.10.2</version.junit-platform>
-		<version.mockito>5.11.0</version.mockito>
+		<version.mockito>4.9.0</version.mockito>
 		<version.byte-buddy>1.14.14</version.byte-buddy>
 		<version.objenesis>3.3</version.objenesis>
 		<version.ow2asm>9.6</version.ow2asm>
