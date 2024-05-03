@@ -63,7 +63,7 @@
 		<version.jakarta-servlet>6.0.0</version.jakarta-servlet>
 		<version.jakarta.mail-api>2.1.2</version.jakarta.mail-api>
 		<version.jakarta.mail>2.0.2</version.jakarta.mail>
-		<version.jackson>2.16.2</version.jackson>
+		<version.jackson>2.17.0</version.jackson>
 		<version.jettison>1.5.4</version.jettison>
 		<version.jsoup>1.15.3</version.jsoup>
 		<version.args4j>2.33</version.args4j>
@@ -71,7 +71,7 @@
 		<version.jquery>3.6.1</version.jquery>
 		<version.jdk-serializable-functional>1.9.0</version.jdk-serializable-functional>
 		<version.openjson>1.0.13</version.openjson>
-		<version.woodstox>6.5.1</version.woodstox>
+		<version.woodstox>6.6.2</version.woodstox>
 		<version.xstream>1.4.20</version.xstream>
 		<version.jclipboardhelper>0.1.2</version.jclipboardhelper>
 		<version.istack>4.2.0</version.istack>
