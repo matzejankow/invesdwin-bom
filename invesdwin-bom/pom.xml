@@ -2354,7 +2354,8 @@
 							<param>eu\.maveniverse\.maven\.mima.*</param>
 							<param>
 								jakarta\.transaction:jakarta\.transaction-api.*</param>
-
+							<!-- UPL -->
+							<param>org.graalvm.polyglot:.*</param>
 							<!-- EDL -->
 							<param>jakarta\.activation:jakarta\.activation-api.*</param>
 							<param>com\.sun\.activation:jakarta\.activation.*</param>
