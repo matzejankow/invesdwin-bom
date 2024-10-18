@@ -118,7 +118,7 @@
 		<version.kotlin>1.9.23</version.kotlin>
 		<version.clojure>1.11.2</version.clojure>
 		<version.jruby>9.4.5.0</version.jruby>
-		<version.graalvm>23.0.2</version.graalvm>
+		<version.graalvm>24.1.1</version.graalvm>
 		<version.jollyday>0.10.0</version.jollyday>
 		<version.threeten-extra>1.7.1</version.threeten-extra>
 		<version.strata>2.10.5</version.strata>
@@ -754,14 +754,39 @@
 				</exclusions>
 			</dependency>
 			<dependency>
-				<groupId>org.graalvm.js</groupId>
+				<groupId>org.graalvm.polyglot</groupId>
 				<artifactId>js</artifactId>
 				<version>${version.graalvm}</version>
+				<type>pom</type>
 			</dependency>
 			<dependency>
 				<groupId>org.graalvm.js</groupId>
 				<artifactId>js-scriptengine</artifactId>
 				<version>${version.graalvm}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.graalvm.polyglot</groupId>
+				<artifactId>java</artifactId>
+				<version>${version.graalvm}</version>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>org.graalvm.polyglot</groupId>
+				<artifactId>ruby</artifactId>
+				<version>${version.graalvm}</version>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>org.graalvm.polyglot</groupId>
+				<artifactId>python</artifactId>
+				<version>${version.graalvm}</version>
+				<type>pom</type>
+			</dependency>
+			<dependency>
+				<groupId>org.graalvm.polyglot</groupId>
+				<artifactId>llvm</artifactId>
+				<version>${version.graalvm}</version>
+				<type>pom</type>
 			</dependency>
 			<dependency>
 				<groupId>jakarta.servlet</groupId>
