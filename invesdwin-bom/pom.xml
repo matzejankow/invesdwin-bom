@@ -104,7 +104,7 @@
 		<version.mockito>4.9.0</version.mockito>
 		<version.byte-buddy>1.14.18</version.byte-buddy>
 		<version.objenesis>3.3</version.objenesis>
-		<version.ow2asm>9.6</version.ow2asm>
+		<version.ow2asm>9.7.1</version.ow2asm>
 		<version.asm>3.3.1</version.asm>
 		<version.zt-exec>1.11</version.zt-exec>
 		<version.zt-zip>1.13</version.zt-zip>
@@ -151,17 +151,18 @@
 		<version.netty>4.1.100.Final</version.netty>
 		<version.netty-io_uring>0.0.21.Final</version.netty-io_uring>
 		<version.netty-tcnative>2.0.61.Final</version.netty-tcnative>
-		<version.chronicle-algorithms>2.25ea0</version.chronicle-algorithms>
-		<version.chronicle-bytes>2.25ea9</version.chronicle-bytes>
-		<version.chronicle-core>2.25ea13</version.chronicle-core>
-		<version.jetbrains-annotations>22.0.0</version.jetbrains-annotations>
+		<version.chronicle-algorithms>2.27ea0</version.chronicle-algorithms>
+		<version.chronicle-bytes>2.27ea2</version.chronicle-bytes>
+		<version.chronicle-core>2.27ea2</version.chronicle-core>
+		<version.chronicle-posix>2.27ea1</version.chronicle-posix>
+		<version.jetbrains-annotations>26.0.2</version.jetbrains-annotations>
 		<version.agrona>1.21.1</version.agrona>
 		<version.arrow>13.0.0</version.arrow>
 		<version.burningwave-core>12.62.0</version.burningwave-core>
 		<version.jna>5.13.0</version.jna>
 		<version.jnr-constants>0.10.4</version.jnr-constants>
-		<version.jnr-ffi>2.2.13</version.jnr-ffi>
-		<version.jffi>1.3.10</version.jffi>
+		<version.jnr-ffi>2.2.17</version.jnr-ffi>
+		<version.jffi>1.3.13</version.jffi>
 		<version.dtype-next>10.113</version.dtype-next>
 		<version.tech.ml.dataset>7.030</version.tech.ml.dataset>
 		<version.xml-apis>1.4.01</version.xml-apis>
@@ -1780,6 +1781,11 @@
 				</exclusions>
 			</dependency>
 			<dependency>
+				<groupId>net.openhft</groupId>
+				<artifactId>posix</artifactId>
+				<version>${version.chronicle-posix}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.agrona</groupId>
 				<artifactId>agrona</artifactId>
 				<version>${version.agrona}</version>
@@ -2260,6 +2266,7 @@
 							<param>com\.github\.rjolly:jshellscriptengine.*</param>
 							<param>org\.rauschig:jarchivelib.*</param>
 							<!-- bsd license -->
+							<param>com\.github\.crykn:kryonet.*</param>
 							<param>com\.esotericsoftware:kryonet.*</param>
 							<param>sg-cdb:sg-cdb.*</param>
 							<param>edu\.ohio-state\.cse\.mvapich:mvapich2-j.*</param>
