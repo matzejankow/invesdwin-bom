@@ -137,7 +137,8 @@
 		https://issues.apache.org/jira/browse/MENFORCER-402 -->
 		<version.maven-enforcer-plugin>3.1.0</version.maven-enforcer-plugin>
 		<version.lifecycle-mapping>1.0.0</version.lifecycle-mapping>
-		<version.license-check-maven-plugin>0.5.6-inv</version.license-check-maven-plugin>
+		<!-- <version.license-check-maven-plugin>0.5.6-inv</version.license-check-maven-plugin> -->
+		<version.license-check-maven-plugin>0.5.3</version.license-check-maven-plugin>
 		<version.maven-release-plugin>3.0.1</version.maven-release-plugin>
 		<version.maven-deploy-plugin>3.1.2</version.maven-deploy-plugin>
 		<version.maven-shade-plugin>3.5.3</version.maven-shade-plugin>
@@ -2554,6 +2555,10 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 			</plugin>
+			<plugin>
+        		<groupId>com.github.danielflower.mavenplugins</groupId>
+        		<artifactId>multi-module-maven-release-plugin</artifactId>
+      		</plugin>
 		</plugins>
 		<extensions>
 			<extension>
@@ -2567,23 +2572,19 @@
 		<repository>
 			<id>invesdwin-oss</id>
 			<name>invesdwin.de-releases</name>
-			<url>https://invesdwin.de/repo/invesdwin-oss</url>
+			<url>http://192.168.178.43:8081/repository/invesdwin-oss/</url>
 		</repository>
 		<snapshotRepository>
 			<id>invesdwin-oss</id>
 			<name>invesdwin.de-snapshots</name>
-			<url>https://invesdwin.de/repo/invesdwin-oss</url>
+			<url>http://192.168.178.43:8081/repository/invesdwin-oss/</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<scm>
-		<url>https://github.com/invesdwin/invesdwin-bom</url>
-		<connection>scm:git:https://github.com/invesdwin/invesdwin-bom.git</connection>
+		<url>https://github.com/matzejankow/invesdwin-bom</url>
+		<connection>scm:git:https://github.com/matzejankow/invesdwin-bom.git</connection>
 		<tag>HEAD</tag>
 	</scm>
-	<ciManagement>
-		<system>jenkins</system>
-		<url>https://invesdwin.de/jenkins/job/dgr-deploy-invesdwin-bom/</url>
-	</ciManagement>
 	<profiles>
 		<profile>
 			<id>jacoco</id>
